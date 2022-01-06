@@ -1,0 +1,59 @@
+/*-----------------------------------------------------------------------------------------------------------
+---------------------------------          Variables       --------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+// theme colors
+$primary: #E31D7A !default;
+$secondary: #97BA02 !default;
+$accent: rgb(97, 97, 97) !default;
+$error: #ce0034 !default;
+$info: #f6c31c !default;
+
+// color Pallette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "accent": $accent,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "orange": rgb(255, 136, 0),
+    "purple": purple,
+    "grey": #808080,
+    "black": hsl(0, 0%, 3%),
+    "pitch-black": hsl(0, 0%, 0%),
+    "white": white,
+);
+
+
+
+.test-btn {
+    background-color: map-get($colors, "purple");
+}
+
+// @debug map-get($colors, "purple");            // Get the color code of a specific color
+// @debug map-has-key($colors, "secondary");     // check if color is saved (true)
+// @debug map-has-key($colors, "tertiary");      // check if a color is saved (false)
+// @debug map-remove($colors, "primary");        // remove the primary color
+// @debug map-merge($colors, ("pink": #ffc0cb)); // add a color to the map
+
+// Spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+// Borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+
+// box-shadow 
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+
+//font sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;

@@ -1,0 +1,6656 @@
+/*-----------------------------------------------------------------------------------------------------------
+
+------------------------------------          General       --------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+body {
+    padding: 0px;
+}
+
+
+.left {
+    left: 0px;
+    width: fit-content;
+    text-align: start;
+}
+
+.right {
+    right: 0px;
+    width: fit-content;
+    text-align:end;
+}
+
+.my-auto {
+    margin: auto;
+    align-items: center;
+    vertical-align: middle;
+    /*Make lineheight = to height*/
+}
+
+.mx-auto {
+    margin: auto;
+    text-align: center;
+}
+
+.start {
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.end {
+    justify-content: end;
+    align-items: end;
+    text-align: end; 
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    vertical-align: text-bottom;
+}
+
+.double-center {
+    margin: auto;
+    text-align: center;
+    /*Make lineheight = to height*/
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.inline-grid {
+    display: inline-grid;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position:relative;
+}
+
+.offscreen {
+    position: absolute;
+    left: -30000px;
+    width: 0px;
+    height: 0px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------
+------------------------------------          Common Objects       --------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------------
+------------------------------------          Height and Widths       --------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------
+-----      PERCENTS's      -----
+------------------------------*/
+.wp-100 {
+    width: 100%;
+}
+
+.wp-90 {
+    width: 90%;
+}
+
+.wp-80 {
+    width: 80%;
+}
+
+.wp-75 {
+    width: 75%;
+}
+
+.wp-70 {
+    width: 70%;
+}
+
+.wp-60 {
+    width: 60%;
+}
+
+.wp-50 {
+    width: 50%;
+}
+
+.wp-40 {
+    width: 40%;
+}
+
+.wp-33 {
+    width: 33%;
+}
+
+.wp-30 {
+    width: 30%;
+}
+
+.wp-25 {
+    width: 25%;
+}
+
+.wp-20 {
+    width: 20%;
+}
+
+.wp-10 {
+    width: 10%;
+}
+
+/*------------ Height -------------*/
+.hp-100 {
+    height: 100vh;
+}
+
+.hp-90 {
+    height: 90vh;
+}
+
+.hp-80 {
+    height: 80vh;
+}
+
+.hp-75 {
+    height: 75vh;
+}
+
+.hp-60 {
+    height: 60vh;
+}
+
+.hp-50 {
+    height: 50vh;
+}
+
+.hp-40 {
+    height: 40vh;
+}
+
+.hp-30 {
+    height: 30vh;
+}
+
+.hp-20 {
+    height: 20vh;
+}
+
+.hp-10 {
+    height: 10vh;
+}
+
+/*------------------------------
+-------      PXL's      --------
+------------------------------*/
+.wpx-1250 {
+    width: 1250px;
+}
+
+.wpx-1240 {
+    width: 1240px;
+}
+
+.wpx-1230 {
+    width: 1230px;
+}
+
+.wpx-1220 {
+    width: 1220px;
+}
+
+.wpx-1210 {
+    width: 1210px;
+}
+
+.wpx-1200 {
+    width: 1200px;
+}
+
+.wpx-1190 {
+    width: 1190px;
+}
+
+.wpx-1180 {
+    width: 1180px;
+}
+
+.wpx-1170 {
+    width: 1170px;
+}
+
+.wpx-1160 {
+    width: 1160px;
+}
+
+.wpx-1150 {
+    width: 1150px;
+}
+
+.wpx-1140 {
+    width: 1140px;
+}
+
+.wpx-1130 {
+    width: 1130px;
+}
+
+.wpx-1120 {
+    width: 1120px;
+}
+
+.wpx-1110 {
+    width: 1110px;
+}
+
+.wpx-1100 {
+    width: 1100px;
+}
+
+.wpx-1090 {
+    width: 1090px;
+}
+
+.wpx-1080 {
+    width: 1080px;
+}
+
+.wpx-1070 {
+    width: 1070px;
+}
+
+.wpx-1060 {
+    width: 1060px;
+}
+
+.wpx-1050 {
+    width: 1050px;
+}
+
+.wpx-1040 {
+    width: 1040px;
+}
+
+.wpx-1030 {
+    width: 1030px;
+}
+
+.wpx-1020 {
+    width: 1020px;
+}
+
+.wpx-1010 {
+    width: 1010px;
+}
+
+.wpx-1000 {
+    width: 1000px;
+}
+
+.wpx-990 {
+    width: 990px;
+}
+
+.wpx-980 {
+    width: 980px;
+}
+
+.wpx-970 {
+    width: 970px;
+}
+
+.wpx-960 {
+    width: 960px;
+}
+
+.wpx-950 {
+    width: 950px;
+}
+
+.wpx-940 {
+    width: 940px;
+}
+
+.wpx-930 {
+    width: 930px;
+}
+
+.wpx-920 {
+    width: 920px;
+}
+
+.wpx-910 {
+    width: 910px;
+}
+
+.wpx-900 {
+    width: 900px;
+}
+
+.wpx-890 {
+    width: 890px;
+}
+
+.wpx-880 {
+    width: 880px;
+}
+
+.wpx-870 {
+    width: 870px;
+}
+
+.wpx-860 {
+    width: 860px;
+}
+
+.wpx-850 {
+    width: 850px;
+}
+
+.wpx-840 {
+    width: 840px;
+}
+
+.wpx-830 {
+    width: 830px;
+}
+
+.wpx-820 {
+    width: 820px;
+}
+
+.wpx-810 {
+    width: 810px;
+}
+
+.wpx-800 {
+    width: 800px;
+}
+
+.wpx-790 {
+    width: 790px;
+}
+
+.wpx-780 {
+    width: 780px;
+}
+
+.wpx-770 {
+    width: 770px;
+}
+
+.wpx-760 {
+    width: 760px;
+}
+
+.wpx-750 {
+    width: 750px;
+}
+
+.wpx-740 {
+    width: 740px;
+}
+
+.wpx-730 {
+    width: 730px;
+}
+
+.wpx-720 {
+    width: 720px;
+}
+
+.wpx-710 {
+    width: 710px;
+}
+
+.wpx-700 {
+    width: 700px;
+}
+
+.wpx-690 {
+    width: 690px;
+}
+
+.wpx-680 {
+    width: 680px;
+}
+
+.wpx-670 {
+    width: 670px;
+}
+
+.wpx-660 {
+    width: 660px;
+}
+
+.wpx-650 {
+    width: 650px;
+}
+
+.wpx-640 {
+    width: 640px;
+}
+
+.wpx-630 {
+    width: 630px;
+}
+
+.wpx-620 {
+    width: 620px;
+}
+
+.wpx-610 {
+    width: 610px;
+}
+
+.wpx-600 {
+    width: 600px;
+}
+
+.wpx-590 {
+    width: 590px;
+}
+
+.wpx-580 {
+    width: 580px;
+}
+
+.wpx-570 {
+    width: 570px;
+}
+
+.wpx-560 {
+    width: 560px;
+}
+
+.wpx-550 {
+    width: 550px;
+}
+
+.wpx-540 {
+    width: 540px;
+}
+
+.wpx-530 {
+    width: 530px;
+}
+
+.wpx-520 {
+    width: 520px;
+}
+
+.wpx-510 {
+    width: 510px;
+}
+
+.wpx-500 {
+    width: 500px;
+}
+
+.wpx-490 {
+    width: 490px;
+}
+
+.wpx-480 {
+    width: 480px;
+}
+
+.wpx-470 {
+    width: 470px;
+}
+
+.wpx-460 {
+    width: 460px;
+}
+
+.wpx-450 {
+    width: 450px;
+}
+
+.wpx-440 {
+    width: 440px;
+}
+
+.wpx-430 {
+    width: 430px;
+}
+
+.wpx-420 {
+    width: 420px;
+}
+
+.wpx-410 {
+    width: 410px;
+}
+
+.wpx-400 {
+    width: 400px;
+}
+
+.wpx-390 {
+    width: 390px;
+}
+
+.wpx-380 {
+    width: 380px;
+}
+
+.wpx-370 {
+    width: 370px;
+}
+
+.wpx-360 {
+    width: 360px;
+}
+
+.wpx-350 {
+    width: 350px;
+}
+
+.wpx-340 {
+    width: 340px;
+}
+
+.wpx-330 {
+    width: 330px;
+}
+
+.wpx-320 {
+    width: 320px;
+}
+
+.wpx-310 {
+    width: 310px;
+}
+
+.wpx-300 {
+    width: 300px;
+}
+
+.wpx-290 {
+    width: 290px;
+}
+
+.wpx-280 {
+    width: 280px;
+}
+
+.wpx-270 {
+    width: 270px;
+}
+
+.wpx-260 {
+    width: 260px;
+}
+
+.wpx-250 {
+    width: 250px;
+}
+
+.wpx-240 {
+    width: 240px;
+}
+
+.wpx-230 {
+    width: 230px;
+}
+
+.wpx-220 {
+    width: 220px;
+}
+
+.wpx-210 {
+    width: 210px;
+}
+
+.wpx-200 {
+    width: 200px;
+}
+
+.wpx-190 {
+    width: 190px;
+}
+
+.wpx-180 {
+    width: 180px;
+}
+
+.wpx-170 {
+    width: 170px;
+}
+
+.wpx-160 {
+    width: 160px;
+}
+
+.wpx-150 {
+    width: 150px;
+}
+
+.wpx-140 {
+    width: 140px;
+}
+
+.wpx-130 {
+    width: 130px;
+}
+
+.wpx-120 {
+    width: 120px;
+}
+
+.wpx-110 {
+    width: 110px;
+}
+
+.wpx-100 {
+    width: 100px;
+}
+
+.wpx-95 {
+    width: 95px;
+}
+
+.wpx-90 {
+    width: 90px;
+}
+
+.wpx-85 {
+    width: 85px;
+}
+
+.wpx-80 {
+    width: 80px;
+}
+
+.wpx-75 {
+    width: 75px;
+}
+
+.wpx-70 {
+    width: 70px;
+}
+
+.wpx-65 {
+    width: 65px;
+}
+
+.wpx-60 {
+    width: 60px;
+}
+
+.wpx-55 {
+    width: 55px;
+}
+
+.wpx-50 {
+    width: 50px;
+}
+
+.wpx-45 {
+    width: 45px;
+}
+
+.wpx-40 {
+    width: 40px;
+}
+
+.wpx-35 {
+    width: 35px;
+}
+
+.wpx-30 {
+    width: 30px;
+}
+
+.wpx-25 {
+    width: 25px;
+}
+
+.wpx-20 {
+    width: 20px;
+}
+
+.wpx-15 {
+    width: 15px;
+}
+
+.wpx-10 {
+    width: 10px;
+}
+
+.wpx-5 {
+    width: 5px;
+}
+
+/*------------ Height -------------*/
+
+.hpx-1000 {
+    height: 1000px;
+}
+
+.hpx-990 {
+    height: 990px;
+}
+
+.hpx-980 {
+    height: 980px;
+}
+
+.hpx-970 {
+    height: 970px;
+}
+
+.hpx-960 {
+    height: 960px;
+}
+
+.hpx-950 {
+    height: 950px;
+}
+
+.hpx-940 {
+    height: 940px;
+}
+
+.hpx-930 {
+    height: 930px;
+}
+
+.hpx-920 {
+    height: 920px;
+}
+
+.hpx-910 {
+    height: 910px;
+}
+
+.hpx-900 {
+    height: 900px;
+}
+
+.hpx-890 {
+    height: 890px;
+}
+
+.hpx-880 {
+    height: 880px;
+}
+
+.hpx-870 {
+    height: 870px;
+}
+
+.hpx-860 {
+    height: 860px;
+}
+
+.hpx-850 {
+    height: 850px;
+}
+
+.hpx-840 {
+    height: 840px;
+}
+
+.hpx-830 {
+    height: 830px;
+}
+
+.hpx-820 {
+    height: 820px;
+}
+
+.hpx-810 {
+    height: 810px;
+}
+
+.hpx-800 {
+    height: 800px;
+}
+.hpx-790 {
+    height: 790px;
+}
+
+.hpx-780 {
+    height: 780px;
+}
+
+.hpx-770 {
+    height: 770px;
+}
+
+.hpx-760 {
+    height: 760px;
+}
+
+.hpx-750 {
+    height: 750px;
+}
+
+.hpx-740 {
+    height: 740px;
+}
+
+.hpx-730 {
+    height: 730px;
+}
+
+.hpx-720 {
+    height: 720px;
+}
+
+.hpx-710 {
+    height: 710px;
+}
+
+.hpx-700 {
+    height: 700px;
+}
+
+.hpx-690 {
+    height: 690px;
+}
+
+.hpx-680 {
+    height: 680px;
+}
+
+.hpx-670 {
+    height: 670px;
+}
+
+.hpx-660 {
+    height: 660px;
+}
+
+.hpx-650 {
+    height: 650px;
+}
+
+.hpx-640 {
+    height: 640px;
+}
+
+.hpx-630 {
+    height: 630px;
+}
+
+.hpx-620 {
+    height: 620px;
+}
+
+.hpx-610 {
+    height: 610px;
+}
+
+.hpx-600 {
+    height: 600px;
+}
+
+
+.hpx-590 {
+    height: 590px;
+}
+
+.hpx-580 {
+    height: 580px;
+}
+
+.hpx-570 {
+    height: 570px;
+}
+
+.hpx-560 {
+    height: 560px;
+}
+
+.hpx-550 {
+    height: 550px;
+}
+
+.hpx-540 {
+    height: 540px;
+}
+
+.hpx-530 {
+    height: 530px;
+}
+
+.hpx-520 {
+    height: 520px;
+}
+
+.hpx-510 {
+    height: 510px;
+}
+
+.hpx-500 {
+    height: 500px;
+}
+
+.hpx-490 {
+    height: 490px;
+}
+
+.hpx-480 {
+    height: 480px;
+}
+
+.hpx-470 {
+    height: 470px;
+}
+
+.hpx-460 {
+    height: 460px;
+}
+
+.hpx-450 {
+    height: 450px;
+}
+
+.hpx-440 {
+    height: 440px;
+}
+
+.hpx-430 {
+    height: 430px;
+}
+
+.hpx-420 {
+    height: 420px;
+}
+
+.hpx-410 {
+    height: 410px;
+}
+
+.hpx-400 {
+    height: 400px;
+}
+
+
+.hpx-390 {
+    height: 390px;
+}
+
+.hpx-380 {
+    height: 380px;
+}
+
+.hpx-370 {
+    height: 370px;
+}
+
+.hpx-360 {
+    height: 360px;
+}
+
+.hpx-350 {
+    height: 350px;
+}
+
+.hpx-340 {
+    height: 340px;
+}
+
+.hpx-330 {
+    height: 330px;
+}
+
+.hpx-320 {
+    height: 320px;
+}
+
+.hpx-310 {
+    height: 310px;
+}
+
+.hpx-300 {
+    height: 300px;
+}
+
+
+.hpx-290 {
+    height: 290px;
+}
+
+.hpx-280 {
+    height: 280px;
+}
+
+.hpx-270 {
+    height: 270px;
+}
+
+.hpx-260 {
+    height: 260px;
+}
+
+.hpx-250 {
+    height: 250px;
+}
+
+.hpx-240 {
+    height: 240px;
+}
+
+.hpx-230 {
+    height: 230px;
+}
+
+.hpx-220 {
+    height: 220px;
+}
+
+.hpx-210 {
+    height: 210px;
+}
+
+.hpx-200 {
+    height: 200px;
+}
+
+
+.hpx-190 {
+    height: 190px;
+}
+
+.hpx-180 {
+    height: 180px;
+}
+
+.hpx-170 {
+    height: 170px;
+}
+
+.hpx-160 {
+    height: 160px;
+}
+
+.hpx-150 {
+    height: 150px;
+}
+
+.hpx-140 {
+    height: 140px;
+}
+
+.hpx-130 {
+    height: 130px;
+}
+
+.hpx-120 {
+    height: 120px;
+}
+
+.hpx-110 {
+    height: 110px;
+}
+
+.hpx-100 {
+    height: 100px;
+}
+
+.hpx-95 {
+    height: 95px;
+}
+
+.hpx-90 {
+    height: 90px;
+}
+
+.hpx-85 {
+    height: 85px;
+}
+
+.hpx-80 {
+    height: 80px;
+}
+
+.hpx-75 {
+    height: 75px;
+}
+
+.hpx-70 {
+    height: 70px;
+}
+
+.hpx-65 {
+    height: 65px;
+}
+
+.hpx-60 {
+    height: 60px;
+}
+
+.hpx-55 {
+    height: 55px;
+}
+
+.hpx-50 {
+    height: 50px;
+}
+
+.hpx-45 {
+    height: 45px;
+}
+
+.hpx-40 {
+    height: 40px;
+}
+
+.hpx-35 {
+    height: 35px;
+}
+
+.hpx-30 {
+    height: 30px;
+}
+
+.hpx-25 {
+    height: 25px;
+}
+
+.hpx-20 {
+    height: 20px;
+}
+
+.hpx-10 {
+    height: 10px;
+}
+
+.hpx-5 {
+    height: 5px;
+}
+
+/*------------------------------
+-------      REM's      --------
+------------------------------*/
+
+.wrem-01 {
+    width: .1rem;
+}
+
+.wrem-02 {
+    width: .2rem;
+}
+
+.wrem-03 {
+    width: .3rem;
+}
+
+.wrem-04 {
+    width: .4rem;
+}
+
+.wrem-05 {
+    width: .5rem;
+}
+
+.wrem-06 {
+    width: .6rem;
+}
+
+.wrem-07 {
+    width: .7rem;
+}
+
+.wrem-08 {
+    width: .8rem;
+}
+
+.wrem-09 {
+    width: .9rem;
+}
+
+.wrem-10 {
+    width: 1rem;
+}
+
+.wrem-11 {
+    width: 1.1rem;
+}
+
+.wrem-12 {
+    width: 1.2rem;
+}
+
+.wrem-13 {
+    width: 1.3rem;
+}
+
+.wrem-14 {
+    width: 1.4rem;
+}
+
+.wrem-15 {
+    width: 1.5rem;
+}
+
+.wrem-16 {
+    width: 1.6rem;
+}
+
+.wrem-17 {
+    width: 1.7rem;
+}
+
+.wrem-18 {
+    width: 1.8rem;
+}
+
+.wrem-19 {
+    width: 1.9rem;
+}
+
+.wrem-20 {
+    width: 2.0rem;
+}
+
+.wrem-21 {
+    width: 2.1rem;
+}
+
+.wrem-22 {
+    width: 2.2rem;
+}
+
+.wrem-23 {
+    width: 2.3rem;
+}
+
+.wrem-24 {
+    width: 2.4rem;
+}
+
+.wrem-25 {
+    width: 2.5rem;
+}
+
+.wrem-26 {
+    width: 2.6rem;
+}
+
+.wrem-27 {
+    width: 2.7rem;
+}
+
+.wrem-28 {
+    width: 2.8rem;
+}
+
+.wrem-29 {
+    width: 2.9rem;
+}
+
+.wrem-30 {
+    width: 3.0rem;
+}
+
+
+.wrem-31 {
+    width: 3.1rem;
+}
+
+.wrem-32 {
+    width: 3.2rem;
+}
+
+.wrem-33 {
+    width: 3.3rem;
+}
+
+.wrem-34 {
+    width: 3.4rem;
+}
+
+.wrem-35 {
+    width: 3.5rem;
+}
+
+.wrem-36 {
+    width: 3.6rem;
+}
+
+.wrem-37 {
+    width: 3.7rem;
+}
+
+.wrem-38 {
+    width: 3.8rem;
+}
+
+.wrem-39 {
+    width: 3.9rem;
+}
+
+.wrem-40 {
+    width: 4.0rem;
+}
+
+.wrem-41 {
+    width: 4.1rem;
+}
+
+.wrem-42 {
+    width: 4.2rem;
+}
+
+.wrem-43 {
+    width: 4.3rem;
+}
+
+.wrem-44 {
+    width: 4.4rem;
+}
+
+.wrem-45 {
+    width: 4.5rem;
+}
+
+.wrem-46 {
+    width: 4.6rem;
+}
+
+.wrem-47 {
+    width: 4.7rem;
+}
+
+.wrem-48 {
+    width: 4.8rem;
+}
+
+.wrem-49 {
+    width: 4.9rem;
+}
+
+.wrem-50 {
+    width: 5.0rem;
+}
+
+
+.wrem-51 {
+    width: 5.1rem;
+}
+
+.wrem-52 {
+    width: 5.2rem;
+}
+
+.wrem-53 {
+    width: 5.3rem;
+}
+
+.wrem-54 {
+    width: 5.4rem;
+}
+
+.wrem-55 {
+    width: 5.5rem;
+}
+
+.wrem-56 {
+    width: 5.6rem;
+}
+
+.wrem-57 {
+    width: 5.7rem;
+}
+
+.wrem-58 {
+    width: 5.8rem;
+}
+
+.wrem-59 {
+    width: 5.9rem;
+}
+
+.wrem-60 {
+    width: 6.0rem;
+}
+
+.wrem-61 {
+    width: 6.1rem;
+}
+
+.wrem-62 {
+    width: 6.2rem;
+}
+
+.wrem-63 {
+    width: 6.3rem;
+}
+
+.wrem-64 {
+    width: 6.4rem;
+}
+
+.wrem-65 {
+    width: 6.5rem;
+}
+
+.wrem-66 {
+    width: 6.6rem;
+}
+
+.wrem-67 {
+    width: 6.7rem;
+}
+
+.wrem-68 {
+    width: 6.8rem;
+}
+
+.wrem-69 {
+    width: 6.9rem;
+}
+
+.wrem-70 {
+    width: 7.0rem;
+}
+
+.wrem-71 {
+    width: 7.1rem;
+}
+
+.wrem-72 {
+    width: 7.2rem;
+}
+
+.wrem-73 {
+    width: 7.3rem;
+}
+
+.wrem-74 {
+    width: 7.4rem;
+}
+
+.wrem-75 {
+    width: 7.5rem;
+}
+
+.wrem-76 {
+    width: 7.6rem;
+}
+
+.wrem-77 {
+    width: 7.7rem;
+}
+
+.wrem-78 {
+    width: 7.8rem;
+}
+
+.wrem-79 {
+    width: 7.9rem;
+}
+
+.wrem-80 {
+    width: 8.0rem;
+}
+
+/*------------ Height -------------*/
+
+.hrem-01 {
+    height: .1rem;
+}
+
+.hrem-02 {
+    height: .2rem;
+}
+
+.hrem-03 {
+    height: .3rem;
+}
+
+.hrem-04 {
+    height: .4rem;
+}
+
+.hrem-05 {
+    height: .5rem;
+}
+
+.hrem-06 {
+    height: .6rem;
+}
+
+.hrem-07 {
+    height: .7rem;
+}
+
+.hrem-08 {
+    height: .8rem;
+}
+
+.hrem-09 {
+    height: .9rem;
+}
+
+.hrem-10 {
+    height: 1rem;
+}
+
+.hrem-11 {
+    height: 1.1rem;
+}
+
+.hrem-12 {
+    height: 1.2rem;
+}
+
+.hrem-13 {
+    height: 1.3rem;
+}
+
+.hrem-14 {
+    height: 1.4rem;
+}
+
+.hrem-15 {
+    height: 1.5rem;
+}
+
+.hrem-16 {
+    height: 1.6rem;
+}
+
+.hrem-17 {
+    height: 1.7rem;
+}
+
+.hrem-18 {
+    height: 1.8rem;
+}
+
+.hrem-19 {
+    height: 1.9rem;
+}
+
+.hrem-20 {
+    height: 2.0rem;
+}
+
+.hrem-21 {
+    height: 2.1rem;
+}
+
+.hrem-22 {
+    height: 2.2rem;
+}
+
+.hrem-23 {
+    height: 2.3rem;
+}
+
+.hrem-24 {
+    height: 2.4rem;
+}
+
+.hrem-25 {
+    height: 2.5rem;
+}
+
+.hrem-26 {
+    height: 2.6rem;
+}
+
+.hrem-27 {
+    height: 2.7rem;
+}
+
+.hrem-28 {
+    height: 2.8rem;
+}
+
+.hrem-29 {
+    height: 2.9rem;
+}
+
+.hrem-30 {
+    height: 3.0rem;
+}
+
+
+.hrem-31 {
+    height: 3.1rem;
+}
+
+.hrem-32 {
+    height: 3.2rem;
+}
+
+.hrem-33 {
+    height: 3.3rem;
+}
+
+.hrem-34 {
+    height: 3.4rem;
+}
+
+.hrem-35 {
+    height: 3.5rem;
+}
+
+.hrem-36 {
+    height: 3.6rem;
+}
+
+.hrem-37 {
+    height: 3.7rem;
+}
+
+.hrem-38 {
+    height: 3.8rem;
+}
+
+.hrem-39 {
+    height: 3.9rem;
+}
+
+.hrem-40 {
+    height: 4.0rem;
+}
+
+.hrem-41 {
+    height: 4.1rem;
+}
+
+.hrem-42 {
+    height: 4.2rem;
+}
+
+.hrem-43 {
+    height: 4.3rem;
+}
+
+.hrem-44 {
+    height: 4.4rem;
+}
+
+.hrem-45 {
+    height: 4.5rem;
+}
+
+.hrem-46 {
+    height: 4.6rem;
+}
+
+.hrem-47 {
+    height: 4.7rem;
+}
+
+.hrem-48 {
+    height: 4.8rem;
+}
+
+.hrem-49 {
+    height: 4.9rem;
+}
+
+.hrem-50 {
+    height: 5.0rem;
+}
+
+
+.hrem-51 {
+    height: 5.1rem;
+}
+
+.hrem-52 {
+    height: 5.2rem;
+}
+
+.hrem-53 {
+    height: 5.3rem;
+}
+
+.hrem-54 {
+    height: 5.4rem;
+}
+
+.hrem-55 {
+    height: 5.5rem;
+}
+
+.hrem-56 {
+    height: 5.6rem;
+}
+
+.hrem-57 {
+    height: 5.7rem;
+}
+
+.hrem-58 {
+    height: 5.8rem;
+}
+
+.hrem-59 {
+    height: 5.9rem;
+}
+
+.hrem-60 {
+    height: 6.0rem;
+}
+
+.hrem-61 {
+    height: 6.1rem;
+}
+
+.hrem-62 {
+    height: 6.2rem;
+}
+
+.hrem-63 {
+    height: 6.3rem;
+}
+
+.hrem-64 {
+    height: 6.4rem;
+}
+
+.hrem-65 {
+    height: 6.5rem;
+}
+
+.hrem-66 {
+    height: 6.6rem;
+}
+
+.hrem-67 {
+    height: 6.7rem;
+}
+
+.hrem-68 {
+    height: 6.8rem;
+}
+
+.hrem-69 {
+    height: 6.9rem;
+}
+
+.hrem-70 {
+    height: 7.0rem;
+}
+
+.hrem-71 {
+    height: 7.1rem;
+}
+
+.hrem-72 {
+    height: 7.2rem;
+}
+
+.hrem-73 {
+    height: 7.3rem;
+}
+
+.hrem-74 {
+    height: 7.4rem;
+}
+
+.hrem-75 {
+    height: 7.5rem;
+}
+
+.hrem-76 {
+    height: 7.6rem;
+}
+
+.hrem-77 {
+    height: 7.7rem;
+}
+
+.hrem-78 {
+    height: 7.8rem;
+}
+
+.hrem-79 {
+    height: 7.9rem;
+}
+
+.hrem-80 {
+    height: 8.0rem;
+}
+
+/*-----------------------------------------------------------------------------------------------------------
+-------------------------          Left, Top, Right, and Bottom       ---------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------
+-----      PERCENTS's      -----
+------------------------------*/
+/*------------ Left -------------*/
+.lp-100 {
+    position: absolute;
+    left: 100%; /*use if position is absolute */
+}
+.mlp-100 {
+    margin-left: 100%; /*use if position is absolute */
+}
+.plp-100 {
+    padding-left: 100%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-80 {
+    position: absolute;
+    left: 80%; /*use if position is absolute */
+}
+.mlp-80 {
+    margin-left: 80%; /*use if position is absolute */
+}
+.plp-80 {
+    padding-left: 80%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-75 {
+    position: absolute;
+    left: 75%; /*use if position is absolute */
+}
+.mlp-75 {
+    margin-left: 75%; /*use if position is absolute */
+}
+.plp-75 {
+    padding-left: 75%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-70 {
+    position: absolute;
+    left: 70%; /*use if position is absolute */
+}
+.mlp-70 {
+    margin-left: 70%; /*use if position is absolute */
+}
+.plp-70 {
+    padding-left: 70%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-60 {
+    position: absolute;
+    left: 60%; /*use if position is absolute */
+}
+.mlp-60 {
+    margin-left: 60%; /*use if position is absolute */
+}
+.plp-60 {
+    padding-left: 60%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-50 {
+    position: absolute;
+    left: 50%; /*use if position is absolute */
+}
+.mlp-50 {
+    margin-left: 50%; /*use if position is absolute */
+}
+.plp-50 {
+    padding-left: 50%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-40 {
+    position: absolute;
+    left: 40%; /*use if position is absolute */
+}
+.mlp-40 {
+    margin-left: 40%; /*use if position is absolute */
+}
+.plp-40 {
+    padding-left: 40%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-30 {
+    position: absolute;
+    left: 30%; /*use if position is absolute */
+}
+.mlp-30 {
+    margin-left: 30%; /*use if position is absolute */
+}
+.plp-30 {
+    padding-left: 30%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-20 {
+    position: absolute;
+    left: 20%; /*use if position is absolute */
+}
+.mlp-20 {
+    margin-left: 20%; /*use if position is absolute */
+}
+.plp-20 {
+    padding-left: 20%; /*use if you want the item to stay within it's own space */
+}
+
+.lp-10 {
+    position: absolute;
+    left: 10%; /*use if position is absolute */
+}
+.mlp-10 {
+    margin-left: 10%; /*use if position is absolute */
+}
+.plp-10 {
+    padding-left: 10%; /*use if you want the item to stay within it's own space */
+}
+
+/*------------ Top -------------*/
+
+.tp-100 {
+    position: absolute;
+    top: 100%; /*use if position is absolute */
+}
+.mtp-100 {
+    margin-top: 100%; /*use if position is absolute */
+}
+.ptp-100 {
+    padding-top: 100%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-80 {
+    position: absolute;
+    top: 80%; /*use if position is absolute */
+}
+.mtp-80 {
+    margin-top: 80%; /*use if position is absolute */
+}
+.ptp-80 {
+    padding-top: 80%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-75 {
+    position: absolute;
+    top: 75%; /*use if position is absolute */
+}
+.mtp-75 {
+    margin-top: 75%; /*use if position is absolute */
+}
+.ptp-75 {
+    padding-top: 75%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-70 {
+    position: absolute;
+    top: 70%; /*use if position is absolute */
+}
+.mtp-70 {
+    margin-top: 70%; /*use if position is absolute */
+}
+.ptp-70 {
+    padding-top: 70%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-60 {
+    position: absolute;
+    top: 60%; /*use if position is absolute */
+}
+.mtp-60 {
+    margin-top: 60%; /*use if position is absolute */
+}
+.ptp-60 {
+    padding-top: 60%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-50 {
+    position: absolute;
+    top: 50%; /*use if position is absolute */
+}
+.mtp-50 {
+    margin-top: 50%; /*use if position is absolute */
+}
+.ptp-50 {
+    padding-top: 50%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-40 {
+    position: absolute;
+    top: 40%; /*use if position is absolute */
+}
+.mtp-40 {
+    margin-top: 40%; /*use if position is absolute */
+}
+.ptp-40 {
+    padding-top: 40%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-30 {
+    position: absolute;
+    top: 30%; /*use if position is absolute */
+}
+.mtp-30 {
+    margin-top: 30%; /*use if position is absolute */
+}
+.ptp-30 {
+    padding-top: 30%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-20 {
+    position: absolute;
+    top: 20%; /*use if position is absolute */
+}
+.mtp-20 {
+    margin-top: 20%; /*use if position is absolute */
+}
+.ptp-20 {
+    padding-top: 20%; /*use if you want the item to stay within it's own space */
+}
+
+.tp-10 {
+    position: absolute;
+    top: 10%; /*use if position is absolute */
+}
+.mtp-10 {
+    margin-top: 10%; /*use if position is absolute */
+}
+.ptp-10 {
+    padding-top: 10%; /*use if you want the item to stay within it's own space */
+}
+
+/*------------ Right -------------*/
+
+.rp-100 {
+    position: absolute;
+    right: 100%; /*use if position is absolute */
+}
+.mrp-100 {
+    margin-right: 100%; /*use if position is absolute */
+}
+.prp-100 {
+    padding-right: 100%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-80 {
+    position: absolute;
+    right: 80%; /*use if position is absolute */
+}
+.mrp-80 {
+    margin-right: 80%; /*use if position is absolute */
+}
+.prp-80 {
+    padding-right: 80%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-75 {
+    position: absolute;
+    right: 75%; /*use if position is absolute */
+}
+.mrp-75 {
+    margin-right: 75%; /*use if position is absolute */
+}
+.prp-75 {
+    padding-right: 75%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-70 {
+    position: absolute;
+    right: 70%; /*use if position is absolute */
+}
+.mrp-70 {
+    margin-right: 70%; /*use if position is absolute */
+}
+.prp-70 {
+    padding-right: 70%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-60 {
+    position: absolute;
+    right: 60%; /*use if position is absolute */
+}
+.mrp-60 {
+    margin-right: 60%; /*use if position is absolute */
+}
+.prp-60 {
+    padding-right: 60%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-50 {
+    position: absolute;
+    right: 50%; /*use if position is absolute */
+}
+.mrp-50 {
+    margin-right: 50%; /*use if position is absolute */
+}
+.prp-50 {
+    padding-right: 50%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-40 {
+    position: absolute;
+    right: 40%; /*use if position is absolute */
+}
+.mrp-40 {
+    margin-right: 40%; /*use if position is absolute */
+}
+.prp-40 {
+    padding-right: 40%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-30 {
+    position: absolute;
+    right: 30%; /*use if position is absolute */
+}
+.mrp-30 {
+    margin-right: 30%; /*use if position is absolute */
+}
+.prp-30 {
+    padding-right: 30%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-20 {
+    position: absolute;
+    right: 20%; /*use if position is absolute */
+}
+.mrp-20 {
+    margin-right: 20%; /*use if position is absolute */
+}
+.prp-20 {
+    padding-right: 20%; /*use if you want the item to stay within it's own space */
+}
+
+.rp-10 {
+    position: absolute;
+    right: 10%; /*use if position is absolute */
+}
+.mrp-10 {
+    margin-right: 10%; /*use if position is absolute */
+}
+.prp-10 {
+    padding-right: 10%; /*use if you want the item to stay within it's own space */
+}
+
+/*------------ Bottom -------------*/
+
+.bp-100 {
+    position: absolute;
+    bottom: 100%; /*use if position is absolute */
+}
+.mbp-100 {
+    margin-bottom: 100%; /*use if position is absolute */
+}
+.pbp-100 {
+    padding-bottom: 100%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-80 {
+    position: absolute;
+    bottom: 80%; /*use if position is absolute */
+}
+.mbp-80 {
+    margin-bottom: 80%; /*use if position is absolute */
+}
+.pbp-80 {
+    padding-bottom: 80%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-75 {
+    position: absolute;
+    bottom: 75%; /*use if position is absolute */
+}
+.mbp-75 {
+    margin-bottom: 75%; /*use if position is absolute */
+}
+.pbp-75 {
+    padding-bottom: 75%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-70 {
+    position: absolute;
+    bottom: 70%; /*use if position is absolute */
+}
+.mbp-70 {
+    margin-bottom: 70%; /*use if position is absolute */
+}
+.pbp-70 {
+    padding-bottom: 70%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-60 {
+    position: absolute;
+    bottom: 60%; /*use if position is absolute */
+}
+.mbp-60 {
+    margin-bottom: 60%; /*use if position is absolute */
+}
+.pbp-60 {
+    padding-bottom: 60%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-50 {
+    position: absolute;
+    bottom: 50%; /*use if position is absolute */
+}
+.mbp-50 {
+    margin-bottom: 50%; /*use if position is absolute */
+}
+.pbp-50 {
+    padding-bottom: 50%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-40 {
+    position: absolute;
+    bottom: 40%; /*use if position is absolute */
+}
+.mbp-40 {
+    margin-bottom: 40%; /*use if position is absolute */
+}
+.pbp-40 {
+    padding-bottom: 40%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-30 {
+    position: absolute;
+    bottom: 30%; /*use if position is absolute */
+}
+.mbp-30 {
+    margin-bottom: 30%; /*use if position is absolute */
+}
+.pbp-30 {
+    padding-bottom: 30%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-20 {
+    position: absolute;
+    bottom: 20%; /*use if position is absolute */
+}
+.mbp-20 {
+    margin-bottom: 20%; /*use if position is absolute */
+}
+.pbp-20 {
+    padding-bottom: 20%; /*use if you want the item to stay within it's own space */
+}
+
+.bp-10 {
+    position: absolute;
+    bottom: 10%; /*use if position is absolute */
+}
+.mbp-10 {
+    margin-bottom: 10%; /*use if position is absolute */
+}
+.pbp-10 {
+    padding-bottom: 10%; /*use if you want the item to stay within it's own space */
+}
+
+/*------------------------------
+-----      PXL's      -----
+------------------------------*/
+/*------------ Left -------------*/
+.lpx-1000 {
+    position: absolute;
+    left: 1000px; /*use if position is absolute */
+}
+.mlpx-1000 {
+    margin-left: 1000px; /*use if position is absolute */
+}
+.plpx-1000 {
+    padding-left: 1000px; /*use if position is absolute */
+}
+
+.lpx-990 {
+    position: absolute;
+    left: 990px; /*use if position is absolute */
+}
+.mlpx-990 {
+    margin-left: 990px; /*use if position is absolute */
+}
+.plpx-990 {
+    padding-left: 990px; /*use if position is absolute */
+}
+
+.lpx-980 {
+    position: absolute;
+    left: 980px; /*use if position is absolute */
+}
+.mlpx-980 {
+    margin-left: 980px; /*use if position is absolute */
+}
+.plpx-980 {
+    padding-left: 980px; /*use if position is absolute */
+}
+
+.lpx-970 {
+    position: absolute;
+    left: 970px; /*use if position is absolute */
+}
+.mlpx-970 {
+    margin-left: 970px; /*use if position is absolute */
+}
+.plpx-970 {
+    padding-left: 970px; /*use if position is absolute */
+}
+
+.lpx-960 {
+    position: absolute;
+    left: 960px; /*use if position is absolute */
+}
+.mlpx-960 {
+    margin-left: 960px; /*use if position is absolute */
+}
+.plpx-960 {
+    padding-left: 960px; /*use if position is absolute */
+}
+
+.lpx-950 {
+    position: absolute;
+    left: 950px; /*use if position is absolute */
+}
+.mlpx-950 {
+    margin-left: 950px; /*use if position is absolute */
+}
+.plpx-950 {
+    padding-left: 950px; /*use if position is absolute */
+}
+
+.lpx-940 {
+    position: absolute;
+    left: 940px; /*use if position is absolute */
+}
+.mlpx-940 {
+    margin-left: 940px; /*use if position is absolute */
+}
+.plpx-940 {
+    padding-left: 940px; /*use if position is absolute */
+}
+
+.lpx-930 {
+    position: absolute;
+    left: 930px; /*use if position is absolute */
+}
+.mlpx-930 {
+    margin-left: 930px; /*use if position is absolute */
+}
+.plpx-930 {
+    padding-left: 930px; /*use if position is absolute */
+}
+
+.lpx-920 {
+    position: absolute;
+    left: 920px; /*use if position is absolute */
+}
+.mlpx-920 {
+    margin-left: 920px; /*use if position is absolute */
+}
+.plpx-920 {
+    padding-left: 920px; /*use if position is absolute */
+}
+
+.lpx-910 {
+    position: absolute;
+    left: 910px; /*use if position is absolute */
+}
+.mlpx-910 {
+    margin-left: 910px; /*use if position is absolute */
+}
+.plpx-910 {
+    padding-left: 910px; /*use if position is absolute */
+}
+
+.lpx-900 {
+    position: absolute;
+    left: 900px; /*use if position is absolute */
+}
+.mlpx-900 {
+    margin-left: 900px; /*use if position is absolute */
+}
+.plpx-900 {
+    padding-left: 900px; /*use if position is absolute */
+}
+
+.lpx-890 {
+    position: absolute;
+    left: 890px; /*use if position is absolute */
+}
+.mlpx-890 {
+    margin-left: 890px; /*use if position is absolute */
+}
+.plpx-890 {
+    padding-left: 890px; /*use if position is absolute */
+}
+
+.lpx-880 {
+    position: absolute;
+    left: 880px; /*use if position is absolute */
+}
+.mlpx-880 {
+    margin-left: 880px; /*use if position is absolute */
+}
+.plpx-880 {
+    padding-left: 880px; /*use if position is absolute */
+}
+
+.lpx-870 {
+    position: absolute;
+    left: 870px; /*use if position is absolute */
+}
+.mlpx-870 {
+    margin-left: 870px; /*use if position is absolute */
+}
+.plpx-870 {
+    padding-left: 870px; /*use if position is absolute */
+}
+
+.lpx-860 {
+    position: absolute;
+    left: 860px; /*use if position is absolute */
+}
+.mlpx-860 {
+    margin-left: 860px; /*use if position is absolute */
+}
+.plpx-860 {
+    padding-left: 860px; /*use if position is absolute */
+}
+
+.lpx-850 {
+    position: absolute;
+    left: 850px; /*use if position is absolute */
+}
+.mlpx-850 {
+    margin-left: 850px; /*use if position is absolute */
+}
+.plpx-850 {
+    padding-left: 850px; /*use if position is absolute */
+}
+
+.lpx-840 {
+    position: absolute;
+    left: 840px; /*use if position is absolute */
+}
+.mlpx-840 {
+    margin-left: 840px; /*use if position is absolute */
+}
+.plpx-840 {
+    padding-left: 840px; /*use if position is absolute */
+}
+
+.lpx-830 {
+    position: absolute;
+    left: 830px; /*use if position is absolute */
+}
+.mlpx-830 {
+    margin-left: 830px; /*use if position is absolute */
+}
+.plpx-830 {
+    padding-left: 830px; /*use if position is absolute */
+}
+
+.lpx-820 {
+    position: absolute;
+    left: 820px; /*use if position is absolute */
+}
+.mlpx-820 {
+    margin-left: 820px; /*use if position is absolute */
+}
+.plpx-820 {
+    padding-left: 820px; /*use if position is absolute */
+}
+
+.lpx-810 {
+    position: absolute;
+    left: 810px; /*use if position is absolute */
+}
+.mlpx-810 {
+    margin-left: 810px; /*use if position is absolute */
+}
+.plpx-810 {
+    padding-left: 810px; /*use if position is absolute */
+}
+
+.lpx-800 {
+    position: absolute;
+    left: 800px; /*use if position is absolute */
+}
+.mlpx-800 {
+    margin-left: 800px; /*use if position is absolute */
+}
+.plpx-800 {
+    padding-left: 800px; /*use if position is absolute */
+}
+
+
+.lpx-790 {
+    position: absolute;
+    left: 790px; /*use if position is absolute */
+}
+.mlpx-790 {
+    margin-left: 790px; /*use if position is absolute */
+}
+.plpx-790 {
+    padding-left: 790px; /*use if position is absolute */
+}
+
+.lpx-780 {
+    position: absolute;
+    left: 780px; /*use if position is absolute */
+}
+.mlpx-780 {
+    margin-left: 780px; /*use if position is absolute */
+}
+.plpx-780 {
+    padding-left: 780px; /*use if position is absolute */
+}
+
+.lpx-770 {
+    position: absolute;
+    left: 770px; /*use if position is absolute */
+}
+.mlpx-770 {
+    margin-left: 770px; /*use if position is absolute */
+}
+.plpx-770 {
+    padding-left: 770px; /*use if position is absolute */
+}
+
+.lpx-760 {
+    position: absolute;
+    left: 760px; /*use if position is absolute */
+}
+.mlpx-760 {
+    margin-left: 760px; /*use if position is absolute */
+}
+.plpx-760 {
+    padding-left: 760px; /*use if position is absolute */
+}
+
+.lpx-750 {
+    position: absolute;
+    left: 750px; /*use if position is absolute */
+}
+.mlpx-750 {
+    margin-left: 750px; /*use if position is absolute */
+}
+.plpx-750 {
+    padding-left: 750px; /*use if position is absolute */
+}
+
+.lpx-740 {
+    position: absolute;
+    left: 740px; /*use if position is absolute */
+}
+.mlpx-740 {
+    margin-left: 740px; /*use if position is absolute */
+}
+.plpx-740 {
+    padding-left: 740px; /*use if position is absolute */
+}
+
+.lpx-730 {
+    position: absolute;
+    left: 730px; /*use if position is absolute */
+}
+.mlpx-730 {
+    margin-left: 730px; /*use if position is absolute */
+}
+.plpx-730 {
+    padding-left: 730px; /*use if position is absolute */
+}
+
+.lpx-720 {
+    position: absolute;
+    left: 720px; /*use if position is absolute */
+}
+.mlpx-720 {
+    margin-left: 720px; /*use if position is absolute */
+}
+.plpx-720 {
+    padding-left: 720px; /*use if position is absolute */
+}
+
+.lpx-710 {
+    position: absolute;
+    left: 710px; /*use if position is absolute */
+}
+.mlpx-710 {
+    margin-left: 710px; /*use if position is absolute */
+}
+.plpx-710 {
+    padding-left: 710px; /*use if position is absolute */
+}
+
+.lpx-700 {
+    position: absolute;
+    left: 700px; /*use if position is absolute */
+}
+.mlpx-700 {
+    margin-left: 700px; /*use if position is absolute */
+}
+.plpx-700 {
+    padding-left: 700px; /*use if position is absolute */
+}
+
+.lpx-690 {
+    position: absolute;
+    left: 690px; /*use if position is absolute */
+}
+.mlpx-690 {
+    margin-left: 690px; /*use if position is absolute */
+}
+.plpx-690 {
+    padding-left: 690px; /*use if position is absolute */
+}
+
+.lpx-680 {
+    position: absolute;
+    left: 680px; /*use if position is absolute */
+}
+.mlpx-680 {
+    margin-left: 680px; /*use if position is absolute */
+}
+.plpx-680 {
+    padding-left: 680px; /*use if position is absolute */
+}
+
+.lpx-670 {
+    position: absolute;
+    left: 670px; /*use if position is absolute */
+}
+.mlpx-670 {
+    margin-left: 670px; /*use if position is absolute */
+}
+.plpx-670 {
+    padding-left: 670px; /*use if position is absolute */
+}
+
+.lpx-660 {
+    position: absolute;
+    left: 660px; /*use if position is absolute */
+}
+.mlpx-660 {
+    margin-left: 660px; /*use if position is absolute */
+}
+.plpx-660 {
+    padding-left: 660px; /*use if position is absolute */
+}
+
+.lpx-650 {
+    position: absolute;
+    left: 650px; /*use if position is absolute */
+}
+.mlpx-650 {
+    margin-left: 650px; /*use if position is absolute */
+}
+.plpx-650 {
+    padding-left: 650px; /*use if position is absolute */
+}
+
+.lpx-640 {
+    position: absolute;
+    left: 640px; /*use if position is absolute */
+}
+.mlpx-640 {
+    margin-left: 640px; /*use if position is absolute */
+}
+.plpx-640 {
+    padding-left: 640px; /*use if position is absolute */
+}
+
+.lpx-630 {
+    position: absolute;
+    left: 630px; /*use if position is absolute */
+}
+.mlpx-630 {
+    margin-left: 630px; /*use if position is absolute */
+}
+.plpx-630 {
+    padding-left: 630px; /*use if position is absolute */
+}
+
+.lpx-620 {
+    position: absolute;
+    left: 620px; /*use if position is absolute */
+}
+.mlpx-620 {
+    margin-left: 620px; /*use if position is absolute */
+}
+.plpx-620 {
+    padding-left: 620px; /*use if position is absolute */
+}
+
+.lpx-610 {
+    position: absolute;
+    left: 610px; /*use if position is absolute */
+}
+.mlpx-610 {
+    margin-left: 610px; /*use if position is absolute */
+}
+.plpx-610 {
+    padding-left: 610px; /*use if position is absolute */
+}
+
+.lpx-600 {
+    position: absolute;
+    left: 600px; /*use if position is absolute */
+}
+.mlpx-600 {
+    margin-left: 600px; /*use if position is absolute */
+}
+.plpx-600 {
+    padding-left: 600px; /*use if position is absolute */
+}
+
+.lpx-590 {
+    position: absolute;
+    left: 590px; /*use if position is absolute */
+}
+.mlpx-590 {
+    margin-left: 590px; /*use if position is absolute */
+}
+.plpx-590 {
+    padding-left: 590px; /*use if position is absolute */
+}
+
+.lpx-580 {
+    position: absolute;
+    left: 580px; /*use if position is absolute */
+}
+.mlpx-580 {
+    margin-left: 580px; /*use if position is absolute */
+}
+.plpx-580 {
+    padding-left: 580px; /*use if position is absolute */
+}
+
+.lpx-570 {
+    position: absolute;
+    left: 570px; /*use if position is absolute */
+}
+.mlpx-570 {
+    margin-left: 570px; /*use if position is absolute */
+}
+.plpx-570 {
+    padding-left: 570px; /*use if position is absolute */
+}
+
+.lpx-560 {
+    position: absolute;
+    left: 560px; /*use if position is absolute */
+}
+.mlpx-560 {
+    margin-left: 560px; /*use if position is absolute */
+}
+.plpx-560 {
+    padding-left: 560px; /*use if position is absolute */
+}
+
+.lpx-550 {
+    position: absolute;
+    left: 550px; /*use if position is absolute */
+}
+.mlpx-550 {
+    margin-left: 550px; /*use if position is absolute */
+}
+.plpx-550 {
+    padding-left: 550px; /*use if position is absolute */
+}
+
+.lpx-540 {
+    position: absolute;
+    left: 540px; /*use if position is absolute */
+}
+.mlpx-540 {
+    margin-left: 540px; /*use if position is absolute */
+}
+.plpx-540 {
+    padding-left: 540px; /*use if position is absolute */
+}
+
+.lpx-530 {
+    position: absolute;
+    left: 530px; /*use if position is absolute */
+}
+.mlpx-530 {
+    margin-left: 530px; /*use if position is absolute */
+}
+.plpx-530 {
+    padding-left: 530px; /*use if position is absolute */
+}
+
+.lpx-520 {
+    position: absolute;
+    left: 520px; /*use if position is absolute */
+}
+.mlpx-520 {
+    margin-left: 520px; /*use if position is absolute */
+}
+.plpx-520 {
+    padding-left: 520px; /*use if position is absolute */
+}
+
+.lpx-510 {
+    position: absolute;
+    left: 510px; /*use if position is absolute */
+}
+.mlpx-510 {
+    margin-left: 510px; /*use if position is absolute */
+}
+.plpx-510 {
+    padding-left: 510px; /*use if position is absolute */
+}
+
+.lpx-500 {
+    position: absolute;
+    left: 500px; /*use if position is absolute */
+}
+.mlpx-500 {
+    margin-left: 500px; /*use if position is absolute */
+}
+.plpx-500 {
+    padding-left: 500px; /*use if position is absolute */
+}
+
+.lpx-490 {
+    position: absolute;
+    left: 490px; /*use if position is absolute */
+}
+.mlpx-490 {
+    margin-left: 490px; /*use if position is absolute */
+}
+.plpx-490 {
+    padding-left: 490px; /*use if position is absolute */
+}
+
+.lpx-480 {
+    position: absolute;
+    left: 480px; /*use if position is absolute */
+}
+.mlpx-480 {
+    margin-left: 480px; /*use if position is absolute */
+}
+.plpx-480 {
+    padding-left: 480px; /*use if position is absolute */
+}
+
+.lpx-470 {
+    position: absolute;
+    left: 470px; /*use if position is absolute */
+}
+.mlpx-470 {
+    margin-left: 470px; /*use if position is absolute */
+}
+.plpx-470 {
+    padding-left: 470px; /*use if position is absolute */
+}
+
+.lpx-460 {
+    position: absolute;
+    left: 460px; /*use if position is absolute */
+}
+.mlpx-460 {
+    margin-left: 460px; /*use if position is absolute */
+}
+.plpx-460 {
+    padding-left: 460px; /*use if position is absolute */
+}
+
+.lpx-450 {
+    position: absolute;
+    left: 450px; /*use if position is absolute */
+}
+.mlpx-450 {
+    margin-left: 450px; /*use if position is absolute */
+}
+.plpx-450 {
+    padding-left: 450px; /*use if position is absolute */
+}
+
+.lpx-440 {
+    position: absolute;
+    left: 440px; /*use if position is absolute */
+}
+.mlpx-440 {
+    margin-left: 440px; /*use if position is absolute */
+}
+.plpx-440 {
+    padding-left: 440px; /*use if position is absolute */
+}
+
+.lpx-430 {
+    position: absolute;
+    left: 430px; /*use if position is absolute */
+}
+.mlpx-430 {
+    margin-left: 430px; /*use if position is absolute */
+}
+.plpx-430 {
+    padding-left: 430px; /*use if position is absolute */
+}
+
+.lpx-420 {
+    position: absolute;
+    left: 420px; /*use if position is absolute */
+}
+.mlpx-420 {
+    margin-left: 420px; /*use if position is absolute */
+}
+.plpx-420 {
+    padding-left: 420px; /*use if position is absolute */
+}
+
+.lpx-410 {
+    position: absolute;
+    left: 410px; /*use if position is absolute */
+}
+.mlpx-410 {
+    margin-left: 410px; /*use if position is absolute */
+}
+.plpx-410 {
+    padding-left: 410px; /*use if position is absolute */
+}
+
+.lpx-400 {
+    position: absolute;
+    left: 400px; /*use if position is absolute */
+}
+.mlpx-400 {
+    margin-left: 400px; /*use if position is absolute */
+}
+.plpx-400 {
+    padding-left: 400px; /*use if position is absolute */
+}
+
+.lpx-390 {
+    position: absolute;
+    left: 390px; /*use if position is absolute */
+}
+.mlpx-390 {
+    margin-left: 390px; /*use if position is absolute */
+}
+.plpx-390 {
+    padding-left: 390px; /*use if position is absolute */
+}
+
+.lpx-380 {
+    position: absolute;
+    left: 380px; /*use if position is absolute */
+}
+.mlpx-380 {
+    margin-left: 380px; /*use if position is absolute */
+}
+.plpx-380 {
+    padding-left: 380px; /*use if position is absolute */
+}
+
+.lpx-370 {
+    position: absolute;
+    left: 370px; /*use if position is absolute */
+}
+.mlpx-370 {
+    margin-left: 370px; /*use if position is absolute */
+}
+.plpx-370 {
+    padding-left: 370px; /*use if position is absolute */
+}
+
+.lpx-360 {
+    position: absolute;
+    left: 360px; /*use if position is absolute */
+}
+.mlpx-360 {
+    margin-left: 360px; /*use if position is absolute */
+}
+.plpx-360 {
+    padding-left: 360px; /*use if position is absolute */
+}
+
+.lpx-350 {
+    position: absolute;
+    left: 350px; /*use if position is absolute */
+}
+.mlpx-350 {
+    margin-left: 350px; /*use if position is absolute */
+}
+.plpx-350 {
+    padding-left: 350px; /*use if position is absolute */
+}
+
+.lpx-340 {
+    position: absolute;
+    left: 340px; /*use if position is absolute */
+}
+.mlpx-340 {
+    margin-left: 340px; /*use if position is absolute */
+}
+.plpx-340 {
+    padding-left: 340px; /*use if position is absolute */
+}
+
+.lpx-330 {
+    position: absolute;
+    left: 330px; /*use if position is absolute */
+}
+.mlpx-330 {
+    margin-left: 330px; /*use if position is absolute */
+}
+.plpx-330 {
+    padding-left: 330px; /*use if position is absolute */
+}
+
+.lpx-320 {
+    position: absolute;
+    left: 320px; /*use if position is absolute */
+}
+.mlpx-320 {
+    margin-left: 320px; /*use if position is absolute */
+}
+.plpx-320 {
+    padding-left: 320px; /*use if position is absolute */
+}
+
+.lpx-310 {
+    position: absolute;
+    left: 310px; /*use if position is absolute */
+}
+.mlpx-310 {
+    margin-left: 310px; /*use if position is absolute */
+}
+.plpx-310 {
+    padding-left: 310px; /*use if position is absolute */
+}
+
+.lpx-300 {
+    position: absolute;
+    left: 300px; /*use if position is absolute */
+}
+.mlpx-300 {
+    margin-left: 300px; /*use if position is absolute */
+}
+.plpx-300 {
+    padding-left: 300px; /*use if position is absolute */
+}
+
+
+.lpx-290 {
+    position: absolute;
+    left: 290px; /*use if position is absolute */
+}
+.mlpx-290 {
+    margin-left: 290px; /*use if position is absolute */
+}
+.plpx-290 {
+    padding-left: 290px; /*use if position is absolute */
+}
+
+.lpx-280 {
+    position: absolute;
+    left: 280px; /*use if position is absolute */
+}
+.mlpx-280 {
+    margin-left: 280px; /*use if position is absolute */
+}
+.plpx-280 {
+    padding-left: 280px; /*use if position is absolute */
+}
+
+.lpx-270 {
+    position: absolute;
+    left: 270px; /*use if position is absolute */
+}
+.mlpx-270 {
+    margin-left: 270px; /*use if position is absolute */
+}
+.plpx-270 {
+    padding-left: 270px; /*use if position is absolute */
+}
+
+.lpx-260 {
+    position: absolute;
+    left: 260px; /*use if position is absolute */
+}
+.mlpx-260 {
+    margin-left: 260px; /*use if position is absolute */
+}
+.plpx-260 {
+    padding-left: 260px; /*use if position is absolute */
+}
+
+.lpx-250 {
+    position: absolute;
+    left: 250px; /*use if position is absolute */
+}
+.mlpx-250 {
+    margin-left: 250px; /*use if position is absolute */
+}
+.plpx-250 {
+    padding-left: 250px; /*use if position is absolute */
+}
+
+.lpx-240 {
+    position: absolute;
+    left: 240px; /*use if position is absolute */
+}
+.mlpx-240 {
+    margin-left: 240px; /*use if position is absolute */
+}
+.plpx-240 {
+    padding-left: 240px; /*use if position is absolute */
+}
+
+.lpx-230 {
+    position: absolute;
+    left: 230px; /*use if position is absolute */
+}
+.mlpx-230 {
+    margin-left: 230px; /*use if position is absolute */
+}
+.plpx-230 {
+    padding-left: 230px; /*use if position is absolute */
+}
+
+.lpx-220 {
+    position: absolute;
+    left: 220px; /*use if position is absolute */
+}
+.mlpx-220 {
+    margin-left: 220px; /*use if position is absolute */
+}
+.plpx-220 {
+    padding-left: 220px; /*use if position is absolute */
+}
+
+.lpx-210 {
+    position: absolute;
+    left: 210px; /*use if position is absolute */
+}
+.mlpx-210 {
+    margin-left: 210px; /*use if position is absolute */
+}
+.plpx-210 {
+    padding-left: 210px; /*use if position is absolute */
+}
+
+.lpx-200 {
+    position: absolute;
+    left: 200px; /*use if position is absolute */
+}
+.mlpx-200 {
+    margin-left: 200px; /*use if position is absolute */
+}
+.plpx-200 {
+    padding-left: 200px; /*use if position is absolute */
+}
+
+
+
+.lpx-190 {
+    position: absolute;
+    left: 190px; /*use if position is absolute */
+}
+.mlpx-190 {
+    margin-left: 190px; /*use if position is absolute */
+}
+.plpx-190 {
+    padding-left: 190px; /*use if position is absolute */
+}
+
+.lpx-180 {
+    position: absolute;
+    left: 180px; /*use if position is absolute */
+}
+.mlpx-180 {
+    margin-left: 180px; /*use if position is absolute */
+}
+.plpx-180 {
+    padding-left: 180px; /*use if position is absolute */
+}
+
+.lpx-170 {
+    position: absolute;
+    left: 170px; /*use if position is absolute */
+}
+.mlpx-170 {
+    margin-left: 170px; /*use if position is absolute */
+}
+.plpx-170 {
+    padding-left: 170px; /*use if position is absolute */
+}
+
+.lpx-160 {
+    position: absolute;
+    left: 160px; /*use if position is absolute */
+}
+.mlpx-160 {
+    margin-left: 160px; /*use if position is absolute */
+}
+.plpx-160 {
+    padding-left: 160px; /*use if position is absolute */
+}
+
+.lpx-150 {
+    position: absolute;
+    left: 150px; /*use if position is absolute */
+}
+.mlpx-150 {
+    margin-left: 150px; /*use if position is absolute */
+}
+.plpx-150 {
+    padding-left: 150px; /*use if position is absolute */
+}
+
+.lpx-140 {
+    position: absolute;
+    left: 140px; /*use if position is absolute */
+}
+.mlpx-140 {
+    margin-left: 140px; /*use if position is absolute */
+}
+.plpx-140 {
+    padding-left: 140px; /*use if position is absolute */
+}
+
+.lpx-130 {
+    position: absolute;
+    left: 130px; /*use if position is absolute */
+}
+.mlpx-130 {
+    margin-left: 130px; /*use if position is absolute */
+}
+.plpx-130 {
+    padding-left: 130px; /*use if position is absolute */
+}
+
+.lpx-120 {
+    position: absolute;
+    left: 120px; /*use if position is absolute */
+}
+.mlpx-120 {
+    margin-left: 120px; /*use if position is absolute */
+}
+.plpx-120 {
+    padding-left: 120px; /*use if position is absolute */
+}
+
+.lpx-110 {
+    position: absolute;
+    left: 110px; /*use if position is absolute */
+}
+.mlpx-110 {
+    margin-left: 110px; /*use if position is absolute */
+}
+.plpx-110 {
+    padding-left: 110px; /*use if position is absolute */
+}
+
+.lpx-100 {
+    position: absolute;
+    left: 100px; /*use if position is absolute */
+}
+.mlpx-100 {
+    margin-left: 100px; /*use if position is absolute */
+}
+.plpx-100 {
+    padding-left: 100px; /*use if position is absolute */
+}
+
+.lpx-95 {
+    position: absolute;
+    left: 95px; /*use if position is absolute */
+}
+.mlpx-95 {
+    margin-left: 95px; /*use if position is absolute */
+}
+.plpx-95 {
+    padding-left: 95px; /*use if position is absolute */
+}
+
+.lpx-90 {
+    position: absolute;
+    left: 90px; /*use if position is absolute */
+}
+.mlpx-90 {
+    margin-left: 90px; /*use if position is absolute */
+}
+.plpx-90 {
+    padding-left: 90px; /*use if position is absolute */
+}
+
+.lpx-85 {
+    position: absolute;
+    left: 85px; /*use if position is absolute */
+}
+.mlpx-85 {
+    margin-left: 85px; /*use if position is absolute */
+}
+.plpx-85 {
+    padding-left: 85px; /*use if position is absolute */
+}
+
+.lpx-80 {
+    position: absolute;
+    left: 80px; /*use if position is absolute */
+}
+.mlpx-80 {
+    margin-left: 80px; /*use if position is absolute */
+}
+.plpx-80 {
+    padding-left: 80px; /*use if position is absolute */
+}
+
+.lpx-75 {
+    position: absolute;
+    left: 75px; /*use if position is absolute */
+}
+.mlpx-75 {
+    margin-left: 75px; /*use if position is absolute */
+}
+.plpx-75 {
+    padding-left: 75px; /*use if position is absolute */
+}
+
+.lpx-70 {
+    position: absolute;
+    left: 70px; /*use if position is absolute */
+}
+.mlpx-70 {
+    margin-left: 70px; /*use if position is absolute */
+}
+.plpx-70 {
+    padding-left: 70px; /*use if position is absolute */
+}
+
+.lpx-65 {
+    position: absolute;
+    left: 65px; /*use if position is absolute */
+}
+.mlpx-65 {
+    margin-left: 65px; /*use if position is absolute */
+}
+.plpx-65 {
+    padding-left: 65px; /*use if position is absolute */
+}
+
+.lpx-60 {
+    position: absolute;
+    left: 60px; /*use if position is absolute */
+}
+.mlpx-60 {
+    margin-left: 60px; /*use if position is absolute */
+}
+.plpx-60 {
+    padding-left: 60px; /*use if position is absolute */
+}
+
+.lpx-55 {
+    position: absolute;
+    left: 55px; /*use if position is absolute */
+}
+.mlpx-55 {
+    margin-left: 55px; /*use if position is absolute */
+}
+.plpx-55 {
+    padding-left: 55px; /*use if position is absolute */
+}
+
+.lpx-50 {
+    position: absolute;
+    left: 50px; /*use if position is absolute */
+}
+.mlpx-50 {
+    margin-left: 50px; /*use if position is absolute */
+}
+.plpx-50 {
+    padding-left: 50px; /*use if position is absolute */
+}
+
+.lpx-45 {
+    position: absolute;
+    left: 45px; /*use if position is absolute */
+}
+.mlpx-45 {
+    margin-left: 45px; /*use if position is absolute */
+}
+.plpx-45 {
+    padding-left: 45px; /*use if position is absolute */
+}
+
+.lpx-40 {
+    position: absolute;
+    left: 40px; /*use if position is absolute */
+}
+.mlpx-40 {
+    margin-left: 40px; /*use if position is absolute */
+}
+.plpx-40 {
+    padding-left: 40px; /*use if position is absolute */
+}
+
+.lpx-35 {
+    position: absolute;
+    left: 35px; /*use if position is absolute */
+}
+.mlpx-35 {
+    margin-left: 35px; /*use if position is absolute */
+}
+.plpx-35 {
+    padding-left: 35px; /*use if position is absolute */
+}
+
+.lpx-30 {
+    position: absolute;
+    left: 30px; /*use if position is absolute */
+}
+.mlpx-30 {
+    margin-left: 30px; /*use if position is absolute */
+}
+.plpx-30 {
+    padding-left: 30px; /*use if position is absolute */
+}
+
+.lpx-25 {
+    position: absolute;
+    left: 25px; /*use if position is absolute */
+}
+.mlpx-25 {
+    margin-left: 25px; /*use if position is absolute */
+}
+.plpx-25 {
+    padding-left: 25px; /*use if position is absolute */
+}
+
+.lpx-20 {
+    position: absolute;
+    left: 20px; /*use if position is absolute */
+}
+.mlpx-20 {
+    margin-left: 20px; /*use if position is absolute */
+}
+.plpx-20 {
+    padding-left: 20px; /*use if position is absolute */
+}
+
+.lpx-15 {
+    position: absolute;
+    left: 15px; /*use if position is absolute */
+}
+.mlpx-15 {
+    margin-left: 15px; /*use if position is absolute */
+}
+.plpx-15 {
+    padding-left: 15px; /*use if position is absolute */
+}
+
+.lpx-10 {
+    position: absolute;
+    left: 10px; /*use if position is absolute */
+}
+.mlpx-10 {
+    margin-left: 10px; /*use if position is absolute */
+}
+.plpx-10 {
+    padding-left: 10px; /*use if position is absolute */
+}
+
+.lpx-5 {
+    position: absolute;
+    left: 5px; /*use if position is absolute */
+}
+.mlpx-5 {
+    margin-left: 5px; /*use if position is absolute */
+}
+.plpx-5 {
+    padding-left: 5px; /*use if position is absolute */
+}
+
+/*------------ Right -------------*/
+
+.rpx-1000 {
+    position: absolute;
+    left: 1000px; /*use if position is absolute */
+}
+.mrpx-1000 {
+    margin-left: 1000px; /*use if position is absolute */
+}
+.prpx-1000 {
+    padding-left: 1000px; /*use if position is absolute */
+}
+
+.rpx-990 {
+    position: absolute;
+    left: 990px; /*use if position is absolute */
+}
+.mrpx-990 {
+    margin-left: 990px; /*use if position is absolute */
+}
+.prpx-990 {
+    padding-left: 990px; /*use if position is absolute */
+}
+
+.rpx-980 {
+    position: absolute;
+    left: 980px; /*use if position is absolute */
+}
+.mrpx-980 {
+    margin-left: 980px; /*use if position is absolute */
+}
+.prpx-980 {
+    padding-left: 980px; /*use if position is absolute */
+}
+
+.rpx-970 {
+    position: absolute;
+    left: 970px; /*use if position is absolute */
+}
+.mrpx-970 {
+    margin-left: 970px; /*use if position is absolute */
+}
+.prpx-970 {
+    padding-left: 970px; /*use if position is absolute */
+}
+
+.rpx-960 {
+    position: absolute;
+    left: 960px; /*use if position is absolute */
+}
+.mrpx-960 {
+    margin-left: 960px; /*use if position is absolute */
+}
+.prpx-960 {
+    padding-left: 960px; /*use if position is absolute */
+}
+
+.rpx-950 {
+    position: absolute;
+    left: 950px; /*use if position is absolute */
+}
+.mrpx-950 {
+    margin-left: 950px; /*use if position is absolute */
+}
+.prpx-950 {
+    padding-left: 950px; /*use if position is absolute */
+}
+
+.rpx-940 {
+    position: absolute;
+    left: 940px; /*use if position is absolute */
+}
+.mrpx-940 {
+    margin-left: 940px; /*use if position is absolute */
+}
+.prpx-940 {
+    padding-left: 940px; /*use if position is absolute */
+}
+
+.rpx-930 {
+    position: absolute;
+    left: 930px; /*use if position is absolute */
+}
+.mrpx-930 {
+    margin-left: 930px; /*use if position is absolute */
+}
+.prpx-930 {
+    padding-left: 930px; /*use if position is absolute */
+}
+
+.rpx-920 {
+    position: absolute;
+    left: 920px; /*use if position is absolute */
+}
+.mrpx-920 {
+    margin-left: 920px; /*use if position is absolute */
+}
+.prpx-920 {
+    padding-left: 920px; /*use if position is absolute */
+}
+
+.rpx-910 {
+    position: absolute;
+    left: 910px; /*use if position is absolute */
+}
+.mrpx-910 {
+    margin-left: 910px; /*use if position is absolute */
+}
+.prpx-910 {
+    padding-left: 910px; /*use if position is absolute */
+}
+
+.rpx-900 {
+    position: absolute;
+    left: 900px; /*use if position is absolute */
+}
+.mrpx-900 {
+    margin-left: 900px; /*use if position is absolute */
+}
+.prpx-900 {
+    padding-left: 900px; /*use if position is absolute */
+}
+
+.rpx-890 {
+    position: absolute;
+    left: 890px; /*use if position is absolute */
+}
+.mrpx-890 {
+    margin-left: 890px; /*use if position is absolute */
+}
+.prpx-890 {
+    padding-left: 890px; /*use if position is absolute */
+}
+
+.rpx-880 {
+    position: absolute;
+    left: 880px; /*use if position is absolute */
+}
+.mrpx-880 {
+    margin-left: 880px; /*use if position is absolute */
+}
+.prpx-880 {
+    padding-left: 880px; /*use if position is absolute */
+}
+
+.rpx-870 {
+    position: absolute;
+    left: 870px; /*use if position is absolute */
+}
+.mrpx-870 {
+    margin-left: 870px; /*use if position is absolute */
+}
+.prpx-870 {
+    padding-left: 870px; /*use if position is absolute */
+}
+
+.rpx-860 {
+    position: absolute;
+    left: 860px; /*use if position is absolute */
+}
+.mrpx-860 {
+    margin-left: 860px; /*use if position is absolute */
+}
+.prpx-860 {
+    padding-left: 860px; /*use if position is absolute */
+}
+
+.rpx-850 {
+    position: absolute;
+    left: 850px; /*use if position is absolute */
+}
+.mrpx-850 {
+    margin-left: 850px; /*use if position is absolute */
+}
+.prpx-850 {
+    padding-left: 850px; /*use if position is absolute */
+}
+
+.rpx-840 {
+    position: absolute;
+    left: 840px; /*use if position is absolute */
+}
+.mrpx-840 {
+    margin-left: 840px; /*use if position is absolute */
+}
+.prpx-840 {
+    padding-left: 840px; /*use if position is absolute */
+}
+
+.rpx-830 {
+    position: absolute;
+    left: 830px; /*use if position is absolute */
+}
+.mrpx-830 {
+    margin-left: 830px; /*use if position is absolute */
+}
+.prpx-830 {
+    padding-left: 830px; /*use if position is absolute */
+}
+
+.rpx-820 {
+    position: absolute;
+    left: 820px; /*use if position is absolute */
+}
+.mrpx-820 {
+    margin-left: 820px; /*use if position is absolute */
+}
+.prpx-820 {
+    padding-left: 820px; /*use if position is absolute */
+}
+
+.rpx-810 {
+    position: absolute;
+    left: 810px; /*use if position is absolute */
+}
+.mrpx-810 {
+    margin-left: 810px; /*use if position is absolute */
+}
+.prpx-810 {
+    padding-left: 810px; /*use if position is absolute */
+}
+
+.rpx-800 {
+    position: absolute;
+    left: 800px; /*use if position is absolute */
+}
+.mrpx-800 {
+    margin-left: 800px; /*use if position is absolute */
+}
+.prpx-800 {
+    padding-left: 800px; /*use if position is absolute */
+}
+
+
+.rpx-790 {
+    position: absolute;
+    left: 790px; /*use if position is absolute */
+}
+.mrpx-790 {
+    margin-left: 790px; /*use if position is absolute */
+}
+.prpx-790 {
+    padding-left: 790px; /*use if position is absolute */
+}
+
+.rpx-780 {
+    position: absolute;
+    left: 780px; /*use if position is absolute */
+}
+.mrpx-780 {
+    margin-left: 780px; /*use if position is absolute */
+}
+.prpx-780 {
+    padding-left: 780px; /*use if position is absolute */
+}
+
+.rpx-770 {
+    position: absolute;
+    left: 770px; /*use if position is absolute */
+}
+.mrpx-770 {
+    margin-left: 770px; /*use if position is absolute */
+}
+.prpx-770 {
+    padding-left: 770px; /*use if position is absolute */
+}
+
+.rpx-760 {
+    position: absolute;
+    left: 760px; /*use if position is absolute */
+}
+.mrpx-760 {
+    margin-left: 760px; /*use if position is absolute */
+}
+.prpx-760 {
+    padding-left: 760px; /*use if position is absolute */
+}
+
+.rpx-750 {
+    position: absolute;
+    left: 750px; /*use if position is absolute */
+}
+.mrpx-750 {
+    margin-left: 750px; /*use if position is absolute */
+}
+.prpx-750 {
+    padding-left: 750px; /*use if position is absolute */
+}
+
+.rpx-740 {
+    position: absolute;
+    left: 740px; /*use if position is absolute */
+}
+.mrpx-740 {
+    margin-left: 740px; /*use if position is absolute */
+}
+.prpx-740 {
+    padding-left: 740px; /*use if position is absolute */
+}
+
+.rpx-730 {
+    position: absolute;
+    left: 730px; /*use if position is absolute */
+}
+.mrpx-730 {
+    margin-left: 730px; /*use if position is absolute */
+}
+.prpx-730 {
+    padding-left: 730px; /*use if position is absolute */
+}
+
+.rpx-720 {
+    position: absolute;
+    left: 720px; /*use if position is absolute */
+}
+.mrpx-720 {
+    margin-left: 720px; /*use if position is absolute */
+}
+.prpx-720 {
+    padding-left: 720px; /*use if position is absolute */
+}
+
+.rpx-710 {
+    position: absolute;
+    left: 710px; /*use if position is absolute */
+}
+.mrpx-710 {
+    margin-left: 710px; /*use if position is absolute */
+}
+.prpx-710 {
+    padding-left: 710px; /*use if position is absolute */
+}
+
+.rpx-700 {
+    position: absolute;
+    left: 700px; /*use if position is absolute */
+}
+.mrpx-700 {
+    margin-left: 700px; /*use if position is absolute */
+}
+.prpx-700 {
+    padding-left: 700px; /*use if position is absolute */
+}
+
+
+
+.rpx-690 {
+    position: absolute;
+    left: 690px; /*use if position is absolute */
+}
+.mrpx-690 {
+    margin-left: 690px; /*use if position is absolute */
+}
+.prpx-690 {
+    padding-left: 690px; /*use if position is absolute */
+}
+
+.rpx-680 {
+    position: absolute;
+    left: 680px; /*use if position is absolute */
+}
+.mrpx-680 {
+    margin-left: 680px; /*use if position is absolute */
+}
+.prpx-680 {
+    padding-left: 680px; /*use if position is absolute */
+}
+
+.rpx-670 {
+    position: absolute;
+    left: 670px; /*use if position is absolute */
+}
+.mrpx-670 {
+    margin-left: 670px; /*use if position is absolute */
+}
+.prpx-670 {
+    padding-left: 670px; /*use if position is absolute */
+}
+
+.rpx-660 {
+    position: absolute;
+    left: 660px; /*use if position is absolute */
+}
+.mrpx-660 {
+    margin-left: 660px; /*use if position is absolute */
+}
+.prpx-660 {
+    padding-left: 660px; /*use if position is absolute */
+}
+
+.rpx-650 {
+    position: absolute;
+    left: 650px; /*use if position is absolute */
+}
+.mrpx-650 {
+    margin-left: 650px; /*use if position is absolute */
+}
+.prpx-650 {
+    padding-left: 650px; /*use if position is absolute */
+}
+
+.rpx-640 {
+    position: absolute;
+    left: 640px; /*use if position is absolute */
+}
+.mrpx-640 {
+    margin-left: 640px; /*use if position is absolute */
+}
+.prpx-640 {
+    padding-left: 640px; /*use if position is absolute */
+}
+
+.rpx-630 {
+    position: absolute;
+    left: 630px; /*use if position is absolute */
+}
+.mrpx-630 {
+    margin-left: 630px; /*use if position is absolute */
+}
+.prpx-630 {
+    padding-left: 630px; /*use if position is absolute */
+}
+
+.rpx-620 {
+    position: absolute;
+    left: 620px; /*use if position is absolute */
+}
+.mrpx-620 {
+    margin-left: 620px; /*use if position is absolute */
+}
+.prpx-620 {
+    padding-left: 620px; /*use if position is absolute */
+}
+
+.rpx-610 {
+    position: absolute;
+    left: 610px; /*use if position is absolute */
+}
+.mrpx-610 {
+    margin-left: 610px; /*use if position is absolute */
+}
+.prpx-610 {
+    padding-left: 610px; /*use if position is absolute */
+}
+
+.rpx-600 {
+    position: absolute;
+    left: 600px; /*use if position is absolute */
+}
+.mrpx-600 {
+    margin-left: 600px; /*use if position is absolute */
+}
+.prpx-600 {
+    padding-left: 600px; /*use if position is absolute */
+}
+
+.rpx-590 {
+    position: absolute;
+    left: 590px; /*use if position is absolute */
+}
+.mrpx-590 {
+    margin-left: 590px; /*use if position is absolute */
+}
+.prpx-590 {
+    padding-left: 590px; /*use if position is absolute */
+}
+
+.rpx-580 {
+    position: absolute;
+    left: 580px; /*use if position is absolute */
+}
+.mrpx-580 {
+    margin-left: 580px; /*use if position is absolute */
+}
+.prpx-580 {
+    padding-left: 580px; /*use if position is absolute */
+}
+
+.rpx-570 {
+    position: absolute;
+    left: 570px; /*use if position is absolute */
+}
+.mrpx-570 {
+    margin-left: 570px; /*use if position is absolute */
+}
+.prpx-570 {
+    padding-left: 570px; /*use if position is absolute */
+}
+
+.rpx-560 {
+    position: absolute;
+    left: 560px; /*use if position is absolute */
+}
+.mrpx-560 {
+    margin-left: 560px; /*use if position is absolute */
+}
+.prpx-560 {
+    padding-left: 560px; /*use if position is absolute */
+}
+
+.rpx-550 {
+    position: absolute;
+    left: 550px; /*use if position is absolute */
+}
+.mrpx-550 {
+    margin-left: 550px; /*use if position is absolute */
+}
+.prpx-550 {
+    padding-left: 550px; /*use if position is absolute */
+}
+
+.rpx-540 {
+    position: absolute;
+    left: 540px; /*use if position is absolute */
+}
+.mrpx-540 {
+    margin-left: 540px; /*use if position is absolute */
+}
+.prpx-540 {
+    padding-left: 540px; /*use if position is absolute */
+}
+
+.rpx-530 {
+    position: absolute;
+    left: 530px; /*use if position is absolute */
+}
+.mrpx-530 {
+    margin-left: 530px; /*use if position is absolute */
+}
+.prpx-530 {
+    padding-left: 530px; /*use if position is absolute */
+}
+
+.rpx-520 {
+    position: absolute;
+    left: 520px; /*use if position is absolute */
+}
+.mrpx-520 {
+    margin-left: 520px; /*use if position is absolute */
+}
+.prpx-520 {
+    padding-left: 520px; /*use if position is absolute */
+}
+
+.rpx-510 {
+    position: absolute;
+    left: 510px; /*use if position is absolute */
+}
+.mrpx-510 {
+    margin-left: 510px; /*use if position is absolute */
+}
+.prpx-510 {
+    padding-left: 510px; /*use if position is absolute */
+}
+
+.rpx-500 {
+    position: absolute;
+    left: 500px; /*use if position is absolute */
+}
+.mrpx-500 {
+    margin-left: 500px; /*use if position is absolute */
+}
+.prpx-500 {
+    padding-left: 500px; /*use if position is absolute */
+}
+
+.rpx-490 {
+    position: absolute;
+    left: 490px; /*use if position is absolute */
+}
+.mrpx-490 {
+    margin-left: 490px; /*use if position is absolute */
+}
+.prpx-490 {
+    padding-left: 490px; /*use if position is absolute */
+}
+
+.rpx-480 {
+    position: absolute;
+    left: 480px; /*use if position is absolute */
+}
+.mrpx-480 {
+    margin-left: 480px; /*use if position is absolute */
+}
+.prpx-480 {
+    padding-left: 480px; /*use if position is absolute */
+}
+
+.rpx-470 {
+    position: absolute;
+    left: 470px; /*use if position is absolute */
+}
+.mrpx-470 {
+    margin-left: 470px; /*use if position is absolute */
+}
+.prpx-470 {
+    padding-left: 470px; /*use if position is absolute */
+}
+
+.rpx-460 {
+    position: absolute;
+    left: 460px; /*use if position is absolute */
+}
+.mrpx-460 {
+    margin-left: 460px; /*use if position is absolute */
+}
+.prpx-460 {
+    padding-left: 460px; /*use if position is absolute */
+}
+
+.rpx-450 {
+    position: absolute;
+    left: 450px; /*use if position is absolute */
+}
+.mrpx-450 {
+    margin-left: 450px; /*use if position is absolute */
+}
+.prpx-450 {
+    padding-left: 450px; /*use if position is absolute */
+}
+
+.rpx-440 {
+    position: absolute;
+    left: 440px; /*use if position is absolute */
+}
+.mrpx-440 {
+    margin-left: 440px; /*use if position is absolute */
+}
+.prpx-440 {
+    padding-left: 440px; /*use if position is absolute */
+}
+
+.rpx-430 {
+    position: absolute;
+    left: 430px; /*use if position is absolute */
+}
+.mrpx-430 {
+    margin-left: 430px; /*use if position is absolute */
+}
+.prpx-430 {
+    padding-left: 430px; /*use if position is absolute */
+}
+
+.rpx-420 {
+    position: absolute;
+    left: 420px; /*use if position is absolute */
+}
+.mrpx-420 {
+    margin-left: 420px; /*use if position is absolute */
+}
+.prpx-420 {
+    padding-left: 420px; /*use if position is absolute */
+}
+
+.rpx-410 {
+    position: absolute;
+    left: 410px; /*use if position is absolute */
+}
+.mrpx-410 {
+    margin-left: 410px; /*use if position is absolute */
+}
+.prpx-410 {
+    padding-left: 410px; /*use if position is absolute */
+}
+
+.rpx-400 {
+    position: absolute;
+    left: 400px; /*use if position is absolute */
+}
+.mrpx-400 {
+    margin-left: 400px; /*use if position is absolute */
+}
+.prpx-400 {
+    padding-left: 400px; /*use if position is absolute */
+}
+
+.rpx-390 {
+    position: absolute;
+    left: 390px; /*use if position is absolute */
+}
+.mrpx-390 {
+    margin-left: 390px; /*use if position is absolute */
+}
+.prpx-390 {
+    padding-left: 390px; /*use if position is absolute */
+}
+
+.rpx-380 {
+    position: absolute;
+    left: 380px; /*use if position is absolute */
+}
+.mrpx-380 {
+    margin-left: 380px; /*use if position is absolute */
+}
+.prpx-380 {
+    padding-left: 380px; /*use if position is absolute */
+}
+
+.rpx-370 {
+    position: absolute;
+    left: 370px; /*use if position is absolute */
+}
+.mrpx-370 {
+    margin-left: 370px; /*use if position is absolute */
+}
+.prpx-370 {
+    padding-left: 370px; /*use if position is absolute */
+}
+
+.rpx-360 {
+    position: absolute;
+    left: 360px; /*use if position is absolute */
+}
+.mrpx-360 {
+    margin-left: 360px; /*use if position is absolute */
+}
+.prpx-360 {
+    padding-left: 360px; /*use if position is absolute */
+}
+
+.rpx-350 {
+    position: absolute;
+    left: 350px; /*use if position is absolute */
+}
+.mrpx-350 {
+    margin-left: 350px; /*use if position is absolute */
+}
+.prpx-350 {
+    padding-left: 350px; /*use if position is absolute */
+}
+
+.rpx-340 {
+    position: absolute;
+    left: 340px; /*use if position is absolute */
+}
+.mrpx-340 {
+    margin-left: 340px; /*use if position is absolute */
+}
+.prpx-340 {
+    padding-left: 340px; /*use if position is absolute */
+}
+
+.rpx-330 {
+    position: absolute;
+    left: 330px; /*use if position is absolute */
+}
+.mrpx-330 {
+    margin-left: 330px; /*use if position is absolute */
+}
+.prpx-330 {
+    padding-left: 330px; /*use if position is absolute */
+}
+
+.rpx-320 {
+    position: absolute;
+    left: 320px; /*use if position is absolute */
+}
+.mrpx-320 {
+    margin-left: 320px; /*use if position is absolute */
+}
+.prpx-320 {
+    padding-left: 320px; /*use if position is absolute */
+}
+
+.rpx-310 {
+    position: absolute;
+    left: 310px; /*use if position is absolute */
+}
+.mrpx-310 {
+    margin-left: 310px; /*use if position is absolute */
+}
+.prpx-310 {
+    padding-left: 310px; /*use if position is absolute */
+}
+
+.rpx-300 {
+    position: absolute;
+    left: 300px; /*use if position is absolute */
+}
+.mrpx-300 {
+    margin-left: 300px; /*use if position is absolute */
+}
+.prpx-300 {
+    padding-left: 300px; /*use if position is absolute */
+}
+
+
+.rpx-290 {
+    position: absolute;
+    left: 290px; /*use if position is absolute */
+}
+.mrpx-290 {
+    margin-left: 290px; /*use if position is absolute */
+}
+.prpx-290 {
+    padding-left: 290px; /*use if position is absolute */
+}
+
+.rpx-280 {
+    position: absolute;
+    left: 280px; /*use if position is absolute */
+}
+.mrpx-280 {
+    margin-left: 280px; /*use if position is absolute */
+}
+.prpx-280 {
+    padding-left: 280px; /*use if position is absolute */
+}
+
+.rpx-270 {
+    position: absolute;
+    left: 270px; /*use if position is absolute */
+}
+.mrpx-270 {
+    margin-left: 270px; /*use if position is absolute */
+}
+.prpx-270 {
+    padding-left: 270px; /*use if position is absolute */
+}
+
+.rpx-260 {
+    position: absolute;
+    left: 260px; /*use if position is absolute */
+}
+.mrpx-260 {
+    margin-left: 260px; /*use if position is absolute */
+}
+.prpx-260 {
+    padding-left: 260px; /*use if position is absolute */
+}
+
+.rpx-250 {
+    position: absolute;
+    left: 250px; /*use if position is absolute */
+}
+.mrpx-250 {
+    margin-left: 250px; /*use if position is absolute */
+}
+.prpx-250 {
+    padding-left: 250px; /*use if position is absolute */
+}
+
+.rpx-240 {
+    position: absolute;
+    left: 240px; /*use if position is absolute */
+}
+.mrpx-240 {
+    margin-left: 240px; /*use if position is absolute */
+}
+.prpx-240 {
+    padding-left: 240px; /*use if position is absolute */
+}
+
+.rpx-230 {
+    position: absolute;
+    left: 230px; /*use if position is absolute */
+}
+.mrpx-230 {
+    margin-left: 230px; /*use if position is absolute */
+}
+.prpx-230 {
+    padding-left: 230px; /*use if position is absolute */
+}
+
+.rpx-220 {
+    position: absolute;
+    left: 220px; /*use if position is absolute */
+}
+.mrpx-220 {
+    margin-left: 220px; /*use if position is absolute */
+}
+.prpx-220 {
+    padding-left: 220px; /*use if position is absolute */
+}
+
+.rpx-210 {
+    position: absolute;
+    left: 210px; /*use if position is absolute */
+}
+.mrpx-210 {
+    margin-left: 210px; /*use if position is absolute */
+}
+.prpx-210 {
+    padding-left: 210px; /*use if position is absolute */
+}
+
+.rpx-200 {
+    position: absolute;
+    left: 200px; /*use if position is absolute */
+}
+.mrpx-200 {
+    margin-left: 200px; /*use if position is absolute */
+}
+.prpx-200 {
+    padding-left: 200px; /*use if position is absolute */
+}
+
+
+
+.rpx-190 {
+    position: absolute;
+    left: 190px; /*use if position is absolute */
+}
+.mrpx-190 {
+    margin-left: 190px; /*use if position is absolute */
+}
+.prpx-190 {
+    padding-left: 190px; /*use if position is absolute */
+}
+
+.rpx-180 {
+    position: absolute;
+    left: 180px; /*use if position is absolute */
+}
+.mrpx-180 {
+    margin-left: 180px; /*use if position is absolute */
+}
+.prpx-180 {
+    padding-left: 180px; /*use if position is absolute */
+}
+
+.rpx-170 {
+    position: absolute;
+    left: 170px; /*use if position is absolute */
+}
+.mrpx-170 {
+    margin-left: 170px; /*use if position is absolute */
+}
+.prpx-170 {
+    padding-left: 170px; /*use if position is absolute */
+}
+
+.rpx-160 {
+    position: absolute;
+    left: 160px; /*use if position is absolute */
+}
+.mrpx-160 {
+    margin-left: 160px; /*use if position is absolute */
+}
+.prpx-160 {
+    padding-left: 160px; /*use if position is absolute */
+}
+
+.rpx-150 {
+    position: absolute;
+    left: 150px; /*use if position is absolute */
+}
+.mrpx-150 {
+    margin-left: 150px; /*use if position is absolute */
+}
+.prpx-150 {
+    padding-left: 150px; /*use if position is absolute */
+}
+
+.rpx-140 {
+    position: absolute;
+    left: 140px; /*use if position is absolute */
+}
+.mrpx-140 {
+    margin-left: 140px; /*use if position is absolute */
+}
+.prpx-140 {
+    padding-left: 140px; /*use if position is absolute */
+}
+
+.rpx-130 {
+    position: absolute;
+    left: 130px; /*use if position is absolute */
+}
+.mrpx-130 {
+    margin-left: 130px; /*use if position is absolute */
+}
+.prpx-130 {
+    padding-left: 130px; /*use if position is absolute */
+}
+
+.rpx-120 {
+    position: absolute;
+    left: 120px; /*use if position is absolute */
+}
+.mrpx-120 {
+    margin-left: 120px; /*use if position is absolute */
+}
+.prpx-120 {
+    padding-left: 120px; /*use if position is absolute */
+}
+
+.rpx-110 {
+    position: absolute;
+    left: 110px; /*use if position is absolute */
+}
+.mrpx-110 {
+    margin-left: 110px; /*use if position is absolute */
+}
+.prpx-110 {
+    padding-left: 110px; /*use if position is absolute */
+}
+
+.rpx-100 {
+    position: absolute;
+    left: 100px; /*use if position is absolute */
+}
+.mrpx-100 {
+    margin-left: 100px; /*use if position is absolute */
+}
+.prpx-100 {
+    padding-left: 100px; /*use if position is absolute */
+}
+
+.rpx-95 {
+    position: absolute;
+    left: 95px; /*use if position is absolute */
+}
+.mrpx-95 {
+    margin-left: 95px; /*use if position is absolute */
+}
+.prpx-95 {
+    padding-left: 95px; /*use if position is absolute */
+}
+
+.rpx-90 {
+    position: absolute;
+    left: 90px; /*use if position is absolute */
+}
+.mrpx-90 {
+    margin-left: 90px; /*use if position is absolute */
+}
+.prpx-90 {
+    padding-left: 90px; /*use if position is absolute */
+}
+
+.rpx-85 {
+    position: absolute;
+    left: 85px; /*use if position is absolute */
+}
+.mrpx-85 {
+    margin-left: 85px; /*use if position is absolute */
+}
+.prpx-85 {
+    padding-left: 85px; /*use if position is absolute */
+}
+
+.rpx-80 {
+    position: absolute;
+    left: 80px; /*use if position is absolute */
+}
+.mrpx-80 {
+    margin-left: 80px; /*use if position is absolute */
+}
+.prpx-80 {
+    padding-left: 80px; /*use if position is absolute */
+}
+
+.rpx-75 {
+    position: absolute;
+    left: 75px; /*use if position is absolute */
+}
+.mrpx-75 {
+    margin-left: 75px; /*use if position is absolute */
+}
+.prpx-75 {
+    padding-left: 75px; /*use if position is absolute */
+}
+
+.rpx-70 {
+    position: absolute;
+    left: 70px; /*use if position is absolute */
+}
+.mrpx-70 {
+    margin-left: 70px; /*use if position is absolute */
+}
+.prpx-70 {
+    padding-left: 70px; /*use if position is absolute */
+}
+
+.rpx-65 {
+    position: absolute;
+    left: 65px; /*use if position is absolute */
+}
+.mrpx-65 {
+    margin-left: 65px; /*use if position is absolute */
+}
+.prpx-65 {
+    padding-left: 65px; /*use if position is absolute */
+}
+
+.rpx-60 {
+    position: absolute;
+    left: 60px; /*use if position is absolute */
+}
+.mrpx-60 {
+    margin-left: 60px; /*use if position is absolute */
+}
+.prpx-60 {
+    padding-left: 60px; /*use if position is absolute */
+}
+
+.rpx-55 {
+    position: absolute;
+    left: 55px; /*use if position is absolute */
+}
+.mrpx-55 {
+    margin-left: 55px; /*use if position is absolute */
+}
+.prpx-55 {
+    padding-left: 55px; /*use if position is absolute */
+}
+
+.rpx-50 {
+    position: absolute;
+    left: 50px; /*use if position is absolute */
+}
+.mrpx-50 {
+    margin-left: 50px; /*use if position is absolute */
+}
+.prpx-50 {
+    padding-left: 50px; /*use if position is absolute */
+}
+
+.rpx-45 {
+    position: absolute;
+    left: 45px; /*use if position is absolute */
+}
+.mrpx-45 {
+    margin-left: 45px; /*use if position is absolute */
+}
+.prpx-45 {
+    padding-left: 45px; /*use if position is absolute */
+}
+
+.rpx-40 {
+    position: absolute;
+    left: 40px; /*use if position is absolute */
+}
+.mrpx-40 {
+    margin-left: 40px; /*use if position is absolute */
+}
+.prpx-40 {
+    padding-left: 40px; /*use if position is absolute */
+}
+
+.rpx-35 {
+    position: absolute;
+    left: 35px; /*use if position is absolute */
+}
+.mrpx-35 {
+    margin-left: 35px; /*use if position is absolute */
+}
+.prpx-35 {
+    padding-left: 35px; /*use if position is absolute */
+}
+
+.rpx-30 {
+    position: absolute;
+    left: 30px; /*use if position is absolute */
+}
+.mrpx-30 {
+    margin-left: 30px; /*use if position is absolute */
+}
+.prpx-30 {
+    padding-left: 30px; /*use if position is absolute */
+}
+
+.rpx-25 {
+    position: absolute;
+    left: 25px; /*use if position is absolute */
+}
+.mrpx-25 {
+    margin-left: 25px; /*use if position is absolute */
+}
+.prpx-25 {
+    padding-left: 25px; /*use if position is absolute */
+}
+
+.rpx-20 {
+    position: absolute;
+    left: 20px; /*use if position is absolute */
+}
+.mrpx-20 {
+    margin-left: 20px; /*use if position is absolute */
+}
+.prpx-20 {
+    padding-left: 20px; /*use if position is absolute */
+}
+
+.rpx-15 {
+    position: absolute;
+    left: 15px; /*use if position is absolute */
+}
+.mrpx-15 {
+    margin-left: 15px; /*use if position is absolute */
+}
+.prpx-15 {
+    padding-left: 15px; /*use if position is absolute */
+}
+
+.rpx-10 {
+    position: absolute;
+    left: 10px; /*use if position is absolute */
+}
+.mrpx-10 {
+    margin-left: 10px; /*use if position is absolute */
+}
+.prpx-10 {
+    padding-left: 10px; /*use if position is absolute */
+}
+
+.rpx-5 {
+    position: absolute;
+    left: 5px; /*use if position is absolute */
+}
+.mrpx-5 {
+    margin-left: 5px; /*use if position is absolute */
+}
+.prpx-5 {
+    padding-left: 5px; /*use if position is absolute */
+}
+
+/*------------------------------
+-----      EM's      -----
+------------------------------*/
+/*------------ Left -------------*/
+
+
+.lem-01 {
+    position: absolute;
+    left: 0.1em;
+}
+
+.mlem-01 {
+    margin-left: 0.1em;
+}
+
+.plem-01 {
+    padding-left: 0.1em;
+}
+
+.lem-02 {
+    position: absolute;
+    left: 0.2em;
+}
+
+.mlem-02 {
+    margin-left: 0.2em;
+}
+
+.plem-02 {
+    padding-left: 0.2em;
+}
+
+.lem-03 {
+    position: absolute;
+    left: 0.3em;
+}
+
+.mlem-03 {
+    margin-left: 0.3em;
+}
+
+.plem-03 {
+    padding-left: 0.3em;
+}
+
+.lem-04 {
+    position: absolute;
+    left: 0.4em;
+}
+
+.mlem-04 {
+    margin-left: 0.4em;
+}
+
+.plem-04 {
+    padding-left: 0.4em;
+}
+
+.lem-05 {
+    position: absolute;
+    left: 0.5em;
+}
+
+.mlem-05 {
+    margin-left: 0.5em;
+}
+
+.plem-05 {
+    padding-left: 0.5em;
+}
+
+.lem-06 {
+    position: absolute;
+    left: 0.6em;
+}
+
+.mlem-06 {
+    margin-left: 0.6em;
+}
+
+.plem-06 {
+    padding-left: 0.6em;
+}
+
+.lem-07 {
+    position: absolute;
+    left: 0.7em;
+}
+
+.mlem-07 {
+    margin-left: 0.7em;
+}
+
+.plem-07 {
+    padding-left: 0.7em;
+}
+
+.lem-08 {
+    position: absolute;
+    left: 0.8em;
+}
+
+.mlem-08 {
+    margin-left: 0.8em;
+}
+
+.plem-08 {
+    padding-left: 0.8em;
+}
+
+.lem-09 {
+    position: absolute;
+    left: 0.9em;
+}
+
+.mlem-09 {
+    margin-left: 0.9em;
+}
+
+.plem-09 {
+    padding-left: 0.9em;
+}
+
+.lem-10 {
+    position: absolute;
+    left: 1.0em;
+}
+
+.mlem-10 {
+    margin-left: 1.0em;
+}
+
+.plem-10 {
+    padding-left: 1.0em;
+}
+
+.lem-11 {
+    position: absolute;
+    left: 1.1em;
+}
+
+.mlem-11 {
+    margin-left: 1.1em;
+}
+
+.plem-11 {
+    padding-left: 1.1em;
+}
+
+.lem-12 {
+    position: absolute;
+    left: 1.2em;
+}
+
+.mlem-12 {
+    margin-left: 1.2em;
+}
+
+.plem-12 {
+    padding-left: 1.2em;
+}
+
+.lem-13 {
+    position: absolute;
+    left: 1.3em;
+}
+
+.mlem-13 {
+    margin-left: 1.3em;
+}
+
+.plem-13 {
+    padding-left: 1.3em;
+}
+
+.lem-14 {
+    position: absolute;
+    left: 1.4em;
+}
+
+.mlem-14 {
+    margin-left: 1.4em;
+}
+
+.plem-14 {
+    padding-left: 1.4em;
+}
+
+.lem-15 {
+    position: absolute;
+    left: 1.5em;
+}
+
+.mlem-15 {
+    margin-left: 1.5em;
+}
+
+.plem-15 {
+    padding-left: 1.5em;
+}
+
+.lem-16 {
+    position: absolute;
+    left: 1.6em;
+}
+
+.mlem-16 {
+    margin-left: 1.6em;
+}
+
+.plem-16 {
+    padding-left: 1.6em;
+}
+
+.lem-17 {
+    position: absolute;
+    left: 1.7em;
+}
+
+.mlem-17 {
+    margin-left: 1.7em;
+}
+
+.plem-17 {
+    padding-left: 1.7em;
+}
+
+.lem-18 {
+    position: absolute;
+    left: 1.8em;
+}
+
+.mlem-18 {
+    margin-left: 1.8em;
+}
+
+.plem-18 {
+    padding-left: 1.8em;
+}
+
+.lem-19 {
+    position: absolute;
+    left: 1.9em;
+}
+
+.mlem-19 {
+    margin-left: 1.9em;
+}
+
+.plem-19 {
+    padding-left: 1.9em;
+}
+
+.lem-20 {
+    position: absolute;
+    left: 2.0em;
+}
+
+.mlem-20 {
+    margin-left: 2.0em;
+}
+
+.plem-20 {
+    padding-left: 2.0em;
+}
+
+.lem-21 {
+    position: absolute;
+    left: 2.1em;
+}
+
+.mlem-21 {
+    margin-left: 2.1em;
+}
+
+.plem-21 {
+    padding-left: 2.1em;
+}
+
+.lem-22 {
+    position: absolute;
+    left: 2.2em;
+}
+
+.mlem-22 {
+    margin-left: 2.2em;
+}
+
+.plem-22 {
+    padding-left: 2.2em;
+}
+
+.lem-23 {
+    position: absolute;
+    left: 2.3em;
+}
+
+.mlem-23 {
+    margin-left: 2.3em;
+}
+
+.plem-23 {
+    padding-left: 2.3em;
+}
+
+.lem-24 {
+    position: absolute;
+    left: 2.4em;
+}
+
+.mlem-24 {
+    margin-left: 2.4em;
+}
+
+.plem-24 {
+    padding-left: 2.4em;
+}
+
+.lem-25 {
+    position: absolute;
+    left: 2.5em;
+}
+
+.mlem-25 {
+    margin-left: 2.5em;
+}
+
+.plem-25 {
+    padding-left: 2.5em;
+}
+
+.lem-26 {
+    position: absolute;
+    left: 2.6em;
+}
+
+.mlem-26 {
+    margin-left: 2.6em;
+}
+
+.plem-26 {
+    padding-left: 2.6em;
+}
+
+.lem-27 {
+    position: absolute;
+    left: 2.7em;
+}
+
+.mlem-27 {
+    margin-left: 2.7em;
+}
+
+.plem-27 {
+    padding-left: 2.7em;
+}
+
+.lem-28 {
+    position: absolute;
+    left: 2.8em;
+}
+
+.mlem-28 {
+    margin-left: 2.8em;
+}
+
+.plem-28 {
+    padding-left: 2.8em;
+}
+
+.lem-29 {
+    position: absolute;
+    left: 2.9em;
+}
+
+.mlem-29 {
+    margin-left: 2.9em;
+}
+
+.plem-29 {
+    padding-left: 2.9em;
+}
+
+.lem-30 {
+    position: absolute;
+    left: 3.0em;
+}
+
+.mlem-30 {
+    margin-left: 3.0em;
+}
+
+.plem-30 {
+    padding-left: 3.0em;
+}
+
+.lem-31 {
+    position: absolute;
+    left: 3.1em;
+}
+
+.mlem-31 {
+    margin-left: 3.1em;
+}
+
+.plem-31 {
+    padding-left: 3.1em;
+}
+
+.lem-32 {
+    position: absolute;
+    left: 3.2em;
+}
+
+.mlem-32 {
+    margin-left: 3.2em;
+}
+
+.plem-32 {
+    padding-left: 3.2em;
+}
+
+.lem-33 {
+    position: absolute;
+    left: 3.3em;
+}
+
+.mlem-33 {
+    margin-left: 3.3em;
+}
+
+.plem-33 {
+    padding-left: 3.3em;
+}
+
+.lem-34 {
+    position: absolute;
+    left: 3.4em;
+}
+
+.mlem-34 {
+    margin-left: 3.4em;
+}
+
+.plem-34 {
+    padding-left: 3.4em;
+}
+
+.lem-35 {
+    position: absolute;
+    left: 3.5em;
+}
+
+.mlem-35 {
+    margin-left: 3.5em;
+}
+
+.plem-35 {
+    padding-left: 3.5em;
+}
+
+.lem-36 {
+    position: absolute;
+    left: 3.6em;
+}
+
+.mlem-36 {
+    margin-left: 3.6em;
+}
+
+.plem-36 {
+    padding-left: 3.6em;
+}
+
+.lem-37 {
+    position: absolute;
+    left: 3.7em;
+}
+
+.mlem-37 {
+    margin-left: 3.7em;
+}
+
+.plem-37 {
+    padding-left: 3.7em;
+}
+
+.lem-38 {
+    position: absolute;
+    left: 3.8em;
+}
+
+.mlem-38 {
+    margin-left: 3.8em;
+}
+
+.plem-38 {
+    padding-left: 3.8em;
+}
+
+.lem-39 {
+    position: absolute;
+    left: 3.9em;
+}
+
+.mlem-39 {
+    margin-left: 3.9em;
+}
+
+.plem-39 {
+    padding-left: 3.9em;
+}
+
+.lem-40 {
+    position: absolute;
+    left: 4.0em;
+}
+
+.mlem-40 {
+    margin-left: 4.0em;
+}
+
+.plem-40 {
+    padding-left: 4.0em;
+}
+
+.lem-41 {
+    position: absolute;
+    left: 4.1em;
+}
+
+.mlem-41 {
+    margin-left: 4.1em;
+}
+
+.plem-41 {
+    padding-left: 4.1em;
+}
+
+.lem-42 {
+    position: absolute;
+    left: 4.2em;
+}
+
+.mlem-42 {
+    margin-left: 4.2em;
+}
+
+.plem-42 {
+    padding-left: 4.2em;
+}
+
+.lem-43 {
+    position: absolute;
+    left: 4.3em;
+}
+
+.mlem-43 {
+    margin-left: 4.3em;
+}
+
+.plem-43 {
+    padding-left: 4.3em;
+}
+
+.lem-44 {
+    position: absolute;
+    left: 4.4em;
+}
+
+.mlem-44 {
+    margin-left: 4.4em;
+}
+
+.plem-44 {
+    padding-left: 4.4em;
+}
+
+.lem-45 {
+    position: absolute;
+    left: 4.5em;
+}
+
+.mlem-45 {
+    margin-left: 4.5em;
+}
+
+.plem-45 {
+    padding-left: 4.5em;
+}
+
+.lem-46 {
+    position: absolute;
+    left: 4.6em;
+}
+
+.mlem-46 {
+    margin-left: 4.6em;
+}
+
+.plem-46 {
+    padding-left: 4.6em;
+}
+
+.lem-47 {
+    position: absolute;
+    left: 4.7em;
+}
+
+.mlem-47 {
+    margin-left: 4.7em;
+}
+
+.plem-47 {
+    padding-left: 4.7em;
+}
+
+.lem-48 {
+    position: absolute;
+    left: 4.8em;
+}
+
+.mlem-48 {
+    margin-left: 4.8em;
+}
+
+.plem-48 {
+    padding-left: 4.8em;
+}
+
+.lem-49 {
+    position: absolute;
+    left: 4.9em;
+}
+
+.mlem-49 {
+    margin-left: 4.9em;
+}
+
+.plem-49 {
+    padding-left: 4.9em;
+}
+
+
+.lem-50 {
+    position: absolute;
+    left: 5.0em;
+}
+
+.mlem-50 {
+    margin-left: 5.0em;
+}
+
+.plem-50 {
+    padding-left: 5.0em;
+}
+
+.lem-51 {
+    position: absolute;
+    left: 5.1em;
+}
+
+.mlem-51 {
+    margin-left: 5.1em;
+}
+
+.plem-51 {
+    padding-left: 5.1em;
+}
+
+.lem-52 {
+    position: absolute;
+    left: 5.2em;
+}
+
+.mlem-52 {
+    margin-left: 5.2em;
+}
+
+.plem-52 {
+    padding-left: 5.2em;
+}
+
+.lem-53 {
+    position: absolute;
+    left: 5.3em;
+}
+
+.mlem-53 {
+    margin-left: 5.3em;
+}
+
+.plem-53 {
+    padding-left: 5.3em;
+}
+
+.lem-54 {
+    position: absolute;
+    left: 5.4em;
+}
+
+.mlem-54 {
+    margin-left: 5.4em;
+}
+
+.plem-54 {
+    padding-left: 5.4em;
+}
+
+.lem-55 {
+    position: absolute;
+    left: 5.5em;
+}
+
+.mlem-55 {
+    margin-left: 5.5em;
+}
+
+.plem-55 {
+    padding-left: 5.5em;
+}
+
+.lem-56 {
+    position: absolute;
+    left: 5.6em;
+}
+
+.mlem-56 {
+    margin-left: 5.6em;
+}
+
+.plem-56 {
+    padding-left: 5.6em;
+}
+
+.lem-57 {
+    position: absolute;
+    left: 5.7em;
+}
+
+.mlem-57 {
+    margin-left: 5.7em;
+}
+
+.plem-57 {
+    padding-left: 5.7em;
+}
+
+.lem-58 {
+    position: absolute;
+    left: 5.8em;
+}
+
+.mlem-58 {
+    margin-left: 5.8em;
+}
+
+.plem-58 {
+    padding-left: 5.8em;
+}
+
+.lem-59 {
+    position: absolute;
+    left: 5.9em;
+}
+
+.mlem-59 {
+    margin-left: 5.9em;
+}
+
+.plem-59 {
+    padding-left: 5.9em;
+}
+
+.lem-60 {
+    position: absolute;
+    left: 6.0em;
+}
+
+.mlem-60 {
+    margin-left: 6.0em;
+}
+
+.plem-60 {
+    padding-left: 6.0em;
+}
+
+.lem-61 {
+    position: absolute;
+    left: 6.1em;
+}
+
+.mlem-61 {
+    margin-left: 6.1em;
+}
+
+.plem-61 {
+    padding-left: 6.1em;
+}
+
+.lem-62 {
+    position: absolute;
+    left: 6.2em;
+}
+
+.mlem-62 {
+    margin-left: 6.2em;
+}
+
+.plem-62 {
+    padding-left: 6.2em;
+}
+
+.lem-63 {
+    position: absolute;
+    left: 6.3em;
+}
+
+.mlem-63 {
+    margin-left: 6.3em;
+}
+
+.plem-63 {
+    padding-left: 6.3em;
+}
+
+.lem-64 {
+    position: absolute;
+    left: 6.4em;
+}
+
+.mlem-64 {
+    margin-left: 6.4em;
+}
+
+.plem-64 {
+    padding-left: 6.4em;
+}
+
+.lem-65 {
+    position: absolute;
+    left: 6.5em;
+}
+
+.mlem-65 {
+    margin-left: 6.5em;
+}
+
+.plem-65 {
+    padding-left: 6.5em;
+}
+
+.lem-66 {
+    position: absolute;
+    left: 6.6em;
+}
+
+.mlem-66 {
+    margin-left: 6.6em;
+}
+
+.plem-66 {
+    padding-left: 6.6em;
+}
+
+.lem-67 {
+    position: absolute;
+    left: 6.7em;
+}
+
+.mlem-67 {
+    margin-left: 6.7em;
+}
+
+.plem-67 {
+    padding-left: 6.7em;
+}
+
+.lem-68 {
+    position: absolute;
+    left: 6.8em;
+}
+
+.mlem-68 {
+    margin-left: 6.8em;
+}
+
+.plem-68 {
+    padding-left: 6.8em;
+}
+
+.lem-69 {
+    position: absolute;
+    left: 6.9em;
+}
+
+.mlem-69 {
+    margin-left: 6.9em;
+}
+
+.plem-69 {
+    padding-left: 6.9em;
+}
+
+
+.lem-70 {
+    position: absolute;
+    left: 7.0em;
+}
+
+.mlem-70 {
+    margin-left: 7.0em;
+}
+
+.plem-70 {
+    padding-left: 7.0em;
+}
+
+
+.lem-71 {
+    position: absolute;
+    left: 7.1em;
+}
+
+.mlem-71 {
+    margin-left: 7.1em;
+}
+
+.plem-71 {
+    padding-left: 7.1em;
+}
+
+.lem-72 {
+    position: absolute;
+    left: 7.2em;
+}
+
+.mlem-72 {
+    margin-left: 7.2em;
+}
+
+.plem-72 {
+    padding-left: 7.2em;
+}
+
+.lem-73 {
+    position: absolute;
+    left: 7.3em;
+}
+
+.mlem-73 {
+    margin-left: 7.3em;
+}
+
+.plem-73 {
+    padding-left: 7.3em;
+}
+
+.lem-74 {
+    position: absolute;
+    left: 7.4em;
+}
+
+.mlem-74 {
+    margin-left: 7.4em;
+}
+
+.plem-74 {
+    padding-left: 7.4em;
+}
+
+.lem-75 {
+    position: absolute;
+    left: 7.5em;
+}
+
+.mlem-75 {
+    margin-left: 7.5em;
+}
+
+.plem-75 {
+    padding-left: 7.5em;
+}
+
+/*------------ Right -------------*/
+
+.rem-01 {
+    position: absolute;
+    right: 0.1em;
+}
+
+.mrem-01 {
+    margin-right: 0.1em;
+}
+
+.prem-01 {
+    padding-right: 0.1em;
+}
+
+.rem-02 {
+    position: absolute;
+    right: 0.2em;
+}
+
+.mrem-02 {
+    margin-right: 0.2em;
+}
+
+.prem-02 {
+    padding-right: 0.2em;
+}
+
+.rem-03 {
+    position: absolute;
+    right: 0.3em;
+}
+
+.mrem-03 {
+    margin-right: 0.3em;
+}
+
+.prem-03 {
+    padding-right: 0.3em;
+}
+
+.rem-04 {
+    position: absolute;
+    right: 0.4em;
+}
+
+.mrem-04 {
+    margin-right: 0.4em;
+}
+
+.prem-04 {
+    padding-right: 0.4em;
+}
+
+.rem-05 {
+    position: absolute;
+    right: 0.5em;
+}
+
+.mrem-05 {
+    margin-right: 0.5em;
+}
+
+.prem-05 {
+    padding-right: 0.5em;
+}
+
+.rem-06 {
+    position: absolute;
+    right: 0.6em;
+}
+
+.mrem-06 {
+    margin-right: 0.6em;
+}
+
+.prem-06 {
+    padding-right: 0.6em;
+}
+
+.rem-07 {
+    position: absolute;
+    right: 0.7em;
+}
+
+.mrem-07 {
+    margin-right: 0.7em;
+}
+
+.prem-07 {
+    padding-right: 0.7em;
+}
+
+.rem-08 {
+    position: absolute;
+    right: 0.8em;
+}
+
+.mrem-08 {
+    margin-right: 0.8em;
+}
+
+.prem-08 {
+    padding-right: 0.8em;
+}
+
+.rem-09 {
+    position: absolute;
+    right: 0.9em;
+}
+
+.mrem-09 {
+    margin-right: 0.9em;
+}
+
+.prem-09 {
+    padding-right: 0.9em;
+}
+
+.rem-10 {
+    position: absolute;
+    right: 1.0em;
+}
+
+.mrem-10 {
+    margin-right: 1.0em;
+}
+
+.prem-10 {
+    padding-right: 1.0em;
+}
+
+.rem-11 {
+    position: absolute;
+    right: 1.1em;
+}
+
+.mrem-11 {
+    margin-right: 1.1em;
+}
+
+.prem-11 {
+    padding-right: 1.1em;
+}
+
+.rem-12 {
+    position: absolute;
+    right: 1.2em;
+}
+
+.mrem-12 {
+    margin-right: 1.2em;
+}
+
+.prem-12 {
+    padding-right: 1.2em;
+}
+
+.rem-13 {
+    position: absolute;
+    right: 1.3em;
+}
+
+.mrem-13 {
+    margin-right: 1.3em;
+}
+
+.prem-13 {
+    padding-right: 1.3em;
+}
+
+.rem-14 {
+    position: absolute;
+    right: 1.4em;
+}
+
+.mrem-14 {
+    margin-right: 1.4em;
+}
+
+.prem-14 {
+    padding-right: 1.4em;
+}
+
+.rem-15 {
+    position: absolute;
+    right: 1.5em;
+}
+
+.mrem-15 {
+    margin-right: 1.5em;
+}
+
+.prem-15 {
+    padding-right: 1.5em;
+}
+
+.rem-16 {
+    position: absolute;
+    right: 1.6em;
+}
+
+.mrem-16 {
+    margin-right: 1.6em;
+}
+
+.prem-16 {
+    padding-right: 1.6em;
+}
+
+.rem-17 {
+    position: absolute;
+    right: 1.7em;
+}
+
+.mrem-17 {
+    margin-right: 1.7em;
+}
+
+.prem-17 {
+    padding-right: 1.7em;
+}
+
+.rem-18 {
+    position: absolute;
+    right: 1.8em;
+}
+
+.mrem-18 {
+    margin-right: 1.8em;
+}
+
+.prem-18 {
+    padding-right: 1.8em;
+}
+
+.rem-19 {
+    position: absolute;
+    right: 1.9em;
+}
+
+.mrem-19 {
+    margin-right: 1.9em;
+}
+
+.prem-19 {
+    padding-right: 1.9em;
+}
+
+.rem-20 {
+    position: absolute;
+    right: 2.0em;
+}
+
+.mrem-20 {
+    margin-right: 2.0em;
+}
+
+.prem-20 {
+    padding-right: 2.0em;
+}
+
+.rem-21 {
+    position: absolute;
+    right: 2.1em;
+}
+
+.mrem-21 {
+    margin-right: 2.1em;
+}
+
+.prem-21 {
+    padding-right: 2.1em;
+}
+
+.rem-22 {
+    position: absolute;
+    right: 2.2em;
+}
+
+.mrem-22 {
+    margin-right: 2.2em;
+}
+
+.prem-22 {
+    padding-right: 2.2em;
+}
+
+.rem-23 {
+    position: absolute;
+    right: 2.3em;
+}
+
+.mrem-23 {
+    margin-right: 2.3em;
+}
+
+.prem-23 {
+    padding-right: 2.3em;
+}
+
+.rem-24 {
+    position: absolute;
+    right: 2.4em;
+}
+
+.mrem-24 {
+    margin-right: 2.4em;
+}
+
+.prem-24 {
+    padding-right: 2.4em;
+}
+
+.rem-25 {
+    position: absolute;
+    right: 2.5em;
+}
+
+.mrem-25 {
+    margin-right: 2.5em;
+}
+
+.prem-25 {
+    padding-right: 2.5em;
+}
+
+.rem-26 {
+    position: absolute;
+    right: 2.6em;
+}
+
+.mrem-26 {
+    margin-right: 2.6em;
+}
+
+.prem-26 {
+    padding-right: 2.6em;
+}
+
+.rem-27 {
+    position: absolute;
+    right: 2.7em;
+}
+
+.mrem-27 {
+    margin-right: 2.7em;
+}
+
+.prem-27 {
+    padding-right: 2.7em;
+}
+
+.rem-28 {
+    position: absolute;
+    right: 2.8em;
+}
+
+.mrem-28 {
+    margin-right: 2.8em;
+}
+
+.prem-28 {
+    padding-right: 2.8em;
+}
+
+.rem-29 {
+    position: absolute;
+    right: 2.9em;
+}
+
+.mrem-29 {
+    margin-right: 2.9em;
+}
+
+.prem-29 {
+    padding-right: 2.9em;
+}
+
+.rem-30 {
+    position: absolute;
+    right: 3.0em;
+}
+
+.mrem-30 {
+    margin-right: 3.0em;
+}
+
+.prem-30 {
+    padding-right: 3.0em;
+}
+
+.rem-31 {
+    position: absolute;
+    right: 3.1em;
+}
+
+.mrem-31 {
+    margin-right: 3.1em;
+}
+
+.prem-31 {
+    padding-right: 3.1em;
+}
+
+.rem-32 {
+    position: absolute;
+    right: 3.2em;
+}
+
+.mrem-32 {
+    margin-right: 3.2em;
+}
+
+.prem-32 {
+    padding-right: 3.2em;
+}
+
+.rem-33 {
+    position: absolute;
+    right: 3.3em;
+}
+
+.mrem-33 {
+    margin-right: 3.3em;
+}
+
+.prem-33 {
+    padding-right: 3.3em;
+}
+
+.rem-34 {
+    position: absolute;
+    right: 3.4em;
+}
+
+.mrem-34 {
+    margin-right: 3.4em;
+}
+
+.prem-34 {
+    padding-right: 3.4em;
+}
+
+.rem-35 {
+    position: absolute;
+    right: 3.5em;
+}
+
+.mrem-35 {
+    margin-right: 3.5em;
+}
+
+.prem-35 {
+    padding-right: 3.5em;
+}
+
+.rem-36 {
+    position: absolute;
+    right: 3.6em;
+}
+
+.mrem-36 {
+    margin-right: 3.6em;
+}
+
+.prem-36 {
+    padding-right: 3.6em;
+}
+
+.rem-37 {
+    position: absolute;
+    right: 3.7em;
+}
+
+.mrem-37 {
+    margin-right: 3.7em;
+}
+
+.prem-37 {
+    padding-right: 3.7em;
+}
+
+.rem-38 {
+    position: absolute;
+    right: 3.8em;
+}
+
+.mrem-38 {
+    margin-right: 3.8em;
+}
+
+.prem-38 {
+    padding-right: 3.8em;
+}
+
+.rem-39 {
+    position: absolute;
+    right: 3.9em;
+}
+
+.mrem-39 {
+    margin-right: 3.9em;
+}
+
+.prem-39 {
+    padding-right: 3.9em;
+}
+
+.rem-40 {
+    position: absolute;
+    right: 4.0em;
+}
+
+.mrem-40 {
+    margin-right: 4.0em;
+}
+
+.prem-40 {
+    padding-right: 4.0em;
+}
+
+.rem-41 {
+    position: absolute;
+    right: 4.1em;
+}
+
+.mrem-41 {
+    margin-right: 4.1em;
+}
+
+.prem-41 {
+    padding-right: 4.1em;
+}
+
+.rem-42 {
+    position: absolute;
+    right: 4.2em;
+}
+
+.mrem-42 {
+    margin-right: 4.2em;
+}
+
+.prem-42 {
+    padding-right: 4.2em;
+}
+
+.rem-43 {
+    position: absolute;
+    right: 4.3emright
+}
+
+.mrem-43 {
+    margin-right: 4.3em;
+}
+
+.prem-43 {
+    padding-right: 4.3em;
+}
+
+.rem-44 {
+    position: absolute;
+    right: 4.4em;
+}
+
+.mrem-44 {
+    margin-right: 4.4em;
+}
+
+.prem-44 {
+    padding-right: 4.4em;
+}
+
+.rem-45 {
+    position: absolute;
+    right: 4.5em;
+}
+
+.mrem-45 {
+    margin-right: 4.5em;
+}
+
+.prem-45 {
+    padding-right: 4.5em;
+}
+
+.rem-46 {
+    position: absolute;
+    right: 4.6em;
+}
+
+.mrem-46 {
+    margin-right: 4.6em;
+}
+
+.prem-46 {
+    padding-right: 4.6em;
+}
+
+.rem-47 {
+    position: absolute;
+    right: 4.7em;
+}
+
+.mrem-47 {
+    margin-right: 4.7em;
+}
+
+.prem-47 {
+    padding-right: 4.7em;
+}
+
+.rem-48 {
+    position: absolute;
+    right: 4.8em;
+}
+
+.mrem-48 {
+    margin-right: 4.8em;
+}
+
+.prem-48 {
+    padding-right: 4.8em;
+}
+
+.rem-49 {
+    position: absolute;
+    right: 4.9em;
+}
+
+.mrem-49 {
+    margin-right: 4.9em;
+}
+
+.prem-49 {
+    padding-right: 4.9em;
+}
+
+.rem-50 {
+    position: absolute;
+    right: 5.0em;
+}
+.mrem-50 {
+    margin-right: 5.0em;
+}
+.prem-50 {
+    padding-right: 5.0em;
+}
+.rem-51 {
+    position: absolute;
+    right: 5.1em;
+}
+.mrem-51 {
+    margin-right: 5.1em;
+}
+.prem-51 {
+    padding-right: 5.1em;
+}
+.rem-52 {
+    position: absolute;
+    right: 5.2em;
+}
+.mrem-52 {
+    margin-right: 5.2em;
+}
+.prem-52 {
+    padding-right: 5.2em;
+}
+.rem-53 {
+    position: absolute;
+    right: 5.3em;
+}
+.mrem-53 {
+    margin-right: 5.3em;
+}
+.prem-53 {
+    padding-right: 5.3em;
+}
+.rem-54 {
+    position: absolute;
+    right: 5.4em;
+}
+.mrem-54 {
+    margin-right: 5.4em;
+}
+.prem-54 {
+    padding-right: 5.4em;
+}
+.rem-55 {
+    position: absolute;
+    right: 5.5em;
+}
+.mrem-55 {
+    margin-right: 5.5em;
+}
+.prem-55 {
+    padding-right: 5.5em;
+}
+.rem-56 {
+    position: absolute;
+    right: 5.6em;
+}
+.mrem-56 {
+    margin-right: 5.6em;
+}
+.prem-56 {
+    padding-right: 5.6em;
+}
+.rem-57 {
+    position: absolute;
+    right: 5.7em;
+}
+.mrem-57 {
+    margin-right: 5.7em;
+}
+.prem-57 {
+    padding-right: 5.7em;
+}
+.rem-58 {
+    position: absolute;
+    right: 5.8em;
+}
+.mrem-58 {
+    margin-right: 5.8em;
+}
+.prem-58 {
+    padding-right: 5.8em;
+}
+.rem-59 {
+    position: absolute;
+    right: 5.9em;
+}
+.mrem-59 {
+    margin-right: 5.9em;
+}
+.prem-59 {
+    padding-right: 5.9em;
+}
+.rem-60 {
+    position: absolute;
+    right: 6.0em;
+}
+.mrem-60 {
+    margin-right: 6.0em;
+}
+.prem-60 {
+    padding-right: 6.0em;
+}
+
+.rem-61 {
+    position: absolute;
+    right: 6.1em;
+}
+
+.mrem-61 {
+    margin-right: 6.1em;
+}
+
+.prem-61 {
+    padding-right: 6.1em;
+}
+
+.rem-62 {
+    position: absolute;
+    right: 6.2em;
+}
+
+.mrem-62 {
+    margin-right: 6.2em;
+}
+
+.prem-62 {
+    padding-right: 6.2em;
+}
+
+.rem-63 {
+    position: absolute;
+    right: 6.3em;
+}
+
+.mrem-63 {
+    margin-right: 6.3em;
+}
+
+.prem-63 {
+    padding-right: 6.3em;
+}
+
+.rem-64 {
+    position: absolute;
+    right: 6.4em;
+}
+
+.mrem-64 {
+    margin-right: 6.4em;
+}
+
+.prem-64 {
+    padding-right: 6.4em;
+}
+
+.rem-65 {
+    position: absolute;
+    right: 6.5em;
+}
+
+.mrem-65 {
+    margin-right: 6.5em;
+}
+
+.prem-65 {
+    padding-right: 6.5em;
+}
+
+.rem-66 {
+    position: absolute;
+    right: 6.6em;
+}
+
+.mrem-66 {
+    margin-right: 6.6em;
+}
+
+.prem-66 {
+    padding-right: 6.6em;
+}
+
+.rem-67 {
+    position: absolute;
+    right: 6.7em;
+}
+
+.mrem-67 {
+    margin-right: 6.7em;
+}
+
+.prem-67 {
+    padding-right: 6.7em;
+}
+
+.rem-68 {
+    position: absolute;
+    right: 6.8em;
+}
+
+.mrem-68 {
+    margin-right: 6.8em;
+}
+
+.prem-68 {
+    padding-right: 6.8em;
+}
+
+.rem-69 {
+    position: absolute;
+    right: 6.9em;
+}
+
+.mrem-69 {
+    margin-right: 6.9em;
+}
+
+.prem-69 {
+    padding-right: 6.9em;
+}
+
+
+.rem-70 {
+    position: absolute;
+    right: 7.0em;
+}
+
+.mrem-70 {
+    margin-right: 7.0em;
+}
+
+.prem-70 {
+    padding-right: 7.0em;
+}
+
+
+.rem-71 {
+    position: absolute;
+    right: 7.1em;
+}
+
+.mrem-71 {
+    margin-right: 7.1em;
+}
+
+.prem-71 {
+    padding-right: 7.1em;
+}
+
+.rem-72 {
+    position: absolute;
+    right: 7.2em;
+}
+
+.mrem-72 {
+    margin-right: 7.2em;
+}
+
+.prem-72 {
+    padding-right: 7.2em;
+}
+
+.rem-73 {
+    position: absolute;
+    right: 7.3em;
+}
+
+.mrem-73 {
+    margin-right: 7.3em;
+}
+
+.prem-73 {
+    padding-right: 7.3em;
+}
+
+.rem-74 {
+    position: absolute;
+    right: 7.4em;
+}
+
+.mrem-74 {
+    margin-right: 7.4em;
+}
+
+.prem-74 {
+    padding-right: 7.4em;
+}
+
+.rem-75 {
+    position: absolute;
+    right: 7.5em;
+}
+
+.mrem-75 {
+    margin-right: 7.5em;
+}
+
+.prem-75 {
+    padding-right: 7.5em;
+}

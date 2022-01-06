@@ -1,0 +1,1203 @@
+/*-----------------------------------------------------------------------------------------------------------
+------------------------------------          Shades       --------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+.white {
+    color: white;
+}
+
+.ng5 {
+    color: hsl(0, 0%, 95%);
+}
+
+.ng10 {
+    color: hsl(0, 0%, 90%);
+}
+
+.ng15 {
+    color: hsl(0, 0%, 85%);
+}
+
+.ng20 {
+    color: hsl(0, 0%, 80%);
+}
+
+.ng25 {
+    color: hsl(0, 0%, 75%);
+}
+
+.ng30 {
+    color: hsl(0, 0%, 70%);
+}
+
+.ng35 {
+    color: hsl(0, 0%, 65%);
+}
+
+.ng40 {
+    color: hsl(0, 0%, 60%);
+}
+
+.ng45 {
+    color: hsl(0, 0%, 55%);
+}
+
+.ng50 {
+    color: hsl(0, 0%, 50%);
+}
+
+.ng55 {
+    color: hsl(0, 0%, 45%);
+}
+
+.ng60 {
+    color: hsl(0, 0%, 40%);
+}
+
+.ng65 {
+    color: hsl(0, 0%, 35%);
+}
+
+.ng70 {
+    color: hsl(0, 0%, 30%);
+}
+
+.ng75 {
+    color: hsl(0, 0%, 25%);
+}
+
+.ng80 {
+    color: hsl(0, 0%, 20%);
+}
+
+.ng85 {
+    color: hsl(0, 0%, 15%);
+}
+.ng90 {
+    color: hsl(0, 0%, 10%);
+}
+
+.black {
+    color: hsl(0, 0%, 3%);
+}
+
+.pitch-black {
+    color: hsl(0, 0%, 0%);
+}
+
+/*-------- Warm Shades ------*/
+
+.wg5 {
+    color: hsl(60, 5%, 96%);
+}
+
+.wg10 {
+    color: hsl(60, 5%, 90%);
+}
+
+.wg15 {
+    color: hsl(60, 5%, 85%);
+}
+
+.wg20 {
+    color: hsl(60, 5%, 80%);
+}
+
+.wg25 {
+    color: hsl(60, 5%, 75%);
+}
+
+.wg30 {
+    color: hsl(60, 5%, 70%);
+}
+
+.wg35 {
+    color: hsl(60, 5%, 65%);
+}
+
+.wg40 {
+    color: hsl(60, 5%, 60%);
+}
+
+.wg45 {
+    color: hsl(60, 5%, 55%);
+}
+
+.wg50 {
+    color: hsl(60, 5%, 50%);
+}
+
+.wg55 {
+    color: hsl(60, 5%, 45%);
+}
+
+.wg60 {
+    color: hsl(60, 5%, 40%);
+}
+
+.wg65 {
+    color: hsl(60, 5%, 35%);
+}
+
+.wg70 {
+    color: hsl(60, 5%, 30%);
+}
+
+.wg75 {
+    color: hsl(60, 5%, 25%);
+}
+
+.wg80 {
+    color: hsl(60, 5%, 20%);
+}
+
+.wg85 {
+    color: hsl(60, 5%, 15%);
+}
+
+.wg90 {
+    color: hsl(60, 5%, 10%);
+}
+
+.wg95 {
+    color: hsl(60, 5%, 5%);
+}
+
+/*-------- Cool Shades ------*/
+
+.cg5 {
+    color: hsl(202, 22%, 95%);
+}
+
+.cg10 {
+    color: hsl(202, 22%, 90%);
+}
+
+.cg15 {
+    color: hsl(202, 22%, 85%);
+}
+
+.cg20 {
+    color: hsl(202, 22%, 80%);
+}
+
+.cg25 {
+    color: hsl(202, 22%, 75%);
+}
+
+.cg30 {
+    color: hsl(202, 22%, 70%);
+}
+
+.cg35 {
+    color: hsl(202, 22%, 65%);
+}
+
+.cg40 {
+    color: hsl(202, 22%, 60%);
+}
+
+.cg45 {
+    color: hsl(202, 22%, 55%);
+}
+
+.cg50 {
+    color: hsl(202, 22%, 50%);
+}
+
+.cg55 {
+    color: hsl(202, 22%, 45%);
+}
+
+.cg60 {
+    color: hsl(202, 22%, 40%);
+}
+
+.cg65 {
+    color: hsl(202, 22%, 35%);
+}
+
+.cg70 {
+    color: hsl(202, 22%, 30%);
+}
+
+.cg75 {
+    color: hsl(202, 22%, 25%);
+}
+
+.cg80 {
+    color: hsl(202, 22%, 20%);
+}
+
+.cg85 {
+    color: hsl(202, 22%, 15%);
+}
+
+.cg90 {
+    color: hsl(202, 22%, 10%);
+}
+
+.cg95 {
+    color: hsl(202, 22%, 5%);
+}
+
+/*------------------------------
+-------- Background Shades --------
+------------------------------*/
+.bg-clear {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.bg-white {
+    background-color: white;
+}
+.bg-ng5 {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.bg-ng10 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.bg-ng15 {
+    background-color: hsl(0, 0%, 85%);
+}
+
+.bg-ng20 {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.bg-ng25 {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.bg-ng30 {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.bg-ng35 {
+    background-color: hsl(0, 0%, 65%);
+}
+
+.bg-ng40 {
+    background-color: hsl(0, 0%, 60%);
+}
+
+.bg-ng45 {
+    background-color: hsl(0, 0%, 55%);
+}
+
+.bg-ng50 {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.bg-ng55 {
+    background-color: hsl(0, 0%, 45%);
+}
+
+.bg-ng60 {
+    background-color: hsl(0, 0%, 40%);
+}
+
+.bg-ng65 {
+    background-color: hsl(0, 0%, 35%);
+}
+
+.bg-ng70 {
+    background-color: hsl(0, 0%, 30%);
+}
+
+.bg-ng75 {
+    background-color: hsl(0, 0%, 25%);
+}
+
+.bg-ng80 {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.bg-ng85 {
+    background-color: hsl(0, 0%, 15%);
+}
+.bg-ng90 {
+    background-color: hsl(0, 0%, 10%);
+}
+
+.bg-black {
+    background-color: hsl(0, 0%, 3%);
+}
+
+.bg-pitch-black {
+    background-color: hsl(0, 0%, 0%);
+}
+
+/*-------- Warm Shades ------*/
+
+.bg-wg5 {
+    background-color: hsl(60, 5%, 96%);
+}
+
+.bg-wg10 {
+    background-color: hsl(60, 5%, 90%);
+}
+
+.bg-wg15 {
+    background-color: hsl(60, 5%, 85%);
+}
+
+.bg-wg20 {
+    background-color: hsl(60, 5%, 80%);
+}
+
+.bg-wg25 {
+    background-color: hsl(60, 5%, 75%);
+}
+
+.bg-wg30 {
+    background-color: hsl(60, 5%, 70%);
+}
+
+.bg-wg35 {
+    background-color: hsl(60, 5%, 65%);
+}
+
+.bg-wg40 {
+    background-color: hsl(60, 5%, 60%);
+}
+
+.bg-wg45 {
+    background-color: hsl(60, 5%, 55%);
+}
+
+.bg-wg50 {
+    background-color: hsl(60, 5%, 50%);
+}
+
+.bg-wg55 {
+    background-color: hsl(60, 5%, 45%);
+}
+
+.bg-wg60 {
+    background-color: hsl(60, 5%, 40%);
+}
+
+.bg-wg65 {
+    background-color: hsl(60, 5%, 35%);
+}
+
+.bg-wg70 {
+    background-color: hsl(60, 5%, 30%);
+}
+
+.bg-wg75 {
+    background-color: hsl(60, 5%, 25%);
+}
+
+.bg-wg80 {
+    background-color: hsl(60, 5%, 20%);
+}
+
+.bg-wg85 {
+    background-color: hsl(60, 5%, 15%);
+}
+
+.bg-wg90 {
+    background-color: hsl(60, 5%, 10%);
+}
+
+.bg-wg95 {
+    background-color: hsl(60, 5%, 5%);
+}
+
+/*-------- Cool Shades ------*/
+
+.bg-cg5 {
+    background-color: hsl(202, 22%, 95%);
+}
+
+.bg-cg10 {
+    background-color: hsl(202, 22%, 90%);
+}
+
+.bg-cg15 {
+    background-color: hsl(202, 22%, 85%);
+}
+
+.bg-cg20 {
+    background-color: hsl(202, 22%, 80%);
+}
+
+.bg-cg25 {
+    background-color: hsl(202, 22%, 75%);
+}
+
+.bg-cg30 {
+    background-color: hsl(202, 22%, 70%);
+}
+
+.bg-cg35 {
+    background-color: hsl(202, 22%, 65%);
+}
+
+.bg-cg40 {
+    background-color: hsl(202, 22%, 60%);
+}
+
+.bg-cg45 {
+    background-color: hsl(202, 22%, 55%);
+}
+
+.bg-cg50 {
+    background-color: hsl(202, 22%, 50%);
+}
+
+.bg-cg55 {
+    background-color: hsl(202, 22%, 45%);
+}
+
+.bg-cg60 {
+    background-color: hsl(202, 22%, 40%);
+}
+
+.bg-cg65 {
+    background-color: hsl(202, 22%, 35%);
+}
+
+.bg-cg70 {
+    background-color: hsl(202, 22%, 30%);
+}
+
+.bg-cg75 {
+    background-color: hsl(202, 22%, 25%);
+}
+
+.bg-cg80 {
+    background-color: hsl(202, 22%, 20%);
+}
+
+.bg-cg85 {
+    background-color: hsl(202, 22%, 15%);
+}
+
+.bg-cg90 {
+    background-color: hsl(202, 22%, 10%);
+}
+
+.bg-cg95 {
+    background-color: hsl(202, 22%, 5%);
+}
+/*-----------------------------------------------------------------------------------------------------------
+------------------------------------          Colors       --------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------
+-------- Regular Colors --------
+------------------------------*/
+
+.red {
+    color: red;
+}
+
+.orange {
+    color:rgb(255, 136, 0);
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color:blue;
+}
+
+.purple {
+    color: purple;
+}
+
+/*-------- Background Regular Colors ------*/
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-orange {
+    background-color: rgb(255, 136, 0);
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-blue {
+    background-color:blue;
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+/*----------------------------------
+--------- Additional Colors --------
+----------------------------------*/
+
+.pink {
+    color: rgb(238, 83, 161);
+}
+
+.hot-pink {
+    color: rgb(255, 0, 128);
+}
+
+.lime-green {
+    color: #C7EA30;
+}
+
+.brown {
+    color:rgb(94, 62, 20);
+}
+
+.tan {
+    color: tan;
+}
+
+.dark-blue {
+    color:darkblue;
+}
+
+.midnight-blue {
+    color:rgb(1, 1, 46);
+}
+
+.indigo {
+    color:rgb(12, 19, 53);
+}
+
+.dark-red {
+    color: #680200;
+}
+
+.gold {
+    color: gold;
+}
+
+.dark-gold {
+    color: rgb(180, 153, 2);
+}
+
+.rose-gold {
+    color: #E6B6A5;
+}
+
+.bronze {
+    color: #D6AE82;
+}
+
+.burnt-titanium {
+    color: rgb(180, 164, 120);
+}
+
+.titanium {
+    color: rgb(145, 140, 114)
+}
+
+.rich-titanium-brown {
+    color: #8F6532;
+}
+
+.silver {
+    color: rgb(209, 207, 201);
+}
+
+.copper {
+    color: #A4664C;
+}
+
+.bright-copper {
+    color: #DF8335;
+}
+
+.brass {
+    color: #DDC164;
+}
+
+.bright-gold {
+    color: rgb(238, 221, 127)
+}
+
+.aluminum {
+    color: #B1B6B1;
+}
+
+.stainless {
+    color: #D7D8D1;
+}
+
+.kashima {
+    color: #BF8A53;
+}
+
+.kashima-extra-dark {
+    color: #2C1701;
+}
+.kashima-dark {
+    color: #835A24;
+}
+
+.kashima-bright {
+    color: #F4B779;
+}
+.kashima-highlight {
+    color: #FEECB8;
+}
+
+.dark-green {
+    color: darkgreen;
+}
+
+.army-green {
+    color: rgb(49, 70, 32);
+}
+
+/*-------- Dark Regular Colors ------*/
+
+.dark-brown {
+    color: rgb(53, 35, 12);
+}
+
+.dark-purple {
+    color: rgb(63, 9, 63);
+}
+
+.midnight-purple {
+    color: rgb(28, 1, 46);
+}
+
+.light-blue {
+    color: rgb(0, 153, 204);
+}
+
+.robin-blue {
+    color: lightblue;
+}
+
+/*-------- Light Regular Colors ------*/
+.light-green {
+    color: #89E289;
+}
+
+.bright-green {
+    color: #15BF15;
+}
+
+.light-red {
+    color: rgb(243, 63, 63);
+}
+
+.light-orange {
+    color:rgb(250, 180, 75);
+}
+
+.light-purple {
+    color: rgb(145, 83, 145)
+}
+
+.sakura-extra-dark {
+    color: #321016;
+}
+
+.sakura-dark {
+    color: #771622;
+}
+
+.sakura-red {
+    color: #D90F35;
+}
+
+.sakura {
+    color: #DF3174;
+}
+
+.sakura-bright {
+    color: #FA5FD4;
+}
+
+.sakura-highlight {
+    color: #FEDAF2;
+}
+
+.sakura-green {
+    color: #D1D802;
+}
+
+.light-yellow {
+    color: rgb(255, 255, 161);
+}
+
+.light-turquoise {
+    color: rgb(153, 229, 222)
+}
+
+.dark-turquoise {
+    color: rgb(38, 158, 146);
+}
+
+.light-pink {
+    color: rgb(255, 166, 210);
+}
+
+.ultra-light-pink {
+    color: #FFCBE5;
+}
+
+.red-orange {
+    color:rgb(255, 81, 0);
+}
+
+.turquoise {
+    color: turquoise
+}
+
+.salmon {
+    color: salmon;
+}
+
+.periwinkle {
+    color: #CCCCFF;
+}
+
+.teal {
+    color: teal;
+}
+
+.ocean-water {
+    color:rgb(53, 168, 177);
+}
+
+.sky-blue {
+    color:skyblue;
+}
+
+.french-beige {
+    color: #CABFAC;
+}
+
+/*-------- Pastel Regular Colors ------*/
+.pastel-blue {
+    color: #C1E5F2;
+}
+
+.pastel-red {
+    color: #F2939B;
+}
+
+.pastel-yellow {
+    color: #EDF2BE;
+}
+
+.pastel-orange {
+    color: #F2CFB7;
+}
+
+.pastel-green {
+    color: #D5E4C1;
+}
+
+.pastel-purple {
+    color: #BDC4DD;
+}
+
+/*-------- 50's Regular Colors ------*/
+.fifties-blue {
+    color: #9BDBC2;
+}
+
+.fifties-red {
+    color: #CB2D30;
+}
+
+.fifties-yellow {
+    color: rgb(250, 250, 128);
+}
+
+.fifties-green {
+    color: #ABDE96;
+}
+
+.fifties-purple {
+    color: #bb8eda;
+}
+
+.fifties-pink {
+    color: #E8A4B0;
+}
+
+.fifties-beige {
+    color: #EEE8AC;
+}
+
+/*-------- Electric Regular Colors ------*/
+.electric-blue {
+    color: #3002F1;
+}
+
+.electric-red {
+    color: #F23204;
+}
+.electric-yellow {
+    color: #F2F231;
+}
+
+.electric-green {
+    color: #06F201;
+}
+
+.electric-purple {
+    color: #B502F2;
+}
+
+.electric-pink {
+    color: #F20689;
+}
+
+.electric-lime {
+    color: #C2F202;
+}
+
+.electric-orange {
+    color: #F16504;
+}
+
+/*-------- Background Regular Colors ------*/
+
+.bg-pink {
+    background-color: rgb(238, 83, 161);
+}
+
+.bg-hot-pink {
+    background-color: rgb(255, 0, 128);
+}
+
+.bg-lime-green {
+    background-color: #C7EA30;
+}
+
+.bg-bright-green {
+    background-color: #15BF15;
+}
+
+.bg-brown {
+    background-color:rgb(94, 62, 20);
+}
+
+.bg-tan {
+    background-color: tan;
+}
+
+.bg-dark-blue {
+    background-color:darkblue;
+}
+
+.bg-midnight-blue {
+    background-color:rgb(1, 1, 46);
+}
+
+.bg-indigo {
+    background-color:rgb(12, 19, 53);
+}
+
+.bg-dark-red {
+    background-color: #680200;
+}
+
+.bg-gold {
+    background-color: gold;
+}
+
+.bg-bright-gold {
+    background-color: rgb(238, 221, 127);
+}
+
+.bg-dark-gold {
+    background-color: rgb(180, 153, 2);
+}
+
+.bg-rose-gold {
+    background-color: #E6B6A5;
+}
+
+.bg-bronze {
+    background-color: #D6AE82;
+}
+
+.bg-burnt-titanium {
+    background-color: rgb(180, 164, 120);
+}
+
+.bg-titanium {
+    background-color: rgb(145, 140, 114)
+}
+
+.bg-rich-titanium-brown {
+    background-color: #8F6532;
+}
+
+.bg-silver {
+    background-color: rgb(209, 207, 201);
+}
+
+.bg-copper {
+    background-color: #A4664C;
+}
+
+.bg-bright-copper {
+    background-color: #DF8335;
+}
+
+.bg-brass {
+    background-color: #DDC164;
+}
+
+.bg-stainless {
+    background-color: #D7D8D1;
+}
+
+.bg-kashima-extra-dark {
+    background-color: #2C1701;
+}
+.bg-kashima-dark {
+    background-color: #835A24;
+}
+.bg-kashima {
+    background-color: #BF8A53;
+}
+.bg-kashima-bright {
+    background-color: #F4B779;
+}
+.bg-kashima-highlight {
+    background-color: #FEECB8;
+}
+
+.bg-aluminum {
+    background-color: #B1B6B1;
+}
+
+.bg-dark-green {
+    background-color: darkgreen;
+}
+
+.bg-army-green {
+    background-color: rgb(49, 70, 32);
+}
+
+.bg-french-beige {
+    background-color: #CABFAC;
+}
+
+/*-------- Dark Regular Colors ------*/
+
+.bg-dark-brown {
+    background-color: rgb(53, 35, 12);
+}
+
+.bg-dark-purple {
+    background-color: rgb(63, 9, 63);
+}
+
+.bg-midnight-purple {
+    background-color: rgb(28, 1, 46);
+}
+
+.bg-light-blue {
+    background-color: rgb(0, 153, 204);
+}
+
+.bg-robin-blue {
+    background-color: lightblue;
+}
+
+/*-------- Light Regular Colors ------*/
+.bg-light-green {
+    background-color: #89E289;
+}
+
+.bg-light-red {
+    background-color: rgb(243, 63, 63);
+}
+
+.bg-light-orange {
+    background-color:rgb(250, 180, 75);
+}
+
+.bg-light-purple {
+    background-color: rgb(145, 83, 145)
+}
+
+.bg-sakura-extra-dark {
+    background-color: #321016;
+}
+
+.bg-sakura-dark {
+    background-color: #771622;
+}
+
+.bg-sakura-red {
+    background-color: #D90F35;
+}
+
+.bg-sakura {
+    background-color: #DF3174;
+}
+
+.bg-sakura-bright {
+    background-color: #FA5FD4;
+}
+
+.bg-sakura-highlight {
+    background-color: #FEDAF2;
+}
+
+.bg-sakura-green {
+    background-color: #D1D802;
+}
+
+.bg-light-yellow {
+    background-color: rgb(255, 255, 161);
+}
+
+.bg-light-turquoise {
+    background-color: rgb(153, 229, 222)
+}
+
+.bg-dark-turquoise {
+    background-color: rgb(38, 158, 146);
+}
+
+.bg-light-pink {
+    background-color: rgb(255, 166, 210);
+}
+
+.bg-ultra-light-pink {
+    background-color: #FFCBE5;
+}
+
+.bg-red-orange {
+    background-color:rgb(255, 81, 0);
+}
+
+.bg-turquoise {
+    background-color: turquoise
+}
+
+.bg-salmon {
+    background-color: salmon;
+}
+
+.bg-periwinkle {
+    background-color: #CCCCFF;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+.bg-ocean-water {
+    background-color:rgb(53, 168, 177);
+}
+
+.bg-sky-blue {
+    background-color:skyblue;
+}
+
+/*-------- Pastel Regular Colors ------*/
+.bg-pastel-blue {
+    background-color: #C1E5F2;
+}
+
+.bg-pastel-red {
+    background-color: #F2939B;
+}
+
+.bg-pastel-yellow {
+    background-color: #EDF2BE;
+}
+
+.bg-pastel-orange {
+    background-color: #F2CFB7;
+}
+
+.bg-pastel-green {
+    background-color: #D5E4C1;
+}
+
+.bg-pastel-purple {
+    background-color: #BDC4DD;
+}
+
+/*-------- 50's Regular Colors ------*/
+.bg-fifties-blue {
+    background-color: #9BDBC2;
+}
+
+.bg-fifties-red {
+    background-color: #CB2D30;
+}
+
+.bg-fifties-yellow {
+    background-color: rgb(250, 250, 128);
+}
+
+.bg-fifties-green {
+    background-color: #ABDE96;
+}
+
+.bg-fifties-purple {
+    background-color: #bb8eda;
+}
+
+.bg-fifties-pink {
+    background-color: #E8A4B0;
+}
+
+.bg-fifties-beige {
+    background-color: #EEE8AC;
+}
+
+/*-------- Electric Regular Colors ------*/
+.bg-electric-blue {
+    background-color: #3002F1;
+}
+
+.bg-electric-red {
+    background-color: #F23204;
+}
+.bg-electric-yellow {
+    background-color: #F2F231;
+}
+
+.bg-electric-green {
+    background-color: #06F201;
+}
+
+.bg-electric-purple {
+    background-color: #B502F2;
+}
+
+.bg-electric-pink {
+    background-color: #F20689;
+}
+
+.bg-electric-lime {
+    background-color: #C2F202;
+}
+
+.bg-electric-orange {
+    background-color: #F16504;
+}
