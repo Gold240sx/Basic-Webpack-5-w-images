@@ -1,0 +1,1 @@
+export const freedom = `sour patch kids`;

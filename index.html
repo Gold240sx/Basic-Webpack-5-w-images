@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean</title>
-    <script type="module" src="dist/main.js"></script>
-</head>
-<body>
-    <h1>hello World!</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" maximum-scale=1.0, minimum-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clean</title>
+        <!---------------  Stylesheets --------------->
+        
 
-    <h3 id="firstImport">not imported</h3>
-</body>
+            <style>
+                .Max500px {width: 500px; height: auto;}
+            </style>
+        <!---------------  Javascript --------------->
+        <script defer src="https://kit.fontawesome.com/1e9632fec7.js" crossorigin="anonymous"></script>
+        <script type="module" src="dist/main.js"></script>
+    </head>
+    <body>
+        <!--------------- TESTS --------------->
+
+        <h1 class="mx-auto">hello World!</h1>
+        <h3 id="firstImport">not imported</h3>
+        <h4 class="scss-test">This font should be purple via dist/main.css</h4>
+        <img class="Max500px" src="src/images/SanFernandoValley.JPEG"> JPEG
+        <br>
+        <img class="Max500px" src="src/images/stacked-logo-B+W.png"> PNG
+        <br>
+        <img class="Max500px" src="src/images/MG Brochure BetaArtboard 5.jpg"> JPG
+        <br>
+        <img class="Max500px" src="src/images/nintendoswitch.svg"> SVG
+        <br>
+
+        <h2>CSS IMPORT: if background is light-green then it works</h2>
+        <h2>SCSS IMPORT: if button is orange then scss import works</h2>
+        <button>I should be orange</button>
+    </body>
 </html>

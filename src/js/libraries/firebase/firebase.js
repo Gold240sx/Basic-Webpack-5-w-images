@@ -1,0 +1,1 @@
+export const firebaseAlert = `hello, from firebase`;

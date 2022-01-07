@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+
+$primary: teal !important;
+
+button {
+    background-color: orange;
+    font-size: 30px;
+    padding:20px;
+    border:none;
+    border-radius: 20px;
+}
+
+.scss-test {
+    color: purple;
+}
