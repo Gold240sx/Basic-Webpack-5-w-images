@@ -13,14 +13,15 @@ module.exports = {
                 use: ["html-loader"]
             },
             {
-                test: /\.(svg|png|jpe?g\jpg|gif)$/,
-                use: {
+                test: /\.(svg|png|jpeg|jpg|gif)$/,
+                use: [{
                     loader: "file-loader",
                     options: {
-                        name: "[name].[ext]",
-                        outputPath: "imgs",
+                        context: path.resolve(__dirname, 'src'),
+                        name: '[path][name].[ext]',
+                        esModule: false
                     }
-                }
+                }]
             }
         ],
     },
