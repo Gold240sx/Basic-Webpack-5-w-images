@@ -6,11 +6,6 @@ module.exports = {
         main: "./src/js/index.js",
         vendor: "./src/js/libraries/vendor.js"
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/links/template.html"
-        })
-    ],
     module: {
         rules: [
             {
@@ -22,7 +17,7 @@ module.exports = {
                 use: {
                     loader: "file-loader",
                     options: {
-                        name: "[name].[fullhash].[ext]",
+                        name: "[name].[ext]",
                         outputPath: "imgs",
                     }
                 }
