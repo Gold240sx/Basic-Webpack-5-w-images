@@ -25,3 +25,5 @@ import { firebaseAlert } from './libraries/firebase/firebase.js';
 
 import "../styles/main.css";
 import "../styles/main.scss";
+
+console.log("hey yall");
