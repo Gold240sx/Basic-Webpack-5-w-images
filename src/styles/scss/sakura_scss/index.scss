@@ -3,26 +3,26 @@
 -----------------------------------------------------------------------------------------------------------*/
 
 // Variables and functions
-@import 'sakura_scss/_variables';
-@import 'sakura_scss/components/_functions';
-@import 'sakura_scss/_sakura-font-library';
+@import '_variables';
+@import 'components/_functions';
+@import 'sakura-font-library';
 
 //base and layout
 @import '_breakpoints';
-@import '_grid';
-@import 'sakura_scss/_base';
-@import 'sakura_scss/_sakura-formatting';
+//@import '_grid';
+@import '_base';
+@import '_sakura-formatting';
 
 //colors
-@import 'sakura_scss/_colors';
-@import 'sakura_scss/_sakura-color-library';
+@import '_colors';
+@import '_sakura-color-library';
 
 //components (button, card, navbar)
-@import 'sakura_scss/components/_card';
-@import 'sakura_scss/components/_button';
+//@import 'components/_card';
+@import 'components/_button';
 @import'components/_navbar';
-@import'components/_badge';
+//@import'components/_badge';
 // @import'components/_carosel';
 
 // utilities (margin, padding, opacity)
-@import 'components/_utilities';
+//@import 'components/_utilities';
