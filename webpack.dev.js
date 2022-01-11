@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(common, {
     mode: "development",
     output: {
-        filename: "[name].bundle.js",
+        filename: "[path][name].bundle.js",
         path: path.resolve(__dirname, "dist")
     },
     plugins: [
@@ -17,12 +17,12 @@ module.exports = merge(common, {
             }
         }),
         new HtmlWebpackPlugin({
-            filename: "sign-in.html",
+            filename: "links/sign-in.html",
             template: "./src/links/sign-in.html",
             chunks: ['signin'],
             minify: {
                 removeComments: true,
-            }
+            },
         })
     ],
     module: {
