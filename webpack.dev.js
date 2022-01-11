@@ -15,6 +15,14 @@ module.exports = merge(common, {
             minify: {
                 removeComments: true,
             }
+        }),
+        new HtmlWebpackPlugin({
+            filename: "sign-in.html",
+            template: "./src/links/sign-in.html",
+            chunks: ['signin'],
+            minify: {
+                removeComments: true,
+            }
         })
     ],
     module: {

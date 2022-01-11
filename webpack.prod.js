@@ -23,8 +23,16 @@ module.exports = merge(common, {
                   removeAttributeQuotes: true,
                   collapseWhitespace: true,
                   removeComments: true
-              }
-          })
+              }}),
+            new HtmlWebpackPlugin({
+                filename: "sign-in.html",
+                template: "./src/links/sign-in.html",
+                chunks: ['signin'],
+                minify: {
+                    removeComments: true,
+                },
+            },
+          )
         ],
     },
     plugins: [
