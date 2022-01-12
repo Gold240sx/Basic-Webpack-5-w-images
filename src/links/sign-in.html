@@ -6,36 +6,791 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clean</title>
         <!---------------  Stylesheets --------------->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,900;1,100;1,200;1,500&display=swap');
+            
+            *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: #D3D3D3;
+            }
 
+            h1, h2, h3, h4, h5, h6, p, tr, td, button, span, label, img {
+                user-select: none; /* supported by Chrome and Opera */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */      
+            }
+
+            body, html, .login_form {
+            height: 100vh;
+            min-height: fit-content;
+            margin-top: 40px;
+            }
+
+            body {
+            background: #262626;
+            }
+
+            .title {
+                color: #C4D21C;
+                padding-left: 15px;
+                margin-bottom: 5px;
+                font-weight: 500;
+                font-size: 2em;
+            }
+
+            .login_form {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-flex: center;
+            -moz-box-flex: center;
+            -webkit-flex: center;
+            -ms-flex: center;
+            flex: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            justify-content: center;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-align-items: center;
+            align-items: center;
+            }
+
+            .login-wrapper {
+            max-width: 500px;
+            width: 100%;
+            }
+
+            .logo {
+            text-align: center;
+            }
+            .logo img {
+            max-width: 80%;
+            width: 100%;
+            margin: 1em auto 2em;
+            }
+
+            form {
+            background: rgba(0, 0, 0, 0.42);
+            padding: 2em 1em;
+            font-family: helvetica, sans-serif;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            }
+            form label {
+            color: rgb(126, 126, 126);
+            margin: 0 3% 0.25em;
+            display: block;
+            font-size: larger;
+            }
+            form input {
+            width: 94%;
+            padding: 0.7em 0.25em;
+            margin: 0 3% 1em;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background-color: #262626;
+            -webkit-transition: all 0.25s;
+            -moz-transition: all 0.25s;
+            -ms-transition: all 0.25s;
+            -o-transition: all 0.25s;
+            transition: all 0.25s;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            color: white;
+            padding-left: 20px;
+            }
+            form input.password {
+            padding-right: 4rem;
+            }
+            form input:focus {
+            border: 2px solid #A2BB13;
+            }
+            form button {
+            width: 94%;
+            margin: 2em 3% 0;
+            border: none;
+            background: #A2BB13;
+            padding: 1em 0;
+            font-size: 1.25em;
+            clear: both;
+            color: #000;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            outline: none;
+            -webkit-transition: all 0.25s;
+            -moz-transition: all 0.25s;
+            -ms-transition: all 0.25s;
+            -o-transition: all 0.25s;
+            transition: all 0.25s;
+            cursor: pointer;
+            }
+
+            .hide-show {
+            width: 94%;
+            margin: -4em 3% 0 1.5%;
+            position: relative;
+            z-index: 5;
+            display: none;
+            }
+            .hide-show span {
+            background: #A2BB13;
+            font-size: 1em;
+            padding: 0.5em;
+            float: right;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: black;
+            }
+            form button:focus, form button:hover, .hide-show span:focus, .hide-show span:hover, .hide-show:focus, .hide-show:hover  {
+                background-color: #C4D21C;
+                background: #C4D21C;
+                transition: .2s ease-in-out;
+            }
+            form button:active, .hide-show:active, .hide-show span:active {
+                background-color: #EBFF00;
+                background: #EBFF00;
+                color: white;
+            }
+
+            .nwsp {
+                white-space: nowrap;
+            }
+
+            tr, td, th {
+                padding: 8px;
+                padding-top: 16px !important;
+                padding-bottom: 16px !important;
+                font-size: 15px;
+            }
+
+            thead {
+                text-align: center;
+                background-color: black;
+                border: #3B3C3D 2px solid;
+            }
+
+            th {
+                background-color: #161616;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            table{
+                border: #3B3C3D 2px solid;
+                font-weight: 300;
+                background-color: #2A2B2B;
+                text-align: center;
+                box-shadow: 
+                    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                    0 12.5px 10px rgba(0, 0, 0, 0.06),
+                    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                    0 100px 80px rgba(0, 0, 0, 0.12);
+            }
+
+            table tr:nth-child(even) {
+                background-color: #191D1E;
+            }
+
+            table td:first-child {
+                font-weight: 500;
+                color: white;
+                background-color: #1B1D1D;
+                text-align: left;
+            }
+
+            thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+                border-radius: 4px 0 0 0;
+            }
+            thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+                border-radius: 0 0 0 4px;
+            }
+
+            .subtitle-row {
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
+                background-color: #1B1D1D !important;
+                padding-left: 40px !important;
+                color: #C4D21C !important;
+            }
+
+            .container {
+                min-width: fit-content;
+                position: relative;
+                width: 90%;
+                margin: auto;
+                max-width: 800px;
+                align-items: center;
+                display: flex;
+                justify-self: center;
+                flex-direction: column;
+                padding-bottom: 90px;
+            }
+
+            footer {
+                width: 100vw;
+                background-color: #1B1D1D;
+                text-align: center;
+                display:flex;
+                justify-self: center;
+                min-height: fit-content;
+                box-sizing: border-box;
+                bottom: 0px;
+            }
+
+            .footer {
+                text-align: center;
+                width: 100vw;
+                font-size: 20px;
+                height:100%;
+                line-height: 100%;
+                vertical-align: middle;
+            }
+        </style>
         <!---------------  Javascript --------------->
-        <script defer src="https://kit.fontawesome.com/1e9632fec7.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="https://kit.fontawesome.com/1758b3260f.js" crossorigin="anonymous"></script>
+
+        <script defer>
+            $(function(){
+                $('.hide-show').show();
+                $('.hide-show span').addClass('show');
+                
+                $('.hide-show span').click(function(){
+                    if( $(this).hasClass('show') ) {
+                    $(this).text('Hide');
+                    $('input[name="login[password]"]').attr('type','text');
+                    $(this).removeClass('show');
+                    } else {
+                    $(this).text('Show');
+                    $('input[name="login[password]"]').attr('type','password');
+                    $(this).addClass('show');
+                    }
+                });
+                
+                $('form button[type="submit"]').on('click', function(){
+                    $('.hide-show span').text('Show').addClass('show');
+                    $('.hide-show').parent().find('input[name="login[password]"]').attr('type','password');
+                }); 
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const form = document.getElementById('login');
+
+                form.addEventListener('submit', (e) => {
+                    const usernameInput = document.getElementById('username-input').value;
+                    const passwordInput = document.getElementById('password-input').value;
+
+                    e.preventDefault();
+                    console.log(usernameInput);
+                    console.log(passwordInput);
+                });
+
+            });
+            
+            console.log("the script works");
+        </script>
     </head>
     <body>
 
-          <!--------------- Sign In / Login --------------->
-          
-          <button type="submit">Sign In</button>
-          <div class="login_form">
+        <!--------------- Sign In / Login --------------->
+        <div class="login_form">
             <setion class="login-wrapper">
               
-              <div class="logo">
-               <img src="../images/stacked-logo-B+W.png" alt=""></a>
-              </div>
-              
-              <form id="login" method="post" action="#">
-               
-                <label for="username">User Name</label>
-                <input  required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
-                
-                <label for="password">Password</label>
-                <input class="password" required name="login[password]" type="password" />
-                <div class="hide-show">
-                  <span>Show</span>
-                </div>
+                <form id="login"> <!-- add a method: posty and action="#"-->
+                    
+                    <div class="logo">
+                        <a href="../index.html">
+                        <img src="../images/stacked-logo-B+W.png" alt=""></a>
+                    </div>
 
-              </form>
-              
+                    <label for="username">User Name</label>
+                    <input  id="username-input" required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
+                    
+                    <label for="password">Password</label>
+                    <input id="password-input" class="password" required name="login[password]" type="password" />
+                    <div class="hide-show">
+                    <span>Show</span>
+                    </div>
+                    <button type="submit">Sign In</button>
+                </form>
             </section>
-          </div>
+        </div>
+
+        <div class="container">
+
+            <!--
+                ██    ██ ███████ ███████ ██████      ██      ██ ███████ ████████ 
+                ██    ██ ██      ██      ██   ██     ██      ██ ██         ██    
+                ██    ██ ███████ █████   ██████      ██      ██ ███████    ██    
+                ██    ██      ██ ██      ██   ██     ██      ██      ██    ██    
+                ██████  ███████ ███████ ██   ██     ███████ ██ ███████    ██    
+            -->
+
+            <section id="user-list" class="modal">
+                <h1 class="title">_User List </h1>
+                <table>
+                    <tr class="">
+                        <th  class="nwsp "></th>
+                        <th  class="nwsp ">Username</th>
+                        <th  class="nwsp ">Email</th>
+                        <th  class="nwsp ">Password</th> 
+                        <th  class="nwsp ">Date Added</th>
+                        <th  class="nwsp ">Name</th>
+                        <th  class="nwsp ">User Permissions</th>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user1</td>
+                        <td  class="nwsp ">Maria@maria.com</td> 
+                        <td  class="nwsp ">Germany</td>
+                        <td  class="nwsp ">yesterday</td>
+                        <td  class="nwsp ">Maria Gomez</td>
+                        <td  class="nwsp ">user</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Francisco@julia.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Fransisco Horchata</td>
+                        <td  class="nwsp ">user</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Johnson@julia.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">3 weeks ago</td>
+                        <td  class="nwsp ">Julia Johnson</td>
+                        <td  class="nwsp ">manager</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Aron@rogers.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Arron Rogers</td>
+                        <td  class="nwsp ">manager</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">ericAlien@solar.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Eric Anderson</td>
+                        <td  class="nwsp ">user</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!--
+                ██████  ██████   ██████       ██ ███████  ██████ ████████     ██      ██ ███████ ████████ 
+                ██   ██ ██   ██ ██    ██      ██ ██      ██         ██        ██      ██ ██         ██    
+                ██████  ██████  ██    ██      ██ █████   ██         ██        ██      ██ ███████    ██    
+                ██      ██   ██ ██    ██ ██   ██ ██      ██         ██        ██      ██      ██    ██    
+                ██      ██   ██  ██████   █████  ███████  ██████    ██        ███████ ██ ███████    ██    
+            -->
+
+            <section id="project-list" class="modal">
+
+                <h1 class="title">_Project List </h1>
+                <table>
+                    <tr class="">
+                        <th  class="nwsp "></th>
+                        <th  class="nwsp ">Project ID</th>
+                        <th  class="nwsp ">Customer Name</th>
+                        <th  class="nwsp ">Address</th> 
+                        <th  class="nwsp ">System Size</th>
+                        <th  class="nwsp ">Status</th>
+                        <th  class="nwsp ">Phone Number</th>
+                        <th  class="nwsp ">Email</th>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">74849483</td>
+                        <td  class="nwsp ">emily charles</td> 
+                        <td  class="nwsp ">Germany</td>
+                        <td  class="nwsp ">4.7</td>
+                        <td  class="nwsp ">Permitting</td>
+                        <td  class="nwsp ">(308) 573-7854</td>
+                        <td  class="nwsp ">emila@hotmail.com</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">74849483</td>
+                        <td  class="nwsp ">david williams</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">9.4</td>
+                        <td  class="nwsp ">Awaiting Install</td>
+                        <td  class="nwsp ">(308) 573-7854</td>
+                        <td  class="nwsp ">emila@hotmail.com</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">74849483</td>
+                        <td  class="nwsp ">jose ferrero</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">3.6</td>
+                        <td  class="nwsp ">Contracts</td>
+                        <td  class="nwsp ">(308) 573-7854</td>
+                        <td  class="nwsp ">emila@hotmail.com</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">74849483</td>
+                        <td  class="nwsp ">charlotte parsons</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">12.5</td>
+                        <td  class="nwsp ">Proposals</td>
+                        <td  class="nwsp ">(308) 573-7854</td>
+                        <td  class="nwsp ">emila@hotmail.com</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">74849483</td>
+                        <td  class="nwsp ">andy warhol</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">23.8</td>
+                        <td  class="nwsp ">Lead</td>
+                        <td  class="nwsp ">(308) 573-7854</td>
+                        <td  class="nwsp ">emila@hotmail.com</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!--
+                ███████  ██████  ██    ██ ██ ██████  ███    ███ ███████ ███    ██ ████████     ██      ██ ███████ ████████ 
+                ██      ██    ██ ██    ██ ██ ██   ██ ████  ████ ██      ████   ██    ██        ██      ██ ██         ██    
+                █████   ██    ██ ██    ██ ██ ██████  ██ ████ ██ █████   ██ ██  ██    ██        ██      ██ ███████    ██    
+                ██      ██ ▄▄ ██ ██    ██ ██ ██      ██  ██  ██ ██      ██  ██ ██    ██        ██      ██      ██    ██    
+                ███████  ██████   ██████  ██ ██      ██      ██ ███████ ██   ████    ██        ███████ ██ ███████    ██    
+                            ▀▀                                                                                             
+            -->
+
+            <section id="equipment-list" class="modal">
+
+                <h1 class="title">_Equipment List </h1>
+                <table>
+                    <tr class="">
+                        <th  class="nwsp "></th>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product No.</th>
+                        <th  class="nwsp ">Watts</th> 
+                        <th  class="nwsp ">Cells</th>
+                        <th  class="nwsp ">Warranty</th>
+                        <th  class="nwsp ">Degredation</th>
+                        <th  class="nwsp ">Volume</th>
+                        <th  class="nwsp ">Smart Module</th>
+                        <th  class="nwsp ">Adder</th>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="10">Modules </td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product No.</th>
+                        <th  class="nwsp ">Wattage</th> 
+                        <th  class="nwsp ">Cells</th>
+                        <th  class="nwsp ">Warranty</th>
+                        <th  class="nwsp ">Efficiency</th>
+                        <th  class="nwsp ">Volume</th>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="10">Inverters</td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product No.</th>
+                        <th  class="nwsp ">Wattage</th> 
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="10">DC Optimizers</td>
+
+                </table>
+
+                <!--
+                    ███████ ███████ ███████      ██████  ██████  ███    ███ ██████   ██████  ███    ██ ███████ ███    ██ ████████ ███████ 
+                    ██      ██      ██          ██      ██    ██ ████  ████ ██   ██ ██    ██ ████   ██ ██      ████   ██    ██    ██      
+                    █████   ███████ ███████     ██      ██    ██ ██ ████ ██ ██████  ██    ██ ██ ██  ██ █████   ██ ██  ██    ██    ███████ 
+                    ██           ██      ██     ██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██ 
+                    ███████ ███████ ███████      ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████ 
+                -->
+
+
+                <h3 class="title nwsp">_Energy Storage System Components </h3>
+
+                <table>
+                    <tr class="">
+                        <th  class="nwsp "></th>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product No.</th>
+                        <th  class="nwsp ">Type</th> 
+                        <th  class="nwsp ">kWh</th>
+                        <th  class="nwsp ">Warranty</th>
+                        <th  class="nwsp ">Volume</th>
+                        <th  class="nwsp ">Price</th>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="10">LG Electronics </td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product Name</th>
+                        <th  class="nwsp ">Product No.</th>
+                        <th  class="nwsp ">Type</th> 
+                        <th  class="nwsp ">Volume</th>
+                        <th  class="nwsp ">Price</th>
+                        <th  class="nwsp ">kWh</th>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="10">Generac</td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product Name</th>
+                        <th  class="nwsp ">Product No.</th> 
+                        <th  class="nwsp ">Type</th>
+                        <th  class="nwsp ">kWh</th>
+                        <th  class="nwsp ">kW</th>
+                        <th  class="nwsp ">Volume</th>
+                        <th  class="nwsp ">Price</th>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="10">ELM Residential</td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product Name</th>
+                        <th  class="nwsp ">Product No.</th> 
+                        <th  class="nwsp ">Type</th>
+                        <th  class="nwsp ">kWh</th>
+                        <th  class="nwsp ">kW</th>
+                        <th  class="nwsp ">Volume</th>
+                        <th  class="nwsp ">Price</th>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="10">ELM Commercial</td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp ">Manufacturer</th>
+                        <th  class="nwsp ">Product Name</th>
+                        <th  class="nwsp ">Product No.</th> 
+                        <th  class="nwsp ">Type</th>
+                        <th  class="nwsp ">kWh</th>
+                        <th  class="nwsp ">kW</th>
+                        <th  class="nwsp ">Volume</th>
+                        <th  class="nwsp ">Price</th>
+                    </tr>
+                </table>
+            </section>
+
+            <!--
+                ███████ ██ ███    ██  █████  ███    ██  ██████ ██ ███    ██  ██████      ██      ██ ███████ ████████ 
+                ██      ██ ████   ██ ██   ██ ████   ██ ██      ██ ████   ██ ██           ██      ██ ██         ██    
+                █████   ██ ██ ██  ██ ███████ ██ ██  ██ ██      ██ ██ ██  ██ ██   ███     ██      ██ ███████    ██    
+                ██      ██ ██  ██ ██ ██   ██ ██  ██ ██ ██      ██ ██  ██ ██ ██    ██     ██      ██      ██    ██    
+                ██      ██ ██   ████ ██   ██ ██   ████  ██████ ██ ██   ████  ██████      ███████ ██ ███████    ██    
+            -->
+
+            <section id="financing-list" class="modal">
+
+                <h1 class="title">_Financing List </h1>
+                <table>
+                    <tr class="">
+                        <th  class="nwsp ">Bank</th>
+                        <th  class="nwsp ">Loan Name</th>
+                        <th  class="nwsp ">APR</th> 
+                        <th  class="nwsp ">Term</th>
+                        <th  class="nwsp ">Banking Fee</th>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp ">user1</td>
+                        <td  class="nwsp ">Maria@maria.com</td> 
+                        <td  class="nwsp ">Germany</td>
+                        <td  class="nwsp ">yesterday</td>
+                        <td  class="nwsp ">Maria Gomez</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Francisco@julia.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Fransisco Horchata</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Johnson@julia.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">3 weeks ago</td>
+                        <td  class="nwsp ">Julia Johnson</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Aron@rogers.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Arron Rogers</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">ericAlien@solar.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Eric Anderson</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!--
+                ███████ ██    ██ ██████  ██████  ██      ██ ███████ ██████      ██      ██ ███████ ████████ 
+                ██      ██    ██ ██   ██ ██   ██ ██      ██ ██      ██   ██     ██      ██ ██         ██    
+                ███████ ██    ██ ██████  ██████  ██      ██ █████   ██████      ██      ██ ███████    ██    
+                     ██ ██    ██ ██      ██      ██      ██ ██      ██   ██     ██      ██      ██    ██    
+                ███████  ██████  ██      ██      ███████ ██ ███████ ██   ██     ███████ ██ ███████    ██    
+            -->
+            
+            <section id="Electric-Supplier-list" class="modal">
+
+                <h1 class="title">_Electric Supplier List </h1>
+                <table>
+                    <tr class="">
+                        <th  class="nwsp "></th>
+                        <th  class="nwsp ">Supplier Name</th>
+                        <th  class="nwsp ">Rate Schedule Name</th>
+                        <th  class="nwsp ">Rate schedule Type</th> 
+                        <th  class="nwsp ">Details</th>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="5">Green Mountain </td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">Green Mountain</td>
+                        <td  class="nwsp ">Residential ACB</td> 
+                        <td  class="nwsp ">Fixed</td>
+                        <td  class="nwsp ">...</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">Green Mountain</td>
+                        <td  class="nwsp ">Residential ACB</td> 
+                        <td  class="nwsp ">Fixed</td>
+                        <td  class="nwsp ">...</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">Green Mountain</td>
+                        <td  class="nwsp ">Residential ACB</td> 
+                        <td  class="nwsp ">Fixed</td>
+                        <td  class="nwsp ">...</td>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="5">Spruce Energy</td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">Spruce Energy</td>
+                        <td  class="nwsp ">Residential ACB</td> 
+                        <td  class="nwsp ">Fixed</td>
+                        <td  class="nwsp ">...</td>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="5">TXU</td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">TXU</td>
+                        <td  class="nwsp ">Residential ACB</td> 
+                        <td  class="nwsp ">Fixed</td>
+                        <td  class="nwsp ">...</td>
+                    </tr>
+                    <td class="subtitle-row" align="center" colspan="5">Aspen Energy</td>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">Aspen Energy</td>
+                        <td  class="nwsp ">Residential ACB</td> 
+                        <td  class="nwsp ">Tiered</td>
+                        <td  class="nwsp ">...</td>
+                    </tr>
+                </table>
+            </section>
+            
+                <!--
+                    ██    ██ ████████ ██ ██      ██ ████████ ██    ██     ██      ██ ███████ ████████ 
+                    ██    ██    ██    ██ ██      ██    ██     ██  ██      ██      ██ ██         ██    
+                    ██    ██    ██    ██ ██      ██    ██      ████       ██      ██ ███████    ██    
+                    ██    ██    ██    ██ ██      ██    ██       ██        ██      ██      ██    ██    
+                    ████████    ██    ██ ███████ ██    ██       ██        ███████ ██ ███████    ██    
+                -->
+
+            <section id="Utility-list" class="modal">
+
+                <h1 class="title">_Electric Utility List </h1>
+                <table>
+                    <tr class="">
+                        <th  class="nwsp "></th>
+                        <th  class="nwsp ">Bank</th>
+                        <th  class="nwsp ">Loan Name</th>
+                        <th  class="nwsp ">APR</th> 
+                        <th  class="nwsp ">Term</th>
+                        <th  class="nwsp ">Banking Fee</th>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user1</td>
+                        <td  class="nwsp ">Maria@maria.com</td> 
+                        <td  class="nwsp ">Germany</td>
+                        <td  class="nwsp ">yesterday</td>
+                        <td  class="nwsp ">Maria Gomez</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Francisco@julia.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Fransisco Horchata</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Johnson@julia.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">3 weeks ago</td>
+                        <td  class="nwsp ">Julia Johnson</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">Aron@rogers.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Arron Rogers</td>
+                    </tr>
+                    <tr class="">
+                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <td  class="nwsp ">user2</td>
+                        <td  class="nwsp ">ericAlien@solar.com</td> 
+                        <td  class="nwsp ">Mexico</td>
+                        <td  class="nwsp ">one week ago</td>
+                        <td  class="nwsp ">Eric Anderson</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <footer>
+            <h5 class="footer copyright">Copyright 2022 Easy Green Solar</h5>
+        </footer>
+
     </body>
 </html>
