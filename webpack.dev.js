@@ -16,12 +16,10 @@ module.exports = merge(common, {
         new HtmlWebpackPlugin({
             filename: "links/sign-in.html",      // This is where ot imports the file from
             template: "./src/links/sign-in.html", // This is where ot imports the file from
-            chunks: ['signin'],
             }),
         new HtmlWebpackPlugin({
             filename: "links/sakura-reference.html",
             template: "./src/links/sakura-reference.html",
-            chunks: ['sakura-reference'],
         }),
     ],
     module: {
