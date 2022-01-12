@@ -31,9 +31,15 @@ module.exports = merge(common, {
                 chunks: ['signin'],
                 minify: {
                     removeComments: true,
-                },
-            },
-          )
+            }}),
+            new HtmlWebpackPlugin({
+                filename: "links/sakura-reference.html",
+                template: "./src/links/sakura-reference.html",
+                publicPath: "./dist/links",
+                chunks: ['sakura-reference'],
+                minify: {
+                    removeComments: true,
+            }}),
         ],
     },
     plugins: [

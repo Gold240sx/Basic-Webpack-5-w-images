@@ -15,6 +15,9 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
             color: #D3D3D3;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
             }
 
             h1, h2, h3, h4, h5, h6, p, tr, td, button, span, label, img {
@@ -29,6 +32,8 @@
             height: 100vh;
             min-height: fit-content;
             margin-top: 40px;
+            padding: 0;
+            margin: 0;
             }
 
             body {
@@ -66,7 +71,7 @@
 
             .login-wrapper {
             max-width: 500px;
-            width: 100%;
+            width: 100vw;
             }
 
             .logo {
@@ -74,7 +79,7 @@
             }
             .logo img {
             max-width: 80%;
-            width: 100%;
+            width: 100vw;;
             margin: 1em auto 2em;
             }
 
@@ -229,6 +234,7 @@
                 background-color: #1B1D1D !important;
                 padding-left: 40px !important;
                 color: #C4D21C !important;
+                font-weight: 90;
             }
 
             .container {
@@ -258,12 +264,14 @@
             .footer {
                 text-align: center;
                 width: 100vw;
-                font-size: 20px;
-                height:100%;
-                line-height: 100%;
+                font-size: 14px;
+                font-weight: 300;
+                height: 80px;
+                line-height: 80px;
                 vertical-align: middle;
             }
         </style>
+        <style src="../styles/main.css"></style>
         <!---------------  Javascript --------------->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script defer src="https://kit.fontawesome.com/1758b3260f.js" crossorigin="anonymous"></script>
@@ -311,6 +319,10 @@
     </head>
     <body>
 
+        <section style="position: absolute; background-color: rgb(48, 48, 48); width: 100vw;">
+            <h2 style="width:fit-content; font-weight: 500; padding: 5px 0px 5px 20px;" class="log-in-prompt">Welcome: &nbsp;&nbsp; <span style="color: grey;" id="nav-username-display">Username</span></h2>
+        </section>
+
         <!--------------- Sign In / Login --------------->
         <div class="login_form">
             <setion class="login-wrapper">
@@ -342,7 +354,7 @@
                 ██    ██ ██      ██      ██   ██     ██      ██ ██         ██    
                 ██    ██ ███████ █████   ██████      ██      ██ ███████    ██    
                 ██    ██      ██ ██      ██   ██     ██      ██      ██    ██    
-                ██████  ███████ ███████ ██   ██     ███████ ██ ███████    ██    
+                ██████   ███████ ███████ ██   ██     ███████ ██ ███████    ██    
             -->
 
             <section id="user-list" class="modal">
@@ -507,7 +519,7 @@
                     </tr>
                     <td class="subtitle-row" align="center" colspan="10">Modules </td>
                     <tr class="">
-                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp "></th>
                         <th  class="nwsp ">Manufacturer</th>
                         <th  class="nwsp ">Product No.</th>
                         <th  class="nwsp ">Wattage</th> 
@@ -518,7 +530,7 @@
                     </tr>
                     <td class="subtitle-row" align="center" colspan="10">Inverters</td>
                     <tr class="">
-                        <td  class="nwsp "><i class="fas fa-folder"></i></td>
+                        <th  class="nwsp "></th>
                         <th  class="nwsp ">Manufacturer</th>
                         <th  class="nwsp ">Product No.</th>
                         <th  class="nwsp ">Wattage</th> 

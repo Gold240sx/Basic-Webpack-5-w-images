@@ -12,18 +12,17 @@ module.exports = merge(common, {
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/links/template.html",
-            minify: {
-                removeComments: true,
-            }
         }),
         new HtmlWebpackPlugin({
-            filename: "links/sign-in.html",
-            template: "./src/links/sign-in.html",
+            filename: "links/sign-in.html",      // This is where ot imports the file from
+            template: "./src/links/sign-in.html", // This is where ot imports the file from
             chunks: ['signin'],
-            minify: {
-                removeComments: true,
-            },
-        })
+            }),
+        new HtmlWebpackPlugin({
+            filename: "links/sakura-reference.html",
+            template: "./src/links/sakura-reference.html",
+            chunks: ['sakura-reference'],
+        }),
     ],
     module: {
         rules: [
