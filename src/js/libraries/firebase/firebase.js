@@ -15,11 +15,11 @@ import {
     getFirestore,
     collection,
     getDocs,
+    addDoc,
+    deleteDoc,
+    doc,
+    onSnapshot,
     //getDoc,
-    //onSnapshot,
-    //addDoc,
-    //deleteDoc,
-    //doc,
     //query,
     //where,
 } from 'firebase/firestore';
@@ -43,18 +43,52 @@ const db = getFirestore();
 /*--------------------//       Collection Reference       //----------------------*/
 const colRef = collection(db, 'Projects')
 
-/*--------------------//       Get the Collection Data       //-------------------*/
-getDocs(colRef)
-    .then((snapshot) => {
-        let Projects = []
+/*--------------------//       Realtime Collection Data       //-------------------*/
+
+onSnapshot(colRef, (snapshot) => {
+    let Projects = []
         snapshot.docs.forEach((doc) => {
             Projects.push({ ...doc.data(), id: doc.id })
         })
         console.log(Projects)
+})
+
+
+/*--------------------//       Adding Projects       //-------------------*/
+const addProjectForm = document.querySelector('.addProject');
+addProjectForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    addDoc(colRef, {
+        name: addProjectForm.name.value,
+        address: addProjectForm.address.value,
+        phoneNumber: addProjectForm.phoneNumber.value,
+        email: addProjectForm.email.value,
     })
-    .catch(err => {
-        console.log(err.message)
-    });
+    .then(() => {
+        addProjectForm.reset();
+    })
+
+});
+
+
+/*--------------------//       Deleting Projects       //-------------------*/
+const deleteProjectForm = document.querySelector('.deleteProject');
+deleteProjectForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const docRef = doc(db, 'Projects', deleteProjectForm.id.value)
+
+    deleteDoc(docRef)
+        .then(() => {
+            deleteProjectForm.reset();
+        })
+});
+
+
+
+
+
 
 
 
