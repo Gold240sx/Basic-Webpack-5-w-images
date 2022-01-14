@@ -15,9 +15,12 @@ firstImport.innerText = freedom;                            //Tests: shows full 
 import { firebaseAlert } from './libraries/firebase/firebase.js';
     console.log( firebaseAlert );
 
+
     /*-------- Additional Firebase Files ------*/
-
-
+import { initializeApp } from 'firebase/app';
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
+const firebaseApp = initializeApp({ /* config */ });
+const db = getFirestore(firebaseApp);
 
 /*-----------------------------------------------------------------------------------------------------------
 ------------------------------------         SCSS and CSS         -------------------------------------------
