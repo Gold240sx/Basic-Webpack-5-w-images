@@ -19,9 +19,9 @@ import {
     deleteDoc,
     doc,
     onSnapshot,
+    query,
+    where,
     //getDoc,
-    //query,
-    //where,
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -43,20 +43,33 @@ const db = getFirestore();
 /*--------------------//       Collection Reference       //----------------------*/
 const colRef = collection(db, 'Projects')
 
+//queries
+const q = query(colRef, where("status", "==", "Lead"));
+
 /*--------------------//       Realtime Collection Data       //-------------------*/
 
 onSnapshot(colRef, (snapshot) => {
-    let Projects = []
+    let Projects = [];
         snapshot.docs.forEach((doc) => {
             Projects.push({ ...doc.data(), id: doc.id })
         })
-        console.log(Projects)
+        console.log(Projects);
+});
+
+onSnapshot(q, (snapshot) => {
+    //let Projects = [];
+    let Search = [];
+        snapshot.docs.forEach((doc) => {
+            Search.push({ ...doc.data(), id: doc.id })
+        })
+        console.log(Search);
 })
 
 
 /*--------------------//       Adding Projects       //-------------------*/
 const addProjectForm = document.querySelector('.addProject');
 addProjectForm.addEventListener('submit', (e) => {
+    const projectStatus = document.getElementById('statusDisplay').innerText;
     e.preventDefault();
 
     addDoc(colRef, {
@@ -64,6 +77,7 @@ addProjectForm.addEventListener('submit', (e) => {
         address: addProjectForm.address.value,
         phoneNumber: addProjectForm.phoneNumber.value,
         email: addProjectForm.email.value,
+        status: projectStatus,
     })
     .then(() => {
         addProjectForm.reset();

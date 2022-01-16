@@ -27,6 +27,6 @@ const db = getFirestore(firebaseApp);
 -----------------------------------------------------------------------------------------------------------*/
 
 import "../styles/main.css";
-import "../styles/main.scss";
+//import "../styles/main.scss";
 
 console.log("hey yall");

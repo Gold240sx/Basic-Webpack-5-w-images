@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clean</title>
         <!---------------  Stylesheets --------------->
-        <style src="../styles/main.css"></style>
+
         <!---------------  Javascript --------------->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script defer src="https://kit.fontawesome.com/1758b3260f.js" crossorigin="anonymous"></script>
@@ -51,6 +51,7 @@
             
             console.log("the script works");
         </script>
+        <script defer src="../js/functionality/dropdown-menu.js"></script>
     </head>
     <body>
 
@@ -551,7 +552,31 @@
                         <label for="email">Email:</label>
                         <input type="text" name="email" required>
 
+                        <h3 class="title">Project Status: &nbsp; <span class="grey" id="statusDisplay"></span></h3>
+                        <div class="custom-select">
+                            <select name="status" id="status">
+                                <option value="">--select--</option>
+                                <option value="Dead Lead">Dead Lead</option>
+                                <option value="Cancelled">Cancelled</option>
+                                <option value="Lead">Lead</option>
+                                <option value="Preperation">Preperation</option>
+                                <option value="Proposal">Proposal</option>
+                                <option value="Funding">Funding</option>
+                                <option value="Post Sale Docs">Post Sale Docs</option>
+                                <option value="Site Assessment">Site Assessment</option>
+                                <option value="CAD">CAD</option>
+                                <option value="Permitting">Permitting</option>
+                                <option value="Product Ordered">Product Ordered</option>
+                                <option value="Install Scheduled">Install Scheduled</option>
+                                <option value="Install">Install</option>
+                                <option value="Post Install">Post Install</option>
+                                <option value="Interconnections">Interconnections</option>
+                                <option value="PTO / Closed Out">PTO / Closed Out</option>
+                            </select>
+                        </div>
+
                         <button class="submit">Submit!</button>
+
                     </form>
                 </div>
             </section>
@@ -568,15 +593,6 @@
                 </div>
             </section>
         </div>
-
-
-
-
-
-
-
-
-
 
 
         <footer>
