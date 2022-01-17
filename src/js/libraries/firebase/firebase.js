@@ -76,7 +76,7 @@ addProjectForm.addEventListener('submit', (e) => {
         name: addProjectForm.name.value,
         address: addProjectForm.address.value,
         phoneNumber: addProjectForm.phoneNumber.value,
-        email: addProjectForm.email.value,
+        email: addProjectForm.newProjectEmail.value,
         status: projectStatus,
     })
     .then(() => {

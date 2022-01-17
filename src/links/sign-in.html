@@ -52,6 +52,7 @@
             console.log("the script works");
         </script>
         <script defer src="../js/functionality/dropdown-menu.js"></script>
+        <script defer src="../js/functionality/input-formatter.js"></script>
     </head>
     <body>
 
@@ -542,17 +543,37 @@
                 <div class="addNewProject">
                     <form class="addProject">
                         <h2 class="title underline">Add a New Project</h2>
-                        <h4 class="plpx-15 grey">Customer Info:</h4>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" required>
-                        <label for="address">Address:</label>
-                        <input type="text" name="address" required>
-                        <label for="phoneNumber">Phone Number:</label>
-                        <input type="text" name="phoneNumber" required>
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" required>
+                        <h4 class="plpx-15 grey customer-info-title">Customer Info:</h4>
 
-                        <h3 class="title">Project Status: &nbsp; <span class="grey" id="statusDisplay"></span></h3>
+                        <div class="input">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="newProject-name" onkeydown="preventNonAlphabeticalInput(event)" required> 
+                            <i class="fas fa-user"></i>
+                        </div>
+
+                        <div class="input">
+                            <label for="address">Address:</label>
+                            <input type="text" name="address" id="newProject-address" required> 
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        
+                        <div class="input">
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input type="text" name="phoneNumber" id="newProject-phoneNumber" onkeydown="preventNonNumericalInput(event); phoneNumberFormatter();" required>
+                            <i class="fas fa-phone"></i>
+                            <h5 id="phone-alert" class="alert hidden" style="margin-left: 20px; padding:10px; font-size: 15px;">Please enter a valid phone number!</h5>
+                        </div>
+                        
+                        <div class="input">
+                            <label for="newProjectEmail">Email:</label>
+                            <input type="email" name="newProjectEmail" id="newProject-email" class="add-new-email-verification">
+                            <i class="fas fa-envelope"></i>
+                            <h5 id="email-alert" class="alert hidden" style="margin-left: 20px; padding:10px; font-size: 15px;">Please enter a valid email!</h5>
+                        </div>
+
+                        <h3 class="title project-status-title">Project Status: &nbsp; 
+                            <span class="grey" id="statusDisplay"></span>
+                        </h3>
                         <div class="custom-select">
                             <select name="status" id="status">
                                 <option value="">--select--</option>
@@ -586,8 +607,12 @@
                 <div class="deleteNewProject">
                     <form class="deleteProject">
                         <h2 class="title underline">Delete a Project</h2>
-                        <label for="id">Document id:</label>
-                        <input type="text" name="id" required>
+                    
+                        <div class="input">
+                            <label for="id">Project id:</label>
+                            <input type="text" name="id" id="newProject-id" required>
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
                         <button class="submit">Delete Project!</button>
                     </form>
                 </div>
