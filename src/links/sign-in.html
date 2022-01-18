@@ -40,7 +40,7 @@
 
                 form.addEventListener('submit', (e) => {
                     const usernameInput = document.getElementById('username-input').value;
-                    const passwordInput = document.getElementById('password-input').value;
+                    const passwordInput = document.getElementById('password-input').value;  
 
                     e.preventDefault();
                     console.log(usernameInput);
@@ -53,6 +53,7 @@
         </script>
         <script defer src="../js/functionality/dropdown-menu.js"></script>
         <script defer src="../js/functionality/input-formatter.js"></script>
+        <script defer src="../js/functionality/toggle.js"></script>
     </head>
     <body>
 
@@ -60,29 +61,156 @@
             <h2 style="width:fit-content; font-weight: 500; padding: 5px 0px 5px 20px;" class="log-in-prompt">Welcome: &nbsp;&nbsp; <span style="color: grey;" id="nav-username-display">Username</span></h2>
         </section>
 
+
+                    <!--
+            ██       ██████   ██████  ██ ███    ██        ███████ ██  ██████  ███    ██ ██    ██ ██████         ██████   █████  ███████ ███████ ██     ██  ██████  ██████  ██████      ██████  ███████ ███████ ███████ ████████      █████  ███    ██ ██████      ███████ ██    ██ ██████  ██████   ██████  ██████  ████████ 
+            ██      ██    ██ ██       ██ ████   ██        ██      ██ ██       ████   ██ ██    ██ ██   ██        ██   ██ ██   ██ ██      ██      ██     ██ ██    ██ ██   ██ ██   ██     ██   ██ ██      ██      ██         ██        ██   ██ ████   ██ ██   ██     ██      ██    ██ ██   ██ ██   ██ ██    ██ ██   ██    ██    
+            ██      ██    ██ ██   ███ ██ ██ ██  ██        ███████ ██ ██   ███ ██ ██  ██ ██    ██ ██████         ██████  ███████ ███████ ███████ ██  █  ██ ██    ██ ██████  ██   ██     ██████  █████   ███████ █████      ██        ███████ ██ ██  ██ ██   ██     ███████ ██    ██ ██████  ██████  ██    ██ ██████     ██    
+            ██      ██    ██ ██    ██ ██ ██  ██ ██             ██ ██ ██    ██ ██  ██ ██ ██    ██ ██             ██      ██   ██      ██      ██ ██ ███ ██ ██    ██ ██   ██ ██   ██     ██   ██ ██           ██ ██         ██        ██   ██ ██  ██ ██ ██   ██          ██ ██    ██ ██      ██      ██    ██ ██   ██    ██    
+            ███████  ██████   ██████  ██ ██   ████ ▄█     ███████ ██  ██████  ██   ████  ██████  ██      ▄█     ██      ██   ██ ███████ ███████  ███ ███   ██████  ██   ██ ██████      ██   ██ ███████ ███████ ███████    ██        ██   ██ ██   ████ ██████      ███████  ██████  ██      ██       ██████  ██   ██    ██    
+            -->
+
         <!--------------- Sign In / Login --------------->
-        <div class="login_form">
-            <setion class="login-wrapper">
+        <div class="login_form login-module">
+            <section class="login-wrapper">
               
                 <form id="login"> <!-- add a method: posty and action="#"-->
                     
                     <div class="logo">
                         <a href="../index.html">
-                        <img src="../images/stacked-logo-B+W.png" alt=""></a>
+                        <img src="../images/notInUse/MainWhiteStacked.png" alt=""></a>
                     </div>
+                    <h3 class="module-title">Log in to continue.</h3>
 
                     <label for="username">User Name</label>
-                    <input  id="username-input" required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
+                    <div class="input">
+                        <input  id="username-input" required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
+                        <i class="fas fa-user"></i>
+                    </div>
                     
                     <label for="password">Password</label>
-                    <input id="password-input" class="password" required name="login[password]" type="password" />
-                    <div class="hide-show">
-                    <span>Show</span>
+                    <div class="input mbpx-50">
+                        <input id="password-input" class="password" required name="login[password]" type="password" />
+                        <i class="fas fa-eye-slash"></i>
+                        <div class="hide-show">
+                        <span>Show</span>
+                        </div>
                     </div>
-                    <button type="submit">Sign In</button>
+
+                    <div class="toggle">
+                        <label class="rememberMe">Remember Me</label>
+                        <div class="switch rememberMeToggle">
+                            <input type="checkbox" class="input-rememberMeToggle hidden" value="false" />
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <button type="submit" class="wp100 submit" id="submit-signup-button">Login</button>
+                        <h6 type="button" class="button" style="white-space: nowrap; display: inline-flex; color: grey !important;">Dont have an account? &nbsp; <div style="text-decoration: underline;" class="signup-shortcut button-link button-link-bright"> SIGN UP!</div></h6>
+                    </div>
+
+                    <p class="module-password-reset bottom-right forgot-password button-link">Forgot your password?</p>
                 </form>
             </section>
-        </div>
+
+            <section>
+                <form id="signup"> 
+                    
+                    <div class="logo">
+                        <a href="../index.html">
+                        <img src="../images/notInUse/Main B+WLateral with Circle.png" alt=""></a>
+                    </div>
+                    <h2 class="module-title">Start knocking your solar sales<br> out of the park!</h2>
+
+                    <div class="input-form">
+
+                        <div class="input">
+                            <input type="text" name="signup-name" id="signup-name" placeholder="Name">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="signupEmail" id="signup-email" placeholder="Email">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="input">
+                            <input type="organization" name="signupOrganization" id="signup-organization" placeholder="Organization">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="signupPassword" id="signup-password" placeholder="Create a password">
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="signupPasswordRetype" id="signup-password-retype" placeholder="Retype Password">
+                        </div>
+                        <div class="input">
+                            <input type="text" name="phoneNumber" id="signup-phoneNumber" placeholder="Phone Number">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="orgPin" id="signup-phoneNumber" placeholder="Organization's Pin">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+                        <div class="col">
+                            <button id="submit-signup-button" class="submit">Let's Get Started!</button>
+                            <h6 type="button" class="back-button button button-link button-link-bright" style="font-size: 20px !important;">Back</h6>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section id="login-password-reset-module" class="login-module absolute">
+              
+                <form class="module-wrapper"> <!-- add a method: posty and action="#"-->
+                    
+                    <div class="logo">
+                        <a href="../index.html">
+                        <img src="../images/notInUse/Main B+WLateral with Circle.png" alt=""></a>
+                    </div>
+                    <h3 class="module-title">Password Reset</h3>
+                    <div class="input-form">
+                    <p class="description">Enter the email associated with your Easy Green Solar Account. We'll send you an email with your username and a link to reset your password. The administrator of your account will also be notified.</p>
+                    <div class="input">
+                        <input type="email" name="resetEmail" id="reset-email"  placeholder="Email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="col">
+                        <button class="wp100 submit" name="reset-email-button" id="reset-email-button">SEND</button>
+                        <h6 style="white-space: nowrap; display: inline-flex; color: grey !important; font-size: 16px; padding-left: 7px;padding-top: 20px;">For additional help, please contact: &nbsp;<div id="support-link" class="button-link button-link-bright">Support</div></h6>
+                    </div>
+                </div>
+                </form>
+            </section>
+
+
+            <section id="login-support-module" class="login-module absolute">
+                <form class="module-wrapper"> <!-- add a method: posty and action="#"-->
+                    <div class="logo">
+                        <a href="../index.html">
+                        <img src="../images/notInUse/Main B+WLateral with Circle.png" alt=""></a>
+                    </div>
+                    <h3 class="module-title">Support Request</h3>
+                    <div class="input-form">
+                        <p class="description">We're sorry you're having issues. Please send us a descirption of the issues your having and one of our engineers will get back with you via email shortly.</p>
+                        <div class="input">
+                            <input type="email" name="resetEmail" id="login-support-email" class="no-icon" placeholder="Your email">
+                        </div>
+                        <div class="input">
+                            <input type="text" name="resetEmail" id="login-support-request-title" class="no-icon" placeholder="Support request title">
+                        </div>
+                        <div class="input">
+                            <textarea name="login-support-request-description" id="login-support-request-description" cols="32" rows="8" placeholder="Description of the issue"></textarea>
+                        </div>
+                        <div class="col">
+                            <button class="wp100 submit" name="reset-email-button" id="reset-email-button">SEND</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
 
         <div class="container">
 
@@ -556,6 +684,12 @@
                             <input type="text" name="address" id="newProject-address" required> 
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
+
+                        <div class="input">
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="newProject-city" required> 
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
                         
                         <div class="input">
                             <label for="phoneNumber">Phone Number:</label>
@@ -569,6 +703,12 @@
                             <input type="email" name="newProjectEmail" id="newProject-email" class="add-new-email-verification">
                             <i class="fas fa-envelope"></i>
                             <h5 id="email-alert" class="alert hidden" style="margin-left: 20px; padding:10px; font-size: 15px;">Please enter a valid email!</h5>
+                        </div>
+
+                        <div class="input">
+                            <label for="salesRep">Sales rep:</label>
+                            <input type="text" name="salesRep" id="newProject-SalesRep" required> 
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
 
                         <h3 class="title project-status-title">Project Status: &nbsp; 
@@ -598,6 +738,8 @@
 
                         <button class="submit">Submit!</button>
 
+                        <h3 id="addProject-alert" class="alertwhite hidden" style="margin-left: 20px; padding:10px; font-size: 15px;"><span id="addProject-alert-name"></span>has been added!</h3>
+
                     </form>
                 </div>
             </section>
@@ -614,6 +756,22 @@
                             <i class="fa-solid fa-hashtag"></i>
                         </div>
                         <button class="submit">Delete Project!</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="editNew>
+
+                <div class="editNewProject">
+                    <form class="editProject">
+                        <h2 class="title underline">Edit a Project</h2>
+                    
+                        <div class="input">
+                            <label for="id">Project id:</label>
+                            <input type="text" name="id" required>
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+                        <button class="submit">Update Project!</button>
                     </form>
                 </div>
             </section>

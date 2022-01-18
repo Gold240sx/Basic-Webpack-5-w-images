@@ -1,14 +1,14 @@
 /*-----------------------------------------------------------------------------------------
---------------------//              FromTheNetNinja V9             //----------------------
+--------------------//              Database FromTheNetNinja V9             //----------------------
 -----------------------------------------------------------------------------------------*/
 export const firebaseAlert = `hello, from firebase`;
 
 import { initializeApp } from 'firebase/app';
 
 import { 
-    //getAuth,
+    getAuth,
     //GoogleAuthProvider,
-    //createUserWithEmailAndPassword,
+    createUserWithEmailAndPassword,
     //onAuthStateChanged,
 } from 'firebase/auth';
 import { 
@@ -21,7 +21,10 @@ import {
     onSnapshot,
     query,
     where,
-    //getDoc,
+    orderBy,
+    serverTimestamp,
+    getDoc,
+    updateDoc,
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -38,13 +41,13 @@ initializeApp(firebaseConfig);
 
 /*--------------------//       Initialize Services       //----------------------*/
 const db = getFirestore();
-//const auth = getAuth();
+const auth = getAuth();
 
 /*--------------------//       Collection Reference       //----------------------*/
 const colRef = collection(db, 'Projects')
 
 //queries
-const q = query(colRef, where("status", "==", "Lead"));
+const q = query(colRef, orderBy('createdAt'));
 
 /*--------------------//       Realtime Collection Data       //-------------------*/
 
@@ -69,15 +72,23 @@ onSnapshot(q, (snapshot) => {
 /*--------------------//       Adding Projects       //-------------------*/
 const addProjectForm = document.querySelector('.addProject');
 addProjectForm.addEventListener('submit', (e) => {
-    const projectStatus = document.getElementById('statusDisplay').innerText;
+
     e.preventDefault();
+    const projectStatus = document.getElementById('statusDisplay').innerText;
+    const projectAddedAlertOutput = document.getElementById('addProject-alert');
+    const projectAddedAlertNameOutput = document.getElementById('addProject-alert-name');
+    //const showSubmitAlert = projectAddedAlertOutput.classList.remove("hidden");
+    //setTimeout( function(showSubmitAlert) {projectAddedAlertOutput.classList.add("hidden"), 3000});
 
     addDoc(colRef, {
         name: addProjectForm.name.value,
         address: addProjectForm.address.value,
+        city: addProjectForm.city.value,
         phoneNumber: addProjectForm.phoneNumber.value,
         email: addProjectForm.newProjectEmail.value,
+        salesRep: addProjectForm.salesRep.value,
         status: projectStatus,
+        createdAt: serverTimestamp(),
     })
     .then(() => {
         addProjectForm.reset();
@@ -99,10 +110,49 @@ deleteProjectForm.addEventListener('submit', (e) => {
         })
 });
 
+/*--------------------//       Get a single Document      //-------------------*/
+const docRef = doc(db, 'Projects', 'vyDxdi1CFGVsMSEBu651');
 
+onSnapshot(docRef, (doc) => {
+    console.log(doc.data(), doc.id)
+});
 
+/*--------------------//       Updating a Document      //-------------------*/
+const editProjectForm = document.querySelector('.editProject');
+editProjectForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
+    const docRef = doc(db, 'Projects', editProjectForm.id.value);
 
+    updateDoc(docRef, {
+        name: 'updated name'
+    })
+    .then (() => {
+        editProjectForm.reset();
+    })
+})
+
+/*-----------------------------------------------------------------------------------------
+---------------------------//              AUTH             //-----------------------------
+-----------------------------------------------------------------------------------------*/
+
+/*--------------------//      Signing Users Up      //-------------------*/
+
+const signupForm = document.getElementById('signup');
+signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('signup-email').value;
+    const password = document.getElementById('signup-password').value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((cred) => {
+            console.log('user created:', cred.user)
+            signupForm.reset()
+        })
+        .catch((err) => {
+            console.log(err.message)
+        })
+});
 
 
 
