@@ -34,31 +34,15 @@
                 }); 
             });
         </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const form = document.getElementById('login');
-
-                form.addEventListener('submit', (e) => {
-                    const usernameInput = document.getElementById('username-input').value;
-                    const passwordInput = document.getElementById('password-input').value;  
-
-                    e.preventDefault();
-                    console.log(usernameInput);
-                    console.log(passwordInput);
-                });
-
-            });
-            
-            console.log("the script works");
-        </script>
         <script defer src="../js/functionality/dropdown-menu.js"></script>
         <script defer src="../js/functionality/input-formatter.js"></script>
         <script defer src="../js/functionality/toggle.js"></script>
     </head>
     <body>
 
-        <section style="position: absolute; background-color: rgb(48, 48, 48); width: 100vw;">
-            <h2 style="width:fit-content; font-weight: 500; padding: 5px 0px 5px 20px;" class="log-in-prompt">Welcome: &nbsp;&nbsp; <span style="color: grey;" id="nav-username-display">Username</span></h2>
+        <section style="position: absolute; background-color: rgb(48, 48, 48); width: 100vw; display: inline-flex; justify-content: space-between;">
+            <h2 id="welcome" style="width:fit-content; font-weight: 500; padding: 5px 0px 5px 20px;" class="log-in-prompt hidden">Welcome: &nbsp;&nbsp; <span style="color: grey;" id="nav-username-display">Username</span></h2>
+            <button id="logout" class="hidden" style="width: 90px; height: 40px; cursor: pointer; font-size: 15px;background-color: rgb(187, 187, 187); border: none; color: black; border-radius: 5px; margin: 15px 40px 15px 15px;">Logout</button>
         </section>
 
 
@@ -82,9 +66,9 @@
                     </div>
                     <h3 class="module-title">Log in to continue.</h3>
 
-                    <label for="username">User Name</label>
+                    <label for="username">Email</label>
                     <div class="input">
-                        <input  id="username-input" required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
+                        <input  id="email-input" required name="login[email]" type="text" autocapitalize="off" autocorrect="off"/>
                         <i class="fas fa-user"></i>
                     </div>
                     

@@ -9,7 +9,9 @@ import {
     getAuth,
     //GoogleAuthProvider,
     createUserWithEmailAndPassword,
-    //onAuthStateChanged,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged,
 } from 'firebase/auth';
 import { 
     getFirestore,
@@ -44,7 +46,8 @@ const db = getFirestore();
 const auth = getAuth();
 
 /*--------------------//       Collection Reference       //----------------------*/
-const colRef = collection(db, 'Projects')
+const colRef = collection(db, 'Projects');
+const userRef = collection(db, 'userData');
 
 //queries
 const q = query(colRef, orderBy('createdAt'));
@@ -143,39 +146,84 @@ signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
+    const username = document.getElementById('signup-name').value;
 
-    createUserWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password, name)
         .then((cred) => {
             console.log('user created:', cred.user)
-            signupForm.reset()
+            signupForm.reset();
+        }, function(error, authData) {
+            if (error) {
+                console.log("Error creating User:", error);
+            } else {
+                // save the user's profile into the database so we can list users,
+                // use them in Security and Firebase Rules, and show profiles
+                ref.child("users").child(authData.uid).set({
+                    provider: authData.provider,
+                    name: userName,
+                });
+            }
+        })
+});
+
+/*--------------------//      Logging Users In & Out     //-------------------*/
+
+const logoutButton = document.getElementById('logout');
+logoutButton.addEventListener('click', (e) => {
+
+    const username = document.getElementById('nav-username-display');
+    const logout = document.getElementById('logout');
+    const welcome = document.getElementById('welcome');
+    
+    signOut( auth)
+        .then(() => {
+            //console.log("user has signed out")
+            welcome.classList.add('hidden');
+            logout.classList.add('hidden');
         })
         .catch((err) => {
-            console.log(err.message)
+            //console.log(err.message)
         })
 });
 
 
+const loginForm = document.getElementById('login');
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email-input').value;
+    const password = document.getElementById('password-input').value;
+    signInWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+        //console.log(cred.user.email , 'has signed in!')
+        loginForm.reset();
+    })
+    .catch((err) => {
+        //console.log(err.message)
+    })
+});
+
+/*--------------------//      Subscribing to Auth Changes      //-------------------*/
+
+onAuthStateChanged(auth, (user) => {
+
+    /*--------------------//      Displaying Username      //-------------------*/
+    const usernameSpot = document.getElementById('nav-username-display');
+    const logout = document.getElementById('logout');
+    const welcome = document.getElementById('welcome');
+    const username = auth.currentUser.email;
+    
+    if (auth != "null" ) {
+        usernameSpot.innerText = username;
+        logout.classList.remove('hidden');
+        welcome.classList.remove('hidden');
+    } else {
+        welcome.classList.add('hidden');
+        logout.classList.add('hidden');
+    }
+});
 
 
 
-
-
-/*
-
-module.exports = {
-
-    const firebaseConfig = {
-        apiKey: "AIzaSyCTvA52q6xFDf36qx8zQjQjlI-pl_THN84",
-        authDomain: "spt-clean.firebaseapp.com",
-        projectId: "spt-clean",
-        storageBucket: "spt-clean.appspot.com",
-        messagingSenderId: "1083345288398",
-        appId: "1:1083345288398:web:e6563c1a8f3036e96f249f"
-    },
-    initializeApp(firebaseConfig);
-};
-
-*/
 
 /*
 // from the firebase video 2018 (V8):
@@ -201,166 +249,7 @@ db.collection('books);
 //Storage
 const storage = firebaseConfig.storage();
 const ref = storage.ref('path');
-//------------------------------------------------------------------------------------------
 */
-
-
-
-/*
-// from the reference documents with Webpack: 
-
-import { initializeApp } from 'firebase/app';
-import { getFirestore, doc, getDoc } from 'firebase/firestore';
-
-const firebaseApp = initializeApp({ 
-    
-    apiKey: "AIzaSyCTvA52q6xFDf36qx8zQjQjlI-pl_THN84",
-    authDomain: "spt-clean.firebaseapp.com",
-    projectId: "spt-clean",
-    storageBucket: "spt-clean.appspot.com",
-    messagingSenderId: "1083345288398",
-    appId: "1:1083345288398:web:e6563c1a8f3036e96f249f"
-
-});
-
-const db = getFirestore(firebaseApp);
-
-async function loadCity(name) {
-    const cityDoc = doc(db, `cities/${name}`);
-    const snapshot = await getDoc(cityDoc);
-    return {
-      id: snapshot.id,
-      ...snapshot.data(),
-    };
-}
-
-
-
-
-
-*/
-
-//------------------------------------------------------------------------------------------
-// From my older (working firebase file)
-/*
-
-import { initializeApp } from 'firebase/app'
-import { 
-    getAuth,
-    GoogleAuthProvider,
-    createUserWithEmailAndPassword,
-    onAuthStateChanged,
-} from 'firebase/auth'
-import { 
-    getFirestore,
-    collection,
-    getDocs,
-    getDoc,
-    onSnapshot,
-    addDoc,
-    deleteDoc,
-    doc,
-    query,
-    where,
-} from 'firebase/firestore'
-
-const firebaseConfig = {
-    apiKey: "AIzaSyBQE8TxazL_86Vwd6OrrTvsV-QEGaK9BxM",
-    authDomain: "firesettings.firebaseapp.com",
-    projectId: "firesettings",
-    storageBucket: "firesettings.appspot.com",
-    messagingSenderId: "24133868223",
-    appId: "1:24133868223:web:8b73512c4537c47e79440a",
-    measurementId: "G-87MXNJ1KQH",
-};
-
-/*------------------------------------------------------------------------------
-----------------------//       Initialize App       //--------------------------
-------------------------------------------------------------------------------
-initializeApp(firebaseConfig);
-
-/*-----------------------------------------------------------------------------------------
-----------------------//       Initialize Services       //--------------------------------
------------------------------------------------------------------------------------------
-const db = getFirestore();
-//const auth = getAuth();
-
-/*-----------------------------------------------------------------------------------------
---------------------------//       Collection Ref       //---------------------------------
------------------------------------------------------------------------------------------
-const colRef = collection(db, 'blogs')
-const subRef = collection(db, 'subscribers')
-const q = query(colRef, where("author", "==", "Nikki"))
-
-
-/*-----------------------------------------------------------------------------------------
-----------------------//       Get Collection Data       //--------------------------------
-----------------------------------------------------------------------------------------
-
-//Real Time Collection Data (Replaces getDocs with onSnapshot)
-
-onSnapshot(colRef, (snapshot) => {  // replace "colRef" with "q"  to make a query selection.
-    let blogs = []
-    snapshot.docs.forEach((doc) => {
-        blogs.push({ ...doc.data(), id: doc.id })
-    })
-    console.log(blogs);
-
-});
-
-onSnapshot(subRef, (snapshot) => {
-    let subscribers = []
-    snapshot.docs.forEach((doc) => {
-        subscribers.push({ ...doc.data(), id: doc.id })
-    })
-    console.log(subscribers)
-});
-
-/*-----------------------------------------------------------------------------------------
-----------------------//       Adding and Deleting BLOGS       //--------------------------
------------------------------------------------------------------------------------------
-const addBlog = document.querySelector('#add-blog-form');
-const deleteBlog = document.querySelector('#delete-blog-form');
-const addSub = document.querySelector('#subscribe-form');
-
-// Adding Blogs
-addBlog.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    addDoc(colRef, {
-        title: addBlog.title.value,
-        content: addBlog.content.value,
-    })
-    .then(() => {
-        addBlog.reset()
-    })
-})
-
-// Deleting Blogs
-deleteBlog.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    const docRef = doc(db, 'blogs', deleteBlog.id.value)
-
-    deleteDoc(docRef)
-    .then(() => {
-        deleteBlog.reset()
-    })
-})
-
-// Adding Subscribers
-addSub.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    addDoc(subRef, {
-        name: addSub.subname.value,
-        email: addSub.subemail.value,
-    })
-    .then(() => {
-        addSub.reset()
-    })
-})
-
 
 
 /*-----------------------------------------------------------------------------------------
